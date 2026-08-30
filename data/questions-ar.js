@@ -1,6 +1,6 @@
 // NEXORA DR TEST — Official Modern Standard Arabic Question Bank
 // Version 1.0 | بنك أسئلة اختبار القيادة - الفئة السابعة (ألبرتا - كندا)
-// Total Questions: 290 | المصدر الرسمي: دليل السائق - حكومة ألبرتا
+// Total Questions: 306 | المصدر الرسمي: دليل السائق - حكومة ألبرتا
 
 export const questionsAr = [
   {
@@ -393,7 +393,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Regulatory Signs",
+    "sourceTopic": "Stop Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -415,8 +415,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "stop",
-      "regulatory"
+      "traffic-signs",
+      "stop-signs"
     ]
   },
   {
@@ -447,8 +447,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "yield",
-      "regulatory"
+      "traffic-signs",
+      "yield-signs"
     ]
   },
   {
@@ -457,7 +457,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Maximum Speed Signs",
+    "sourceTopic": "Speed Limits",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -479,8 +479,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "speed-limit",
-      "regulatory"
+      "traffic-signs",
+      "speed-limits"
     ]
   },
   {
@@ -489,7 +489,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "School Zone Signs",
+    "sourceTopic": "School Zones",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -511,14 +511,14 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "school-zone",
-      "warning"
+      "traffic-signs",
+      "school-zones"
     ]
   },
   {
     "id": "SIGN-005",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
     "sourceTopic": "Playground Zones",
@@ -543,8 +543,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "playground-zone",
-      "speed-limit"
+      "traffic-signs",
+      "playground-zones"
     ]
   },
   {
@@ -553,7 +553,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Traffic Signals Ahead",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -575,17 +575,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "warning",
-      "signals"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-007",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Merging Traffic Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -607,17 +607,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "merging",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-008",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Lane Ending Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -639,17 +639,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "lane-ending",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-009",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Divided Highway Begins",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -671,17 +671,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "divided-highway",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-010",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Divided Highway Ends",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -703,8 +703,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "divided-highway",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
@@ -713,7 +713,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Slippery Road Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -735,8 +735,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "slippery",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
@@ -745,7 +745,7 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Turn Prohibition Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -767,8 +767,8 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "prohibitory",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
@@ -777,7 +777,39 @@ export const questionsAr = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "U-Turn Prohibition",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/no-right-turn.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-014",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -799,17 +831,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "u-turn",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-014",
+    "id": "SIGN-015",
     "category": "شواخص وإشارات المرور",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Do Not Enter Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -831,17 +863,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "do-not-enter",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-015",
+    "id": "SIGN-016",
     "category": "شواخص وإشارات المرور",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "One-Way Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -863,17 +895,49 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "one-way",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-016",
+    "id": "SIGN-017",
     "category": "شواخص وإشارات المرور",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "No Parking Signs",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/one-way-left.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-018",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Parking Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -895,17 +959,17 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "parking",
-      "regulatory"
+      "traffic-signs",
+      "parking-signs"
     ]
   },
   {
-    "id": "SIGN-017",
+    "id": "SIGN-019",
     "category": "شواخص وإشارات المرور",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Construction Zone Signs",
+    "sourceTopic": "Construction Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -927,17 +991,49 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "construction",
-      "orange-warning"
+      "traffic-signs",
+      "construction-signs"
     ]
   },
   {
-    "id": "SIGN-018",
+    "id": "SIGN-020",
     "category": "شواخص وإشارات المرور",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Slow Moving Vehicle Signs",
+    "sourceTopic": "Construction Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/construction-flagperson.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "construction-signs"
+    ]
+  },
+  {
+    "id": "SIGN-021",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Special Vehicles",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -959,8 +1055,424 @@ export const questionsAr = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "slow-moving-vehicle",
-      "special"
+      "traffic-signs",
+      "special-vehicles"
+    ]
+  },
+  {
+    "id": "SIGN-022",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Speed Limits",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/max-80.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "speed-limits"
+    ]
+  },
+  {
+    "id": "SIGN-023",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Speed Limits",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/max-100.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "speed-limits"
+    ]
+  },
+  {
+    "id": "SIGN-024",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/pedestrian-crosswalk.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-025",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Railway Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/railway-crossing.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "railway-signs"
+    ]
+  },
+  {
+    "id": "SIGN-026",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/roundabout-ahead.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-027",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/winding-road.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-028",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/two-way-traffic.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-029",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Information Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/hospital.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "information-signs"
+    ]
+  },
+  {
+    "id": "SIGN-030",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/keep-right.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-031",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Lane Control Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/straight-or-left-lane.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "lane-control-signs"
+    ]
+  },
+  {
+    "id": "SIGN-032",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Lane Control Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/right-turn-only-lane.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "lane-control-signs"
+    ]
+  },
+  {
+    "id": "SIGN-033",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/passing-prohibited.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-034",
+    "category": "شواخص وإشارات المرور",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "فيما يتعلق بقواعد (شواخص وإشارات المرور) في مقاطعة ألبرتا، ما هو السلوك الصحيح الواجب على السائق اتباعه؟",
+    "answers": [
+      "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+      "تجاهل تعليمات (شواخص وإشارات المرور) أثناء ساعات الليل الهادئة",
+      "تنطبق قواعد (شواخص وإشارات المرور) على الشاحنات الثقيلة التجارية فقط",
+      "لا يُلزم السائقون دون 18 عاماً بهذه القواعد"
+    ],
+    "correctAnswer": "الالتزام بالقوانين والشواخص المرورية المنظمة لـ (شواخص وإشارات المرور) والقيادة بحذر وانتباه",
+    "explanation": "يُلزم قانون السلامة المرورية في ألبرتا جميع السائقين بفهم وتطبيق القواعد المرورية المتعلقة بـ (شواخص وإشارات المرور) لضمان أمان مستخدمي الطريق.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/emergency-vehicles-slowdown.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
@@ -2824,7 +3336,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0101",
+    "id": "ALB-0201",
     "category": "شواخص وإشارات المرور",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -2856,7 +3368,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0102",
+    "id": "ALB-0202",
     "category": "شواخص وإشارات المرور",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -2888,7 +3400,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0103",
+    "id": "ALB-0203",
     "category": "شواخص وإشارات المرور",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -2920,7 +3432,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0104",
+    "id": "ALB-0204",
     "category": "شواخص وإشارات المرور",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -2952,7 +3464,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0105",
+    "id": "ALB-0205",
     "category": "الإشارات الضوئية المرورية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -2984,7 +3496,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0106",
+    "id": "ALB-0206",
     "category": "الإشارات الضوئية المرورية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3016,7 +3528,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0107",
+    "id": "ALB-0207",
     "category": "الإشارات الضوئية المرورية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3048,7 +3560,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0108",
+    "id": "ALB-0208",
     "category": "الإشارات الضوئية المرورية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3080,7 +3592,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0109",
+    "id": "ALB-0209",
     "category": "العلامات والخطوط الأرضية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3112,7 +3624,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0110",
+    "id": "ALB-0210",
     "category": "العلامات والخطوط الأرضية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3144,7 +3656,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0111",
+    "id": "ALB-0211",
     "category": "العلامات والخطوط الأرضية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3176,7 +3688,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0112",
+    "id": "ALB-0212",
     "category": "العلامات والخطوط الأرضية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3208,7 +3720,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0113",
+    "id": "ALB-0213",
     "category": "التقاطعات وحركة السير",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3240,7 +3752,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0114",
+    "id": "ALB-0214",
     "category": "التقاطعات وحركة السير",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3272,7 +3784,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0115",
+    "id": "ALB-0215",
     "category": "التقاطعات وحركة السير",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3304,7 +3816,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0116",
+    "id": "ALB-0216",
     "category": "التقاطعات وحركة السير",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3336,7 +3848,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0117",
+    "id": "ALB-0217",
     "category": "حق الأولوية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3368,7 +3880,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0118",
+    "id": "ALB-0218",
     "category": "حق الأولوية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3400,7 +3912,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0119",
+    "id": "ALB-0219",
     "category": "حق الأولوية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3432,7 +3944,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0120",
+    "id": "ALB-0220",
     "category": "حق الأولوية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3464,7 +3976,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0121",
+    "id": "ALB-0221",
     "category": "Uncontrolled Intersections",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3496,7 +4008,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0122",
+    "id": "ALB-0222",
     "category": "Uncontrolled Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3528,7 +4040,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0123",
+    "id": "ALB-0223",
     "category": "Uncontrolled Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3560,7 +4072,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0124",
+    "id": "ALB-0224",
     "category": "Uncontrolled Intersections",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3592,7 +4104,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0125",
+    "id": "ALB-0225",
     "category": "إشارات التوقف",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3624,7 +4136,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0126",
+    "id": "ALB-0226",
     "category": "إشارات التوقف",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3656,7 +4168,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0127",
+    "id": "ALB-0227",
     "category": "إشارات التوقف",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3688,7 +4200,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0128",
+    "id": "ALB-0228",
     "category": "إشارات التوقف",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3720,7 +4232,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0129",
+    "id": "ALB-0229",
     "category": "Yield Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3752,7 +4264,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0130",
+    "id": "ALB-0230",
     "category": "Yield Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3784,7 +4296,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0131",
+    "id": "ALB-0231",
     "category": "Yield Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3816,7 +4328,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0132",
+    "id": "ALB-0232",
     "category": "Yield Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3848,7 +4360,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0133",
+    "id": "ALB-0233",
     "category": "الانعطاف والإشارات",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3880,7 +4392,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0134",
+    "id": "ALB-0234",
     "category": "الانعطاف والإشارات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3912,7 +4424,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0135",
+    "id": "ALB-0235",
     "category": "الانعطاف والإشارات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3944,7 +4456,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0136",
+    "id": "ALB-0236",
     "category": "الانعطاف والإشارات",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3976,7 +4488,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0137",
+    "id": "ALB-0237",
     "category": "Lane Positioning",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4008,7 +4520,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0138",
+    "id": "ALB-0238",
     "category": "Lane Positioning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4040,7 +4552,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0139",
+    "id": "ALB-0239",
     "category": "Lane Positioning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4072,7 +4584,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0140",
+    "id": "ALB-0240",
     "category": "Lane Positioning",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4104,7 +4616,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0141",
+    "id": "ALB-0241",
     "category": "Lane Changes",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4136,7 +4648,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0142",
+    "id": "ALB-0242",
     "category": "Lane Changes",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4168,7 +4680,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0143",
+    "id": "ALB-0243",
     "category": "Lane Changes",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4200,7 +4712,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0144",
+    "id": "ALB-0244",
     "category": "Lane Changes",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4232,7 +4744,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0145",
+    "id": "ALB-0245",
     "category": "Passing",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4264,7 +4776,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0146",
+    "id": "ALB-0246",
     "category": "Passing",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4296,7 +4808,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0147",
+    "id": "ALB-0247",
     "category": "Passing",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4328,7 +4840,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0148",
+    "id": "ALB-0248",
     "category": "Passing",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4360,7 +4872,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0149",
+    "id": "ALB-0249",
     "category": "Highway Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4392,7 +4904,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0150",
+    "id": "ALB-0250",
     "category": "Highway Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4424,7 +4936,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0151",
+    "id": "ALB-0251",
     "category": "Highway Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4456,7 +4968,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0152",
+    "id": "ALB-0252",
     "category": "Highway Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4488,7 +5000,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0153",
+    "id": "ALB-0253",
     "category": "حدود السرعة القانونية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4520,7 +5032,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0154",
+    "id": "ALB-0254",
     "category": "حدود السرعة القانونية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4552,7 +5064,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0155",
+    "id": "ALB-0255",
     "category": "حدود السرعة القانونية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4584,7 +5096,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0156",
+    "id": "ALB-0256",
     "category": "حدود السرعة القانونية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4616,7 +5128,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0157",
+    "id": "ALB-0257",
     "category": "School Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4648,7 +5160,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0158",
+    "id": "ALB-0258",
     "category": "School Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4680,7 +5192,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0159",
+    "id": "ALB-0259",
     "category": "School Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4712,7 +5224,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0160",
+    "id": "ALB-0260",
     "category": "School Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4744,7 +5256,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0161",
+    "id": "ALB-0261",
     "category": "Playground Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4776,7 +5288,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0162",
+    "id": "ALB-0262",
     "category": "Playground Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4808,7 +5320,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0163",
+    "id": "ALB-0263",
     "category": "Playground Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4840,7 +5352,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0164",
+    "id": "ALB-0264",
     "category": "Playground Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4872,7 +5384,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0165",
+    "id": "ALB-0265",
     "category": "Construction Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4904,7 +5416,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0166",
+    "id": "ALB-0266",
     "category": "Construction Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4936,7 +5448,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0167",
+    "id": "ALB-0267",
     "category": "Construction Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4968,7 +5480,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0168",
+    "id": "ALB-0268",
     "category": "Construction Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5000,7 +5512,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0169",
+    "id": "ALB-0269",
     "category": "تقاطعات السكك الحديدية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5032,7 +5544,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0170",
+    "id": "ALB-0270",
     "category": "تقاطعات السكك الحديدية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5064,7 +5576,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0171",
+    "id": "ALB-0271",
     "category": "تقاطعات السكك الحديدية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5096,7 +5608,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0172",
+    "id": "ALB-0272",
     "category": "تقاطعات السكك الحديدية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5128,7 +5640,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0173",
+    "id": "ALB-0273",
     "category": "سلامة المشاة",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5160,7 +5672,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0174",
+    "id": "ALB-0274",
     "category": "سلامة المشاة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5192,7 +5704,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0175",
+    "id": "ALB-0275",
     "category": "سلامة المشاة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5224,7 +5736,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0176",
+    "id": "ALB-0276",
     "category": "سلامة المشاة",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5256,7 +5768,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0177",
+    "id": "ALB-0277",
     "category": "الدراجات الهوائية ومشاركة الطريق",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5288,7 +5800,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0178",
+    "id": "ALB-0278",
     "category": "الدراجات الهوائية ومشاركة الطريق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5320,7 +5832,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0179",
+    "id": "ALB-0279",
     "category": "الدراجات الهوائية ومشاركة الطريق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5352,7 +5864,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0180",
+    "id": "ALB-0280",
     "category": "الدراجات الهوائية ومشاركة الطريق",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5384,7 +5896,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0181",
+    "id": "ALB-0281",
     "category": "Motorcycles",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5416,7 +5928,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0182",
+    "id": "ALB-0282",
     "category": "Motorcycles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5448,7 +5960,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0183",
+    "id": "ALB-0283",
     "category": "Motorcycles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5480,7 +5992,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0184",
+    "id": "ALB-0284",
     "category": "Motorcycles",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5512,7 +6024,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0185",
+    "id": "ALB-0285",
     "category": "مركبات الطوارئ والسلامة على الطرق",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5544,7 +6056,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0186",
+    "id": "ALB-0286",
     "category": "مركبات الطوارئ والسلامة على الطرق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5576,7 +6088,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0187",
+    "id": "ALB-0287",
     "category": "مركبات الطوارئ والسلامة على الطرق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5608,7 +6120,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0188",
+    "id": "ALB-0288",
     "category": "مركبات الطوارئ والسلامة على الطرق",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5640,7 +6152,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0189",
+    "id": "ALB-0289",
     "category": "حافلات المدارس",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5672,7 +6184,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0190",
+    "id": "ALB-0290",
     "category": "حافلات المدارس",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5704,7 +6216,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0191",
+    "id": "ALB-0291",
     "category": "حافلات المدارس",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5736,7 +6248,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0192",
+    "id": "ALB-0292",
     "category": "حافلات المدارس",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5768,7 +6280,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0193",
+    "id": "ALB-0293",
     "category": "قواعد وقوف واصطفاف المركبات",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5800,7 +6312,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0194",
+    "id": "ALB-0294",
     "category": "قواعد وقوف واصطفاف المركبات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5832,7 +6344,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0195",
+    "id": "ALB-0295",
     "category": "قواعد وقوف واصطفاف المركبات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5864,7 +6376,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0196",
+    "id": "ALB-0296",
     "category": "قواعد وقوف واصطفاف المركبات",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5896,7 +6408,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0197",
+    "id": "ALB-0297",
     "category": "الوقوف على المنحدرات والروابي",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5928,7 +6440,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0198",
+    "id": "ALB-0298",
     "category": "الوقوف على المنحدرات والروابي",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5960,7 +6472,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0199",
+    "id": "ALB-0299",
     "category": "الوقوف على المنحدرات والروابي",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5992,7 +6504,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0200",
+    "id": "ALB-0300",
     "category": "الوقوف على المنحدرات والروابي",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6024,7 +6536,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0201",
+    "id": "ALB-0301",
     "category": "Parallel Parking",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6056,7 +6568,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0202",
+    "id": "ALB-0302",
     "category": "Parallel Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6088,7 +6600,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0203",
+    "id": "ALB-0303",
     "category": "Parallel Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6120,7 +6632,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0204",
+    "id": "ALB-0304",
     "category": "Parallel Parking",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6152,7 +6664,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0205",
+    "id": "ALB-0305",
     "category": "Following Distance",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6184,7 +6696,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0206",
+    "id": "ALB-0306",
     "category": "Following Distance",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6216,7 +6728,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0207",
+    "id": "ALB-0307",
     "category": "Following Distance",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6248,7 +6760,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0208",
+    "id": "ALB-0308",
     "category": "Following Distance",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6280,7 +6792,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0209",
+    "id": "ALB-0309",
     "category": "القيادة الوقائية والمسافات الآمنة",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6312,7 +6824,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0210",
+    "id": "ALB-0310",
     "category": "القيادة الوقائية والمسافات الآمنة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6344,7 +6856,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0211",
+    "id": "ALB-0311",
     "category": "القيادة الوقائية والمسافات الآمنة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6376,7 +6888,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0212",
+    "id": "ALB-0312",
     "category": "القيادة الوقائية والمسافات الآمنة",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6408,7 +6920,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0213",
+    "id": "ALB-0313",
     "category": "مشاركة الطريق والمركبات الثقيلة",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6440,7 +6952,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0214",
+    "id": "ALB-0314",
     "category": "مشاركة الطريق والمركبات الثقيلة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6472,7 +6984,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0215",
+    "id": "ALB-0315",
     "category": "مشاركة الطريق والمركبات الثقيلة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6504,7 +7016,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0216",
+    "id": "ALB-0316",
     "category": "مشاركة الطريق والمركبات الثقيلة",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6536,7 +7048,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0217",
+    "id": "ALB-0317",
     "category": "القيادة الشتوية والظروف الجوية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6568,7 +7080,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0218",
+    "id": "ALB-0318",
     "category": "القيادة الشتوية والظروف الجوية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6600,7 +7112,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0219",
+    "id": "ALB-0319",
     "category": "القيادة الشتوية والظروف الجوية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6632,7 +7144,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0220",
+    "id": "ALB-0320",
     "category": "القيادة الشتوية والظروف الجوية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6664,7 +7176,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0221",
+    "id": "ALB-0321",
     "category": "Ice and Snow",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6696,7 +7208,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0222",
+    "id": "ALB-0322",
     "category": "Ice and Snow",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6728,7 +7240,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0223",
+    "id": "ALB-0323",
     "category": "Ice and Snow",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6760,7 +7272,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0224",
+    "id": "ALB-0324",
     "category": "Ice and Snow",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6792,7 +7304,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0225",
+    "id": "ALB-0325",
     "category": "Reduced Visibility",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6824,7 +7336,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0226",
+    "id": "ALB-0326",
     "category": "Reduced Visibility",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6856,7 +7368,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0227",
+    "id": "ALB-0327",
     "category": "Reduced Visibility",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6888,7 +7400,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0228",
+    "id": "ALB-0328",
     "category": "Reduced Visibility",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6920,7 +7432,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0229",
+    "id": "ALB-0329",
     "category": "Night Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6952,7 +7464,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0230",
+    "id": "ALB-0330",
     "category": "Night Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6984,7 +7496,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0231",
+    "id": "ALB-0331",
     "category": "Night Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7016,7 +7528,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0232",
+    "id": "ALB-0332",
     "category": "Night Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7048,7 +7560,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0233",
+    "id": "ALB-0333",
     "category": "Hydroplaning",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7080,7 +7592,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0234",
+    "id": "ALB-0334",
     "category": "Hydroplaning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7112,7 +7624,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0235",
+    "id": "ALB-0335",
     "category": "Hydroplaning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7144,7 +7656,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0236",
+    "id": "ALB-0336",
     "category": "Hydroplaning",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7176,7 +7688,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0237",
+    "id": "ALB-0337",
     "category": "حالات الطوارئ الميكانيكية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7208,7 +7720,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0238",
+    "id": "ALB-0338",
     "category": "حالات الطوارئ الميكانيكية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7240,7 +7752,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0239",
+    "id": "ALB-0339",
     "category": "حالات الطوارئ الميكانيكية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7272,7 +7784,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0240",
+    "id": "ALB-0340",
     "category": "حالات الطوارئ الميكانيكية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7304,7 +7816,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0241",
+    "id": "ALB-0341",
     "category": "إجراءات الحوادث المرورية",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7336,7 +7848,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0242",
+    "id": "ALB-0342",
     "category": "إجراءات الحوادث المرورية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7368,7 +7880,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0243",
+    "id": "ALB-0343",
     "category": "إجراءات الحوادث المرورية",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7400,7 +7912,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0244",
+    "id": "ALB-0344",
     "category": "إجراءات الحوادث المرورية",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7432,7 +7944,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0245",
+    "id": "ALB-0345",
     "category": "Distracted Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7464,7 +7976,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0246",
+    "id": "ALB-0346",
     "category": "Distracted Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7496,7 +8008,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0247",
+    "id": "ALB-0347",
     "category": "Distracted Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7528,7 +8040,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0248",
+    "id": "ALB-0348",
     "category": "Distracted Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7560,7 +8072,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0249",
+    "id": "ALB-0349",
     "category": "الكحول والعقاقير وسلامة السائق",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7592,7 +8104,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0250",
+    "id": "ALB-0350",
     "category": "الكحول والعقاقير وسلامة السائق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7624,7 +8136,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0251",
+    "id": "ALB-0351",
     "category": "الكحول والعقاقير وسلامة السائق",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7656,7 +8168,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0252",
+    "id": "ALB-0352",
     "category": "الكحول والعقاقير وسلامة السائق",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7688,7 +8200,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0253",
+    "id": "ALB-0353",
     "category": "أحزمة الأمان ومقاعد الأطفال",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7720,7 +8232,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0254",
+    "id": "ALB-0354",
     "category": "أحزمة الأمان ومقاعد الأطفال",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7752,7 +8264,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0255",
+    "id": "ALB-0355",
     "category": "أحزمة الأمان ومقاعد الأطفال",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7784,7 +8296,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0256",
+    "id": "ALB-0356",
     "category": "أحزمة الأمان ومقاعد الأطفال",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7816,7 +8328,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0257",
+    "id": "ALB-0357",
     "category": "Child Restraints",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7848,7 +8360,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0258",
+    "id": "ALB-0358",
     "category": "Child Restraints",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7880,7 +8392,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0259",
+    "id": "ALB-0359",
     "category": "Child Restraints",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7912,7 +8424,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0260",
+    "id": "ALB-0360",
     "category": "Child Restraints",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7944,7 +8456,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0261",
+    "id": "ALB-0361",
     "category": "قيود وشروط رخصة القيادة",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7976,7 +8488,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0262",
+    "id": "ALB-0362",
     "category": "قيود وشروط رخصة القيادة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8008,7 +8520,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0263",
+    "id": "ALB-0363",
     "category": "قيود وشروط رخصة القيادة",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8040,7 +8552,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0264",
+    "id": "ALB-0364",
     "category": "قيود وشروط رخصة القيادة",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8072,7 +8584,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0265",
+    "id": "ALB-0365",
     "category": "نظام النقاط المرورية والغرامات",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8104,7 +8616,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0266",
+    "id": "ALB-0366",
     "category": "نظام النقاط المرورية والغرامات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8136,7 +8648,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0267",
+    "id": "ALB-0367",
     "category": "نظام النقاط المرورية والغرامات",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8168,7 +8680,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0268",
+    "id": "ALB-0368",
     "category": "نظام النقاط المرورية والغرامات",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8200,7 +8712,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0269",
+    "id": "ALB-0369",
     "category": "Driver Responsibilities",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8232,7 +8744,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0270",
+    "id": "ALB-0370",
     "category": "Driver Responsibilities",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8264,7 +8776,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0271",
+    "id": "ALB-0371",
     "category": "Driver Responsibilities",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8296,7 +8808,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0272",
+    "id": "ALB-0372",
     "category": "Driver Responsibilities",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8328,7 +8840,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0273",
+    "id": "ALB-0373",
     "category": "Vehicle Equipment",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8360,7 +8872,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0274",
+    "id": "ALB-0374",
     "category": "Vehicle Equipment",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8392,7 +8904,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0275",
+    "id": "ALB-0375",
     "category": "Vehicle Equipment",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8424,7 +8936,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0276",
+    "id": "ALB-0376",
     "category": "Vehicle Equipment",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8456,7 +8968,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0277",
+    "id": "ALB-0377",
     "category": "Basic Vehicle Safety",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8488,7 +9000,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0278",
+    "id": "ALB-0378",
     "category": "Basic Vehicle Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8520,7 +9032,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0279",
+    "id": "ALB-0379",
     "category": "Basic Vehicle Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8552,7 +9064,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0280",
+    "id": "ALB-0380",
     "category": "Basic Vehicle Safety",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8584,7 +9096,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0281",
+    "id": "ALB-0381",
     "category": "Signs by Shape",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8616,7 +9128,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0282",
+    "id": "ALB-0382",
     "category": "Signs by Shape",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8648,7 +9160,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0283",
+    "id": "ALB-0383",
     "category": "Signs by Shape",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8680,7 +9192,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0284",
+    "id": "ALB-0384",
     "category": "Signs by Shape",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8712,7 +9224,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0285",
+    "id": "ALB-0385",
     "category": "Signs by Colour",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8744,7 +9256,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0286",
+    "id": "ALB-0386",
     "category": "Signs by Colour",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8776,7 +9288,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0287",
+    "id": "ALB-0387",
     "category": "Signs by Colour",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8808,7 +9320,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0288",
+    "id": "ALB-0388",
     "category": "Signs by Colour",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8840,7 +9352,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0289",
+    "id": "ALB-0389",
     "category": "Regulatory Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8872,7 +9384,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0290",
+    "id": "ALB-0390",
     "category": "Regulatory Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8904,7 +9416,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0291",
+    "id": "ALB-0391",
     "category": "Regulatory Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8936,7 +9448,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0292",
+    "id": "ALB-0392",
     "category": "Regulatory Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8968,7 +9480,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0293",
+    "id": "ALB-0393",
     "category": "Warning Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -9000,7 +9512,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0294",
+    "id": "ALB-0394",
     "category": "Warning Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9032,7 +9544,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0295",
+    "id": "ALB-0395",
     "category": "Warning Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9064,7 +9576,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0296",
+    "id": "ALB-0396",
     "category": "Warning Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -9096,7 +9608,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0297",
+    "id": "ALB-0397",
     "category": "Information Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -9128,7 +9640,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0298",
+    "id": "ALB-0398",
     "category": "Information Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9160,7 +9672,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0299",
+    "id": "ALB-0399",
     "category": "Information Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9192,7 +9704,7 @@ export const questionsAr = [
     ]
   },
   {
-    "id": "ALB-0300",
+    "id": "ALB-0400",
     "category": "Information Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",

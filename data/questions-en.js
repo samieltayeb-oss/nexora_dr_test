@@ -1,6 +1,6 @@
 // NEXORA DR TEST — Official English Question Bank
 // Version 1.0 | Alberta Class 7 Learner Knowledge Examination Practice Bank
-// Total Questions: 290 | Authoritative Source: Government of Alberta Driver's Guide
+// Total Questions: 306 | Authoritative Source: Government of Alberta Driver's Guide
 
 export const questionsEn = [
   {
@@ -13,7 +13,7 @@ export const questionsEn = [
     "sourceSection": "Intersections and Turns",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
-    "question": "In this uncontrolled intersection scenario, Vehicle A (blue sedan from south) and Vehicle B (red SUV from east) arrive at the intersection at the exact same time. Which vehicle has the right-of-way?",
+    "question": "In this uncontrolled intersection scenario, Vehicle A (blue sedan from south) and Vehicle B (red SUV from east) arrive at the intersection line at the exact same time. Which vehicle has the right-of-way?",
     "answers": [
       "Vehicle B (red SUV) because it is on the right of Vehicle A",
       "Vehicle A (blue sedan) because it arrived from the south",
@@ -393,7 +393,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Regulatory Signs",
+    "sourceTopic": "Stop Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -405,7 +405,7 @@ export const questionsEn = [
       "Reduce speed to 30 km/h"
     ],
     "correctAnswer": "Come to a complete stop before the stop line or crosswalk and proceed only when safe",
-    "explanation": "An eight-sided octagonal red sign always means STOP. You must come to a complete halt before the stop line, crosswalk, or intersection, and yield to all pedestrians and vehicles before proceeding.",
+    "explanation": "An eight-sided octagonal red sign always means STOP. You must come to a complete halt before the stop line, crosswalk, or intersection.",
     "visualType": "sign",
     "signAsset": "/assets/signs/stop.svg",
     "image": null,
@@ -415,8 +415,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "stop",
-      "regulatory"
+      "traffic-signs",
+      "stop-signs"
     ]
   },
   {
@@ -437,7 +437,7 @@ export const questionsEn = [
       "Speed up to merge before other vehicles"
     ],
     "correctAnswer": "Slow down and yield right-of-way to all vehicles and pedestrians, stopping if necessary",
-    "explanation": "An inverted triangle sign means YIELD. You must slow down and give the right-of-way to other traffic and pedestrians on the road you are entering or crossing, stopping if safety requires.",
+    "explanation": "An inverted triangle sign means YIELD. You must slow down and give the right-of-way to other traffic.",
     "visualType": "sign",
     "signAsset": "/assets/signs/yield.svg",
     "image": null,
@@ -447,8 +447,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "yield",
-      "regulatory"
+      "traffic-signs",
+      "yield-signs"
     ]
   },
   {
@@ -457,7 +457,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Maximum Speed Signs",
+    "sourceTopic": "Speed Limits",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -469,7 +469,7 @@ export const questionsEn = [
       "Construction zone speed limit"
     ],
     "correctAnswer": "The maximum legal speed under ideal driving conditions is 50 km/h",
-    "explanation": "A black and white \"MAXIMUM 50\" sign indicates the maximum allowable speed under ideal driving conditions. In poor weather, rain, or snow, you must reduce your speed below this limit.",
+    "explanation": "A black and white MAXIMUM 50 sign indicates the maximum allowable speed under ideal driving conditions.",
     "visualType": "sign",
     "signAsset": "/assets/signs/max-50.svg",
     "image": null,
@@ -479,8 +479,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "speed-limit",
-      "regulatory"
+      "traffic-signs",
+      "speed-limits"
     ]
   },
   {
@@ -489,7 +489,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "School Zone Signs",
+    "sourceTopic": "School Zones",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -501,7 +501,7 @@ export const questionsEn = [
       "Daycare parking lot entrance"
     ],
     "correctAnswer": "You are approaching a school area or school crosswalk; watch for children",
-    "explanation": "A pentagon-shaped fluorescent yellow-green sign indicates a school area or school crosswalk. Drivers must use extra caution, watch for children crossing, and obey posted school zone speeds.",
+    "explanation": "A pentagon-shaped fluorescent yellow-green sign indicates a school area or school crosswalk.",
     "visualType": "sign",
     "signAsset": "/assets/signs/school-zone.svg",
     "image": null,
@@ -511,14 +511,14 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "school-zone",
-      "warning"
+      "traffic-signs",
+      "school-zones"
     ]
   },
   {
     "id": "SIGN-005",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
     "sourceTopic": "Playground Zones",
@@ -533,7 +533,7 @@ export const questionsEn = [
       "Only when children are visibly playing outside"
     ],
     "correctAnswer": "Every day from 8:30 AM until one hour after sunset (unless municipal bylaws standardize hours to 7:30 AM - 9:00 PM)",
-    "explanation": "Under provincial regulations, playground zones are in effect every day from 8:30 AM until one hour after sunset. Municipalities like Calgary and Edmonton enforce harmonized playground hours from 7:30 AM to 9:00 PM.",
+    "explanation": "Playground zones are in effect every day from 8:30 AM until one hour after sunset.",
     "visualType": "sign",
     "signAsset": "/assets/signs/playground-zone.svg",
     "image": null,
@@ -543,8 +543,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "playground-zone",
-      "speed-limit"
+      "traffic-signs",
+      "playground-zones"
     ]
   },
   {
@@ -553,7 +553,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Traffic Signals Ahead",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -565,7 +565,7 @@ export const questionsEn = [
       "Turn on your headlights ahead"
     ],
     "correctAnswer": "Traffic control signals ahead; be prepared to slow down or stop",
-    "explanation": "This diamond warning sign alerts drivers that there are traffic light signals ahead. Prepare to slow down if the signal is yellow or red.",
+    "explanation": "This sign alerts drivers that there are traffic light signals ahead.",
     "visualType": "sign",
     "signAsset": "/assets/signs/traffic-signal-ahead.svg",
     "image": null,
@@ -575,17 +575,17 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "warning",
-      "signals"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-007",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Merging Traffic Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -597,7 +597,7 @@ export const questionsEn = [
       "Exit lane begins on the right"
     ],
     "correctAnswer": "Merging traffic ahead; vehicles from another road are joining your travel lane",
-    "explanation": "This warning sign warns that traffic from an on-ramp or side road is merging with your roadway. Drivers on both the highway and the ramp should adjust speed to merge safely and smoothly.",
+    "explanation": "This sign warns that traffic from an on-ramp or side road is merging with your roadway.",
     "visualType": "sign",
     "signAsset": "/assets/signs/merging-traffic.svg",
     "image": null,
@@ -607,17 +607,17 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "merging",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-008",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Lane Ending Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -629,7 +629,7 @@ export const questionsEn = [
       "Passing lane begins ahead"
     ],
     "correctAnswer": "The right lane ends ahead; drivers in the right lane must merge safely to the left",
-    "explanation": "This sign warns that the right lane is coming to an end. Drivers in the right lane must check blind spots, signal, and merge smoothly into the adjacent lane.",
+    "explanation": "This sign warns that the right lane is coming to an end.",
     "visualType": "sign",
     "signAsset": "/assets/signs/lane-ending.svg",
     "image": null,
@@ -639,17 +639,17 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "lane-ending",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-009",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Divided Highway Begins",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -661,7 +661,7 @@ export const questionsEn = [
       "Obstacle in the middle of a one-way street"
     ],
     "correctAnswer": "Divided highway begins ahead; keep to the right of the median barrier",
-    "explanation": "This sign indicates that the roadway ahead will be divided into two separate roadways separated by a physical median. Drivers must keep to the right of the barrier.",
+    "explanation": "This sign indicates that the roadway ahead will be divided into two separate roadways by a median barrier.",
     "visualType": "sign",
     "signAsset": "/assets/signs/divided-highway-begins.svg",
     "image": null,
@@ -671,17 +671,17 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "divided-highway",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
     "id": "SIGN-010",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Divided Highway Ends",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -693,7 +693,7 @@ export const questionsEn = [
       "Detour around a construction barrier"
     ],
     "correctAnswer": "Divided highway ends ahead; you are entering a two-way undivided roadway with oncoming traffic",
-    "explanation": "This sign warns that the physical median is ending and the roadway becomes a two-way undivided highway. Watch for oncoming traffic on your left.",
+    "explanation": "This sign warns that the median is ending and you are entering a two-way roadway.",
     "visualType": "sign",
     "signAsset": "/assets/signs/divided-highway-ends.svg",
     "image": null,
@@ -703,8 +703,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "divided-highway",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
@@ -713,7 +713,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Slippery Road Signs",
+    "sourceTopic": "Warning Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -725,7 +725,7 @@ export const questionsEn = [
       "Vehicle rollover testing grounds"
     ],
     "correctAnswer": "The road surface ahead is slippery when wet, cold, or icy; reduce speed and avoid sudden steering or braking",
-    "explanation": "This sign warns that the pavement becomes slippery when wet or icy. Slow down, increase following distance, and avoid abrupt steering, acceleration, or hard braking.",
+    "explanation": "This sign warns that pavement becomes slippery when wet or icy.",
     "visualType": "sign",
     "signAsset": "/assets/signs/slippery-when-wet.svg",
     "image": null,
@@ -735,8 +735,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "slippery",
-      "warning"
+      "traffic-signs",
+      "warning-signs"
     ]
   },
   {
@@ -745,7 +745,7 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Turn Prohibition Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -757,7 +757,7 @@ export const questionsEn = [
       "Sharp left curve ahead"
     ],
     "correctAnswer": "Left turns are strictly prohibited at this intersection",
-    "explanation": "A red circle with a diagonal slash is a universal prohibitory symbol. This sign means drivers must not make a left turn at this location.",
+    "explanation": "A red circle with a diagonal slash prohibits left turns at this intersection.",
     "visualType": "sign",
     "signAsset": "/assets/signs/no-left-turn.svg",
     "image": null,
@@ -767,8 +767,8 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "prohibitory",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
@@ -777,7 +777,39 @@ export const questionsEn = [
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "U-Turn Prohibition",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this regulatory sign with a right arrow inside a red circle with a slash mean?",
+    "answers": [
+      "Right turns are strictly prohibited at this intersection",
+      "Right turn permitted only after complete stop",
+      "One way street to the right",
+      "Sharp curve to the right ahead"
+    ],
+    "correctAnswer": "Right turns are strictly prohibited at this intersection",
+    "explanation": "This sign strictly prohibits turning right at the intersection.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/no-right-turn.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-014",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -789,7 +821,7 @@ export const questionsEn = [
       "Dead end ahead with no turnaround space"
     ],
     "correctAnswer": "U-turns are prohibited at this location",
-    "explanation": "This sign strictly prohibits turning your vehicle 180 degrees to travel in the opposite direction (U-turn).",
+    "explanation": "This sign prohibits making a 180-degree U-turn.",
     "visualType": "sign",
     "signAsset": "/assets/signs/no-u-turn.svg",
     "image": null,
@@ -799,17 +831,17 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "u-turn",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-014",
+    "id": "SIGN-015",
     "category": "Road Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Do Not Enter Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -821,7 +853,7 @@ export const questionsEn = [
       "Railway crossing without signal lights"
     ],
     "correctAnswer": "Do not enter; vehicles must not proceed past this sign into the oncoming lane or one-way street",
-    "explanation": "The \"Do Not Enter\" sign is placed at exits, ramps, and one-way streets where driving forward would place you in direct conflict with oncoming traffic.",
+    "explanation": "The Do Not Enter sign prohibits vehicles from entering an opposing lane or one-way roadway.",
     "visualType": "sign",
     "signAsset": "/assets/signs/do-not-enter.svg",
     "image": null,
@@ -831,21 +863,21 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "do-not-enter",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-015",
+    "id": "SIGN-016",
     "category": "Road Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "One-Way Signs",
+    "sourceTopic": "Regulatory Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
-    "question": "What does this black-and-white sign with a prominent horizontal arrow and the words \"ONE WAY\" indicate?",
+    "question": "What does this black-and-white sign with a horizontal arrow pointing right and the words \"ONE WAY\" indicate?",
     "answers": [
       "Traffic on this street moves in one direction only, as indicated by the arrow",
       "Mandatory right turn for all vehicles",
@@ -853,7 +885,7 @@ export const questionsEn = [
       "Passing permitted on the right side only"
     ],
     "correctAnswer": "Traffic on this street moves in one direction only, as indicated by the arrow",
-    "explanation": "A ONE WAY sign indicates that all vehicular traffic on that road or street must travel in the direction of the arrow.",
+    "explanation": "A ONE WAY sign indicates that all traffic must travel in the direction of the arrow.",
     "visualType": "sign",
     "signAsset": "/assets/signs/one-way-right.svg",
     "image": null,
@@ -863,17 +895,49 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "one-way",
-      "regulatory"
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
-    "id": "SIGN-016",
+    "id": "SIGN-017",
     "category": "Road Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "No Parking Signs",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this black-and-white sign with a horizontal arrow pointing left and the words \"ONE WAY\" indicate?",
+    "answers": [
+      "Traffic on this roadway moves to the left in one direction only",
+      "Sharp left turn ahead with 30 km/h limit",
+      "Passing lane on the left only",
+      "Left exit ahead"
+    ],
+    "correctAnswer": "Traffic on this roadway moves to the left in one direction only",
+    "explanation": "This sign indicates that traffic moves exclusively to the left on the cross street.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/one-way-left.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-018",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Parking Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -885,7 +949,7 @@ export const questionsEn = [
       "Parking allowed for up to 15 minutes"
     ],
     "correctAnswer": "No parking is permitted in this designated zone",
-    "explanation": "The letter P inside a red circle with a slash is the standard regulatory sign prohibiting parking in that area.",
+    "explanation": "The letter P inside a red circle with a slash prohibits parking.",
     "visualType": "sign",
     "signAsset": "/assets/signs/no-parking.svg",
     "image": null,
@@ -895,29 +959,29 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "parking",
-      "regulatory"
+      "traffic-signs",
+      "parking-signs"
     ]
   },
   {
-    "id": "SIGN-017",
+    "id": "SIGN-019",
     "category": "Road Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Construction Zone Signs",
+    "sourceTopic": "Construction Signs",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
-    "question": "What do diamond-shaped orange road signs indicate in Alberta?",
+    "question": "What does this orange diamond sign with a silhouette of a worker digging indicate?",
     "answers": [
-      "Temporary condition or construction work zone ahead; use caution and obey reduced speed limits",
-      "Permanent scenic viewpoint ahead",
-      "School zone on weekends",
-      "Agricultural farm crossing"
+      "Road construction or maintenance work ahead; obey reduced speed limits and watch for workers",
+      "Scenic archaeological park ahead",
+      "Pedestrian crossing on a gravel road",
+      "Agricultural farm zone"
     ],
-    "correctAnswer": "Temporary condition or construction work zone ahead; use caution and obey reduced speed limits",
-    "explanation": "Orange diamond signs indicate temporary conditions, road construction, maintenance, or detour zones. Speed fines are doubled in Alberta when workers are present.",
+    "correctAnswer": "Road construction or maintenance work ahead; obey reduced speed limits and watch for workers",
+    "explanation": "An orange diamond with a digging worker indicates active road work ahead.",
     "visualType": "sign",
     "signAsset": "/assets/signs/construction-roadwork.svg",
     "image": null,
@@ -927,17 +991,49 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "construction",
-      "orange-warning"
+      "traffic-signs",
+      "construction-signs"
     ]
   },
   {
-    "id": "SIGN-018",
+    "id": "SIGN-020",
     "category": "Road Signs",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
     "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
-    "sourceTopic": "Slow Moving Vehicle Signs",
+    "sourceTopic": "Construction Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this orange diamond sign displaying a person holding a horizontal flag indicate?",
+    "answers": [
+      "Traffic control flagperson ahead; be prepared to stop and obey hand signals",
+      "Parade route ahead",
+      "Pedestrian crosswalk guard on duty",
+      "Track and field school event"
+    ],
+    "correctAnswer": "Traffic control flagperson ahead; be prepared to stop and obey hand signals",
+    "explanation": "This sign warns that a flagperson is controlling traffic ahead.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/construction-flagperson.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "construction-signs"
+    ]
+  },
+  {
+    "id": "SIGN-021",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Special Vehicles",
     "sourceSection": "Traffic Signs",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
@@ -949,7 +1045,7 @@ export const questionsEn = [
       "Emergency roadside assistance vehicle"
     ],
     "correctAnswer": "The vehicle travels at a speed of 40 km/h or less (slow-moving vehicle)",
-    "explanation": "The slow-moving vehicle emblem (an orange fluorescent triangle with a red border) is displayed on farm tractors, construction equipment, and other machinery designed to travel at 40 km/h or slower.",
+    "explanation": "The slow-moving vehicle emblem is displayed on machinery designed to travel at 40 km/h or slower.",
     "visualType": "sign",
     "signAsset": "/assets/signs/slow-moving-vehicle.svg",
     "image": null,
@@ -959,8 +1055,424 @@ export const questionsEn = [
     "contentValidated": true,
     "tags": [
       "signs",
-      "slow-moving-vehicle",
-      "special"
+      "traffic-signs",
+      "special-vehicles"
+    ]
+  },
+  {
+    "id": "SIGN-022",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Speed Limits",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this black and white \"MAXIMUM 80\" speed sign indicate?",
+    "answers": [
+      "Maximum legal speed of 80 km/h under ideal road and weather conditions",
+      "Minimum speed limit on rural highways",
+      "Speed limit for heavy commercial vehicles only",
+      "Construction detour speed"
+    ],
+    "correctAnswer": "Maximum legal speed of 80 km/h under ideal road and weather conditions",
+    "explanation": "This sign sets the legal maximum speed limit at 80 km/h in ideal conditions.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/max-80.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "speed-limits"
+    ]
+  },
+  {
+    "id": "SIGN-023",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Speed Limits",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this black and white \"MAXIMUM 100\" speed sign indicate on an Alberta highway?",
+    "answers": [
+      "The maximum legal speed limit under ideal conditions is 100 km/h",
+      "Recommended speed for merging onto the highway",
+      "Speed limit during nighttime hours only",
+      "Minimum passing speed"
+    ],
+    "correctAnswer": "The maximum legal speed limit under ideal conditions is 100 km/h",
+    "explanation": "This sign indicates the maximum allowable speed limit is 100 km/h under ideal conditions.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/max-100.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "speed-limits"
+    ]
+  },
+  {
+    "id": "SIGN-024",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this yellow diamond sign with a walking pedestrian silhouette and crosswalk lines mean?",
+    "answers": [
+      "Pedestrian crosswalk ahead; yield right-of-way to pedestrians crossing the roadway",
+      "School zone with 20 km/h speed limit",
+      "Sidewalk ends ahead",
+      "Running track crossing"
+    ],
+    "correctAnswer": "Pedestrian crosswalk ahead; yield right-of-way to pedestrians crossing the roadway",
+    "explanation": "This sign alerts drivers to an upcoming marked pedestrian crosswalk.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/pedestrian-crosswalk.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-025",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Railway Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this circular yellow sign with an \"X\" and the letters \"R R\" indicate?",
+    "answers": [
+      "Advance railway crossing warning; slow down, look, listen, and be prepared to stop",
+      "Rest area ahead",
+      "Road repair ahead",
+      "Roundabout intersection ahead"
+    ],
+    "correctAnswer": "Advance railway crossing warning; slow down, look, listen, and be prepared to stop",
+    "explanation": "A round yellow sign with an X and RR warns drivers of an advance railroad crossing.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/railway-crossing.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "railway-signs"
+    ]
+  },
+  {
+    "id": "SIGN-026",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this yellow diamond sign displaying three circular counter-clockwise arrows indicate?",
+    "answers": [
+      "Roundabout / traffic circle ahead; prepare to yield to circulating traffic on entry",
+      "Winding mountain road ahead",
+      "Sharp curve to the left",
+      "Cul-de-sac ahead"
+    ],
+    "correctAnswer": "Roundabout / traffic circle ahead; prepare to yield to circulating traffic on entry",
+    "explanation": "This sign indicates a roundabout ahead. Prepare to slow down and yield on entry.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/roundabout-ahead.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-027",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this yellow diamond sign with a serpentine curved arrow indicate?",
+    "answers": [
+      "A series of three or more curves (winding road) ahead; reduce speed",
+      "Slippery road when wet",
+      "Detour around highway construction",
+      "Lane ends on the left"
+    ],
+    "correctAnswer": "A series of three or more curves (winding road) ahead; reduce speed",
+    "explanation": "This sign warns of a series of curves ahead (winding road).",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/winding-road.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-028",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this yellow diamond sign with opposing vertical arrows indicate?",
+    "answers": [
+      "Two-way traffic ahead on the same roadway; watch for oncoming traffic in the left lane",
+      "Divided highway begins",
+      "Passing permitted in both lanes",
+      "One-way street ahead"
+    ],
+    "correctAnswer": "Two-way traffic ahead on the same roadway; watch for oncoming traffic in the left lane",
+    "explanation": "This sign warns that you are leaving a one-way street or divided highway and entering two-way traffic.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/two-way-traffic.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-029",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Information Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this square blue sign with a large white letter \"H\" indicate?",
+    "answers": [
+      "Hospital or emergency medical medical services ahead",
+      "Hotel lodging facility ahead",
+      "Helicopter landing pad",
+      "Highway patrol weigh station"
+    ],
+    "correctAnswer": "Hospital or emergency medical medical services ahead",
+    "explanation": "A blue sign with a white H indicates a hospital with emergency facilities.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/hospital.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "information-signs"
+    ]
+  },
+  {
+    "id": "SIGN-030",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this white regulatory sign showing an obstacle with an arrow pointing down-right indicate?",
+    "answers": [
+      "Obstacle or traffic island ahead; keep to the right of the divider",
+      "Right turn required at the next street",
+      "Lane ends on the right",
+      "Steep hill descent ahead"
+    ],
+    "correctAnswer": "Obstacle or traffic island ahead; keep to the right of the divider",
+    "explanation": "This regulatory sign directs traffic to pass to the right of an island or obstacle.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/keep-right.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
+    ]
+  },
+  {
+    "id": "SIGN-031",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Lane Control Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this white regulatory lane-use sign with a straight and left-branching arrow mean for drivers in that lane?",
+    "answers": [
+      "Vehicles in this lane may either proceed straight ahead or turn left",
+      "Left turn only is permitted from this lane",
+      "Passing on the left is permitted",
+      "U-turn lane only"
+    ],
+    "correctAnswer": "Vehicles in this lane may either proceed straight ahead or turn left",
+    "explanation": "This lane-use sign indicates that drivers in this lane have the option to proceed straight or turn left.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/straight-or-left-lane.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "lane-control-signs"
+    ]
+  },
+  {
+    "id": "SIGN-032",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Lane Control Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this white regulatory sign with a curving right arrow and the word \"ONLY\" mandate?",
+    "answers": [
+      "Vehicles in this lane MUST turn right; proceeding straight is prohibited",
+      "Right turn permitted on red light only",
+      "Right lane is for transit buses only",
+      "Passing on the right is permitted"
+    ],
+    "correctAnswer": "Vehicles in this lane MUST turn right; proceeding straight is prohibited",
+    "explanation": "This sign mandates that all traffic in this lane must make a right turn.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/right-turn-only-lane.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "lane-control-signs"
+    ]
+  },
+  {
+    "id": "SIGN-033",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Warning Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this yellow triangular pennant sign reading \"NO PASSING\" indicate?",
+    "answers": [
+      "Passing other vehicles is prohibited in this zone due to limited sight distance",
+      "Passing is permitted with caution",
+      "End of passing lane ahead",
+      "Dead end ahead"
+    ],
+    "correctAnswer": "Passing other vehicles is prohibited in this zone due to limited sight distance",
+    "explanation": "A yellow no-passing pennant on the left side of the road indicates the start of a no-passing zone.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/passing-prohibited.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "warning-signs"
+    ]
+  },
+  {
+    "id": "SIGN-034",
+    "category": "Road Signs",
+    "difficulty": "easy",
+    "sourceAuthority": "Government of Alberta",
+    "sourceDocument": "Driver's Guide to Operation, Safety and Licensing: Cars and Light Trucks",
+    "sourceTopic": "Regulatory Signs",
+    "sourceSection": "Traffic Signs",
+    "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
+    "sourceVerifiedDate": "August 2026",
+    "question": "What does this regulatory sign specifying \"PASSING EMERGENCY VEHICLES MAXIMUM 60 WHEN FLASHING\" require?",
+    "answers": [
+      "Drivers in the lane adjacent to stopped emergency/roadside vehicles with flashing lights must slow to 60 km/h or lower",
+      "Emergency vehicles must not exceed 60 km/h",
+      "Passing is prohibited on all four-lane highways",
+      "Speed limit increases to 60 km/h in construction zones"
+    ],
+    "correctAnswer": "Drivers in the lane adjacent to stopped emergency/roadside vehicles with flashing lights must slow to 60 km/h or lower",
+    "explanation": "This regulatory sign enforces Alberta law requiring drivers to slow to 60 km/h when passing stopped emergency and roadside maintenance vehicles with flashing lights.",
+    "visualType": "sign",
+    "signAsset": "/assets/signs/emergency-vehicles-slowdown.svg",
+    "image": null,
+    "imageAlt": null,
+    "overlayBadges": null,
+    "visualValidated": true,
+    "contentValidated": true,
+    "tags": [
+      "signs",
+      "traffic-signs",
+      "regulatory-signs"
     ]
   },
   {
@@ -1074,7 +1586,7 @@ export const questionsEn = [
       "0.02% BAC"
     ],
     "correctAnswer": "Zero percent (0.00% BAC) — zero tolerance",
-    "explanation": "Alberta has a zero-tolerance law for all GDL (Graduated Driver Licensing) drivers. Your blood alcohol concentration must be 0.00% with no illegal drugs in your system.",
+    "explanation": "Alberta has a zero-tolerance law for all GDL drivers. Your blood alcohol concentration must be 0.00% with no illegal drugs in your system.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1105,7 +1617,7 @@ export const questionsEn = [
       "4 demerit points"
     ],
     "correctAnswer": "8 demerit points",
-    "explanation": "A GDL driver (Class 7 learner or Class 5-GDL probationary) will be suspended upon accumulating 8 or more demerit points within a 2-year period (compared to 15 points for fully licensed non-GDL drivers).",
+    "explanation": "A GDL driver will be suspended upon accumulating 8 or more demerit points within a 2-year period (compared to 15 points for fully licensed non-GDL drivers).",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1190,7 +1702,7 @@ export const questionsEn = [
     "sourceSection": "Licence Restrictions",
     "sourceURL": "https://www.alberta.ca/driver-knowledge-tests",
     "sourceVerifiedDate": "August 2026",
-    "question": "Are Class 7 learner drivers permitted to drive commercial vehicles (Class 1, 2, 3, or 4) or operate a motorcycle without a supervisor?",
+    "question": "Are Class 7 learner drivers permitted to drive commercial vehicles or operate a motorcycle without a supervisor?",
     "answers": [
       "No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding",
       "Yes, as long as a Class 5 driver is accompanying them",
@@ -1198,7 +1710,7 @@ export const questionsEn = [
       "Yes, on rural roads during daylight"
     ],
     "correctAnswer": "No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding",
-    "explanation": "Class 7 licence holders cannot operate commercial vehicles or drive a motorcycle without a fully licensed Class 6 supervising rider following in another vehicle or riding alongside.",
+    "explanation": "Class 7 licence holders cannot operate commercial vehicles or drive a motorcycle without a fully licensed supervising rider.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1229,7 +1741,7 @@ export const questionsEn = [
       "70 km/h"
     ],
     "correctAnswer": "50 km/h",
-    "explanation": "The provincial maximum speed limit on roadways within an urban area (city, town, village) is 50 km/h unless posted signs indicate otherwise.",
+    "explanation": "The provincial maximum speed limit on roadways within an urban area is 50 km/h unless posted signs indicate otherwise.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1322,7 +1834,7 @@ export const questionsEn = [
       "50 km/h"
     ],
     "correctAnswer": "30 km/h",
-    "explanation": "The maximum legal speed in a school zone is 30 km/h during school hours (8:00–9:30 AM, 11:30 AM–1:30 PM, and 3:00–4:30 PM on school days) or municipal harmonized hours.",
+    "explanation": "The maximum legal speed in a school zone is 30 km/h during active hours.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1353,7 +1865,7 @@ export const questionsEn = [
       "Yes, if there are two lanes traveling in the same direction"
     ],
     "correctAnswer": "No, passing another moving vehicle in a school or playground zone during active hours is illegal",
-    "explanation": "You are never permitted to pass or attempt to pass any moving vehicle traveling in the same direction inside a school zone or playground zone during restricted hours.",
+    "explanation": "You are never permitted to pass any moving vehicle inside an active school zone or playground zone.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1384,7 +1896,7 @@ export const questionsEn = [
       "The fine is unchanged but demerit points double"
     ],
     "correctAnswer": "Speeding fines are doubled",
-    "explanation": "Under Alberta traffic legislation, speeding fines are automatically doubled when passing through designated construction or maintenance zones when workers are present.",
+    "explanation": "Speeding fines are automatically doubled when passing through designated construction zones with workers present.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1415,7 +1927,7 @@ export const questionsEn = [
       "You have right-of-way if you arrived first"
     ],
     "correctAnswer": "All traffic on the through street and any pedestrians crossing",
-    "explanation": "At a T-intersection without traffic signs or signals, the driver on the terminating road must yield the right-of-way to all cross traffic on the through street.",
+    "explanation": "At a T-intersection, the driver on the terminating road must yield to all cross traffic on the through street.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1446,7 +1958,7 @@ export const questionsEn = [
       "Yield only to vehicles traveling in the lane closest to you"
     ],
     "correctAnswer": "Stop completely before the sidewalk or roadway edge and yield to all pedestrians, cyclists, and vehicular traffic",
-    "explanation": "When entering a public road from an alley, parking lot, or private driveway, you must stop completely before crossing the sidewalk and yield to all approaching pedestrians and vehicular traffic.",
+    "explanation": "When entering from a driveway or alley, stop completely before crossing the sidewalk and yield to all traffic and pedestrians.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1477,7 +1989,7 @@ export const questionsEn = [
       "Proceed through without stopping at 50 km/h"
     ],
     "correctAnswer": "Treat the intersection as an all-way (four-way) stop",
-    "explanation": "When traffic lights are non-functional or blacked out, drivers must treat the intersection exactly like an all-way four-way stop.",
+    "explanation": "When traffic lights are non-functional, treat the intersection as a four-way stop.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1508,7 +2020,7 @@ export const questionsEn = [
       "Stop and treat the intersection as a four-way stop"
     ],
     "correctAnswer": "Slow down, proceed with caution, and yield right-of-way to pedestrians and approaching traffic",
-    "explanation": "A flashing amber traffic light means CAUTION. You may proceed straight through or turn only after slowing down and yielding to pedestrians and other traffic.",
+    "explanation": "A flashing amber light means CAUTION. Proceed only after yielding to pedestrians and traffic.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1539,7 +2051,7 @@ export const questionsEn = [
       "Yield to oncoming traffic only"
     ],
     "correctAnswer": "Come to a complete stop, yield right-of-way to cross traffic and pedestrians, and proceed only when safe (treat as a STOP sign)",
-    "explanation": "A flashing red light means the exact same thing as a STOP sign. You must come to a full and complete stop and proceed only when safe.",
+    "explanation": "A flashing red light means the exact same thing as a STOP sign.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1570,7 +2082,7 @@ export const questionsEn = [
       "Yes, but only between sunrise and sunset"
     ],
     "correctAnswer": "Yes, but only after coming to a complete stop and yielding to all pedestrians and oncoming cross traffic",
-    "explanation": "In Alberta, you may turn right on a solid red light unless a sign states \"No Turn on Red\", but you MUST come to a full complete stop before the stop line first and yield to all pedestrians and traffic.",
+    "explanation": "You may turn right on red after a full complete stop and yielding to all pedestrians and traffic.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1601,7 +2113,7 @@ export const questionsEn = [
       "Yes, whenever there are no oncoming vehicles"
     ],
     "correctAnswer": "Yes, but ONLY when turning from a one-way street onto another one-way street, after coming to a complete stop and yielding to traffic and pedestrians",
-    "explanation": "In Alberta, a left turn on red is legal ONLY when turning from a one-way street onto another one-way street, after a complete stop and yielding to all traffic and pedestrians.",
+    "explanation": "In Alberta, a left turn on red is legal ONLY when turning from a one-way street onto another one-way street after a complete stop.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1632,7 +2144,7 @@ export const questionsEn = [
       "The traffic light is broken"
     ],
     "correctAnswer": "You have an advance protected left turn; opposing through traffic is stopped by a red light",
-    "explanation": "A green arrow gives you a protected turn. Oncoming traffic is facing a red light, so you may turn safely in the direction of the arrow.",
+    "explanation": "A green arrow gives you a protected turn where oncoming traffic faces a red light.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1663,7 +2175,7 @@ export const questionsEn = [
       "Only when you reach the crosswalk"
     ],
     "correctAnswer": "At least 30 metres before the turn",
-    "explanation": "In urban areas, you should signal your intention to turn at least 30 metres before reaching the intersection. On highways, signal at least 100 metres in advance.",
+    "explanation": "In urban areas, signal at least 30 metres before reaching the intersection.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1694,7 +2206,7 @@ export const questionsEn = [
       "Any lane as long as you signal"
     ],
     "correctAnswer": "Stay in the corresponding lane throughout the entire turn (inside lane to inside lane, outside lane to outside lane)",
-    "explanation": "When turning left in dual turn lanes, you must remain in your corresponding lane throughout the entire turn and finish in the matching lane.",
+    "explanation": "In dual turn lanes, you must remain in your corresponding lane throughout the entire turn.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1725,7 +2237,7 @@ export const questionsEn = [
       "On the sidewalk"
     ],
     "correctAnswer": "Close to the right curb or edge of the road (within 1 metre)",
-    "explanation": "When making a right turn, keep your vehicle close to the right curb or road edge and turn into the first available right-hand travel lane.",
+    "explanation": "When making a right turn, position your vehicle close to the right curb.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1756,7 +2268,7 @@ export const questionsEn = [
       "In empty suburban cul-de-sacs"
     ],
     "correctAnswer": "At an intersection controlled by traffic lights (unless explicitly permitted by a sign), on curves, near crests of hills, and in alleys",
-    "explanation": "In Alberta, U-turns are prohibited at traffic lights, where a \"No U-Turn\" sign is posted, on curves or near the crest of a hill where you cannot see 150m in both directions, in urban areas between intersections, and in alleys.",
+    "explanation": "U-turns are prohibited at traffic lights, on curves or hill crests where visibility is less than 150m, and in alleys.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1787,7 +2299,7 @@ export const questionsEn = [
       "At least 10 metres"
     ],
     "correctAnswer": "At least 5 metres",
-    "explanation": "You cannot park within 5 metres of a fire hydrant or an intersection.",
+    "explanation": "You cannot park within 5 metres of a fire hydrant.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1818,7 +2330,7 @@ export const questionsEn = [
       "At least 8 metres"
     ],
     "correctAnswer": "At least 5 metres",
-    "explanation": "You must park at least 5 metres away from the nearest side of a stop sign, yield sign, or marked crosswalk.",
+    "explanation": "You must park at least 5 metres away from a stop sign, yield sign, or crosswalk.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1849,7 +2361,7 @@ export const questionsEn = [
       "At least 0.5 metres"
     ],
     "correctAnswer": "At least 1.5 metres",
-    "explanation": "You must not park within 1.5 metres of an access entrance to a garage, private driveway, or public alley.",
+    "explanation": "You must not park within 1.5 metres of a garage, private driveway, or alley.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1880,7 +2392,7 @@ export const questionsEn = [
       "750 mm (75 cm)"
     ],
     "correctAnswer": "500 mm (50 cm)",
-    "explanation": "When parallel parked, your vehicle’s curbside wheels must be within 500 mm (50 cm) of the curb.",
+    "explanation": "When parallel parked, your curbside wheels must be within 500 mm (50 cm) of the curb.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1911,7 +2423,7 @@ export const questionsEn = [
       "Turn front wheels halfway to the left"
     ],
     "correctAnswer": "Turn front wheels to the RIGHT (toward the curb)",
-    "explanation": "When parking downhill with a curb, turn wheels to the RIGHT (toward the curb) so that if the car rolls forward, the tires roll directly into the curb and stop.",
+    "explanation": "When parking downhill with a curb, turn wheels to the RIGHT (toward curb).",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1942,7 +2454,7 @@ export const questionsEn = [
       "Leave wheels turned left and do not apply parking brake"
     ],
     "correctAnswer": "Turn front wheels to the RIGHT (toward the edge/shoulder of the road)",
-    "explanation": "When parking uphill without a curb, turn wheels to the RIGHT. If the vehicle rolls backwards, it will roll off the road into the ditch rather than across live traffic lanes.",
+    "explanation": "When parking uphill without a curb, turn wheels to the RIGHT so the vehicle rolls into the ditch if brakes fail.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -1973,7 +2485,7 @@ export const questionsEn = [
       "It does not matter if the parking brake is set"
     ],
     "correctAnswer": "Turn front wheels to the RIGHT (toward the edge/shoulder of the road)",
-    "explanation": "When parking downhill without a curb, turn wheels to the RIGHT so the vehicle rolls off the roadway if brakes fail.",
+    "explanation": "When parking downhill without a curb, turn wheels to the RIGHT.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2004,7 +2516,7 @@ export const questionsEn = [
       "Exactly 1 car length for every 50 km/h"
     ],
     "correctAnswer": "At least 2 seconds",
-    "explanation": "The 2-second rule is the minimum safe following distance under ideal conditions. When the vehicle ahead passes a fixed object, it must take at least 2 full seconds before you reach that same point.",
+    "explanation": "The 2-second rule is the minimum safe following distance under ideal conditions.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2035,7 +2547,7 @@ export const questionsEn = [
       "Follow directly behind large trucks"
     ],
     "correctAnswer": "Increase following distance to at least 4 seconds or more",
-    "explanation": "In poor weather, winter driving, gravel roads, or when following heavy commercial vehicles or motorcycles, increase your following distance to at least 4 seconds or more.",
+    "explanation": "In poor weather, increase following distance to at least 4 seconds or more.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2066,7 +2578,7 @@ export const questionsEn = [
       "20 to 30 metres ahead"
     ],
     "correctAnswer": "At least 12 to 15 seconds ahead (about 1 to 2 city blocks, or half a kilometre on the highway)",
-    "explanation": "Proactive drivers maintain a 12 to 15-second visual search pattern ahead of their vehicle to detect hazards and changing traffic flow early.",
+    "explanation": "Proactive drivers maintain a 12 to 15-second visual search pattern ahead.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2097,7 +2609,7 @@ export const questionsEn = [
       "They are required only during driving examinations"
     ],
     "correctAnswer": "Rearview and side mirrors have blind spot areas where nearby vehicles, motorcycles, and cyclists cannot be seen",
-    "explanation": "Mirrors cannot display vehicles traveling directly in your vehicle’s blind spots. You must always perform a quick shoulder check before moving laterally or changing lanes.",
+    "explanation": "Mirrors cannot display vehicles in your blind spots. Always perform a shoulder check.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2128,7 +2640,7 @@ export const questionsEn = [
       "Close enough that no motorcycle can enter"
     ],
     "correctAnswer": "Enough space to see the rear tires of the vehicle ahead contacting the pavement",
-    "explanation": "Leaving enough space to clearly see the rear tires of the vehicle ahead touching the pavement gives you room to steer around if that vehicle stalls, and prevents a chain reaction if you are rear-ended.",
+    "explanation": "Leave enough space to see the rear tires of the vehicle ahead touching the pavement.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2159,7 +2671,7 @@ export const questionsEn = [
       "Steer sharply in the opposite direction of the skid"
     ],
     "correctAnswer": "Take your foot off the accelerator, do not brake hard, and steer smoothly in the direction you want the front of the vehicle to go",
-    "explanation": "In a rear-wheel skid (oversteer), ease off the accelerator, avoid abrupt braking, and steer gently in the direction you want the front of the vehicle to travel.",
+    "explanation": "In a skid, ease off the accelerator and steer gently in the direction you want the front of the vehicle to travel.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2190,7 +2702,7 @@ export const questionsEn = [
       "Wind pulls the car; steer vigorously back and forth"
     ],
     "correctAnswer": "Tires ride on a thin film of water losing contact with the road; ease off the gas and steer straight without hard braking",
-    "explanation": "Hydroplaning occurs when water builds up under tires, lifting them off the road. Ease off the accelerator smoothly, keep steering straight, and avoid slamming the brakes until tires regain grip.",
+    "explanation": "Hydroplaning occurs when water builds up under tires. Ease off the gas smoothly and keep steering straight.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2221,7 +2733,7 @@ export const questionsEn = [
       "Hazard warning lights only"
     ],
     "correctAnswer": "Low-beam headlights (and fog lights if equipped)",
-    "explanation": "High beams reflect off fog, snowflakes, or smoke directly back into your eyes, causing blinding glare. Always use low-beam headlights in fog or heavy snow.",
+    "explanation": "High beams reflect off fog and snow directly back into your eyes. Always use low beams.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2252,7 +2764,7 @@ export const questionsEn = [
       "From 6:00 PM to 6:00 AM year-round"
     ],
     "correctAnswer": "From one hour after sunset until one hour before sunrise, and anytime visibility is reduced to less than 150 metres",
-    "explanation": "Headlights must be turned on from one hour after sunset to one hour before sunrise, and whenever weather or atmospheric conditions reduce visibility to less than 150 metres.",
+    "explanation": "Headlights must be on from one hour after sunset to one hour before sunrise, and whenever visibility is under 150m.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2283,7 +2795,7 @@ export const questionsEn = [
       "Only when the oncoming driver flashes their lights"
     ],
     "correctAnswer": "At least 300 metres away",
-    "explanation": "You must dim your high beams to low beams whenever you are within 300 metres of oncoming vehicles, and within 150 metres when following behind another vehicle.",
+    "explanation": "Dim high beams to low beams within 300 metres of oncoming vehicles and 150 metres when following.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2345,7 +2857,7 @@ export const questionsEn = [
       "4 demerit points"
     ],
     "correctAnswer": "6 demerit points",
-    "explanation": "Failing to stop for a school bus with alternating flashing red lights is a severe safety violation carrying 6 demerit points.",
+    "explanation": "Failing to stop for a school bus with flashing red lights carries 6 demerit points.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2376,7 +2888,7 @@ export const questionsEn = [
       "2 demerit points"
     ],
     "correctAnswer": "6 demerit points and a mandatory court appearance",
-    "explanation": "Speeding more than 50 km/h over the posted limit carries 6 demerit points and requires a mandatory court appearance with no set fine.",
+    "explanation": "Speeding 51+ km/h over the limit carries 6 demerit points and a mandatory court appearance.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2407,7 +2919,7 @@ export const questionsEn = [
       "Until you renew your driver’s licence"
     ],
     "correctAnswer": "2 years from the date of the conviction",
-    "explanation": "Demerit points remain on a driver’s abstract for exactly two years from the date of conviction for the offence.",
+    "explanation": "Demerit points remain on a driver’s abstract for exactly two years from conviction.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2438,7 +2950,7 @@ export const questionsEn = [
       "7 days"
     ],
     "correctAnswer": "1 month (30 days)",
-    "explanation": "A driver suspended for demerit points for the first time will receive a 1-month licence suspension. Points are reduced to 3 upon reinstatement.",
+    "explanation": "A first demerit suspension lasts 1 month, and points are reduced to 3 upon reinstatement.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2469,7 +2981,7 @@ export const questionsEn = [
       "Shift into reverse or park immediately"
     ],
     "correctAnswer": "Grip the steering wheel firmly, ease off the gas, and steer straight; apply brakes gently only after the vehicle has slowed",
-    "explanation": "A tire blowout causes strong pulling toward the blown tire. Grip the steering wheel firmly with both hands, ease off the accelerator smoothly, and steer straight. Apply brakes gently once speed is controlled.",
+    "explanation": "Grip the steering wheel firmly with both hands, ease off the gas smoothly, and steer straight.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2500,7 +3012,7 @@ export const questionsEn = [
       "Pump the accelerator rapidly"
     ],
     "correctAnswer": "Shift the transmission into NEUTRAL (N), apply brakes firmly, and steer to the shoulder before turning off the engine",
-    "explanation": "Shifting to neutral disconnects engine power from the wheels without locking the steering wheel. Apply steady brakes and guide the car safely to the shoulder before turning off the engine.",
+    "explanation": "Shifting to neutral disconnects engine power without locking steering.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2531,7 +3043,7 @@ export const questionsEn = [
       "Swerve back and forth vigorously across lanes"
     ],
     "correctAnswer": "Pump the brake pedal rapidly; if that fails, downshift to a lower gear and apply the parking brake gradually while holding the release button",
-    "explanation": "Rapidly pumping the brake pedal may build residual hydraulic pressure. If not, downshift to engine-brake and gently apply the emergency parking brake while keeping the release button depressed.",
+    "explanation": "Pump the pedal rapidly, downshift to a lower gear, and gently use the parking brake.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2562,7 +3074,7 @@ export const questionsEn = [
       "Only if a government vehicle is involved"
     ],
     "correctAnswer": "When there is any injury, fatality, or combined property damage exceeding $2,000 (or if it is a hit-and-run)",
-    "explanation": "Under Alberta law, you must report a collision to police immediately if anyone is injured or killed, if it is a hit-and-run, or if the estimated total combined property damage appears to exceed $2,000.",
+    "explanation": "Collisions must be reported if there is injury, fatality, hit-and-run, or damage over $2,000.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2593,7 +3105,7 @@ export const questionsEn = [
       "Lane for bicycles only"
     ],
     "correctAnswer": "Passing is prohibited in your direction of travel",
-    "explanation": "A solid yellow line on your side of the roadway indicates that sight distance is restricted and passing is prohibited.",
+    "explanation": "A solid yellow line on your side indicates passing is prohibited.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2624,7 +3136,7 @@ export const questionsEn = [
       "Speed limit is 110 km/h"
     ],
     "correctAnswer": "Passing is permitted from either direction when oncoming traffic is clear and safe",
-    "explanation": "A broken yellow centre line separates opposing directions of traffic and indicates that passing is permitted in either direction when the road ahead is clear.",
+    "explanation": "A broken yellow centre line indicates passing is permitted when clear.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2655,7 +3167,7 @@ export const questionsEn = [
       "The lane is for parking only"
     ],
     "correctAnswer": "Lane changes are discouraged and hazardous (or prohibited)",
-    "explanation": "Solid white lines separate traffic lanes moving in the same direction. Crossing a solid white line is discouraged and should be avoided because of hazards.",
+    "explanation": "Solid white lines between lanes discourage lane changes.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2686,7 +3198,7 @@ export const questionsEn = [
       "Passing lane on a two-lane highway"
     ],
     "correctAnswer": "The lane is reserved for specific designated vehicles only (e.g. transit buses, carpools / HOV, or bicycles)",
-    "explanation": "A diamond marking indicates a reserved special-purpose lane, such as High Occupancy Vehicle (HOV) lanes, bus-only lanes, or bicycle lanes.",
+    "explanation": "A diamond marking indicates a reserved special-purpose lane (HOV, bus, bike).",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2717,7 +3229,7 @@ export const questionsEn = [
       "Exercising or fresh air"
     ],
     "correctAnswer": "Time (allowing the liver sufficient time to metabolize the alcohol)",
-    "explanation": "Only time can eliminate alcohol from your body. Coffee, cold showers, fresh air, and exercise do not speed up the liver’s metabolic rate or reduce your blood alcohol concentration.",
+    "explanation": "Only time can eliminate alcohol from your body.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2748,7 +3260,7 @@ export const questionsEn = [
       "1 demerit point and a verbal warning"
     ],
     "correctAnswer": "Immediate 90-day driving suspension, 30-day vehicle seizure, mandatory ignition interlock for 12 months, and substantial monetary penalties",
-    "explanation": "Under Alberta IRS Fail penalties, drivers face immediate roadside consequences: 90-day complete suspension, 30-day vehicle seizure, mandatory participation in ignition interlock for 12 months, and a $1,000+ fine.",
+    "explanation": "IRS Fail consequences include an immediate 90-day suspension, 30-day vehicle seizure, and 12-month interlock.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2779,7 +3291,7 @@ export const questionsEn = [
       "The vehicle owner only"
     ],
     "correctAnswer": "The driver of the vehicle",
-    "explanation": "The driver is legally responsible for ensuring that all passengers under 16 years of age are properly buckled in seat belts or appropriate child safety seats.",
+    "explanation": "The driver is legally responsible for all passengers under 16 wearing seat belts.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2810,7 +3322,7 @@ export const questionsEn = [
       "Only until the child reaches 5 kg"
     ],
     "correctAnswer": "When the child weighs between 9 kg (20 lbs) and 18 kg (40 lbs)",
-    "explanation": "Under Alberta law, infants up to 9 kg must be in rear-facing seats. Children between 9 kg and 18 kg (20 to 40 lbs) must be secured in a forward-facing child safety seat.",
+    "explanation": "Children weighing between 9 kg and 18 kg must be in a forward-facing child safety seat.",
     "visualType": "none",
     "signAsset": null,
     "image": null,
@@ -2824,7 +3336,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0101",
+    "id": "ALB-0201",
     "category": "Road Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -2856,7 +3368,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0102",
+    "id": "ALB-0202",
     "category": "Road Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -2888,7 +3400,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0103",
+    "id": "ALB-0203",
     "category": "Road Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -2920,7 +3432,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0104",
+    "id": "ALB-0204",
     "category": "Road Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -2952,7 +3464,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0105",
+    "id": "ALB-0205",
     "category": "Traffic Lights",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -2984,7 +3496,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0106",
+    "id": "ALB-0206",
     "category": "Traffic Lights",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3016,7 +3528,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0107",
+    "id": "ALB-0207",
     "category": "Traffic Lights",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3048,7 +3560,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0108",
+    "id": "ALB-0208",
     "category": "Traffic Lights",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3080,7 +3592,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0109",
+    "id": "ALB-0209",
     "category": "Pavement Markings",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3112,7 +3624,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0110",
+    "id": "ALB-0210",
     "category": "Pavement Markings",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3144,7 +3656,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0111",
+    "id": "ALB-0211",
     "category": "Pavement Markings",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3176,7 +3688,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0112",
+    "id": "ALB-0212",
     "category": "Pavement Markings",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3208,7 +3720,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0113",
+    "id": "ALB-0213",
     "category": "Intersections",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3240,7 +3752,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0114",
+    "id": "ALB-0214",
     "category": "Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3272,7 +3784,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0115",
+    "id": "ALB-0215",
     "category": "Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3304,7 +3816,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0116",
+    "id": "ALB-0216",
     "category": "Intersections",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3336,7 +3848,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0117",
+    "id": "ALB-0217",
     "category": "Right-of-Way",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3368,7 +3880,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0118",
+    "id": "ALB-0218",
     "category": "Right-of-Way",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3400,7 +3912,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0119",
+    "id": "ALB-0219",
     "category": "Right-of-Way",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3432,7 +3944,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0120",
+    "id": "ALB-0220",
     "category": "Right-of-Way",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3464,7 +3976,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0121",
+    "id": "ALB-0221",
     "category": "Uncontrolled Intersections",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3496,7 +4008,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0122",
+    "id": "ALB-0222",
     "category": "Uncontrolled Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3528,7 +4040,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0123",
+    "id": "ALB-0223",
     "category": "Uncontrolled Intersections",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3560,7 +4072,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0124",
+    "id": "ALB-0224",
     "category": "Uncontrolled Intersections",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3592,7 +4104,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0125",
+    "id": "ALB-0225",
     "category": "Stop Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3624,7 +4136,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0126",
+    "id": "ALB-0226",
     "category": "Stop Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3656,7 +4168,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0127",
+    "id": "ALB-0227",
     "category": "Stop Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3688,7 +4200,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0128",
+    "id": "ALB-0228",
     "category": "Stop Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3720,7 +4232,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0129",
+    "id": "ALB-0229",
     "category": "Yield Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3752,7 +4264,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0130",
+    "id": "ALB-0230",
     "category": "Yield Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3784,7 +4296,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0131",
+    "id": "ALB-0231",
     "category": "Yield Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3816,7 +4328,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0132",
+    "id": "ALB-0232",
     "category": "Yield Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3848,7 +4360,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0133",
+    "id": "ALB-0233",
     "category": "Turning",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -3880,7 +4392,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0134",
+    "id": "ALB-0234",
     "category": "Turning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3912,7 +4424,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0135",
+    "id": "ALB-0235",
     "category": "Turning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -3944,7 +4456,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0136",
+    "id": "ALB-0236",
     "category": "Turning",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -3976,7 +4488,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0137",
+    "id": "ALB-0237",
     "category": "Lane Positioning",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4008,7 +4520,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0138",
+    "id": "ALB-0238",
     "category": "Lane Positioning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4040,7 +4552,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0139",
+    "id": "ALB-0239",
     "category": "Lane Positioning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4072,7 +4584,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0140",
+    "id": "ALB-0240",
     "category": "Lane Positioning",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4104,7 +4616,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0141",
+    "id": "ALB-0241",
     "category": "Lane Changes",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4136,7 +4648,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0142",
+    "id": "ALB-0242",
     "category": "Lane Changes",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4168,7 +4680,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0143",
+    "id": "ALB-0243",
     "category": "Lane Changes",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4200,7 +4712,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0144",
+    "id": "ALB-0244",
     "category": "Lane Changes",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4232,7 +4744,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0145",
+    "id": "ALB-0245",
     "category": "Passing",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4264,7 +4776,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0146",
+    "id": "ALB-0246",
     "category": "Passing",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4296,7 +4808,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0147",
+    "id": "ALB-0247",
     "category": "Passing",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4328,7 +4840,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0148",
+    "id": "ALB-0248",
     "category": "Passing",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4360,7 +4872,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0149",
+    "id": "ALB-0249",
     "category": "Highway Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4392,7 +4904,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0150",
+    "id": "ALB-0250",
     "category": "Highway Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4424,7 +4936,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0151",
+    "id": "ALB-0251",
     "category": "Highway Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4456,7 +4968,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0152",
+    "id": "ALB-0252",
     "category": "Highway Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4488,7 +5000,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0153",
+    "id": "ALB-0253",
     "category": "Speed Limits",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4520,7 +5032,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0154",
+    "id": "ALB-0254",
     "category": "Speed Limits",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4552,7 +5064,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0155",
+    "id": "ALB-0255",
     "category": "Speed Limits",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4584,7 +5096,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0156",
+    "id": "ALB-0256",
     "category": "Speed Limits",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4616,7 +5128,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0157",
+    "id": "ALB-0257",
     "category": "School Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4648,7 +5160,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0158",
+    "id": "ALB-0258",
     "category": "School Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4680,7 +5192,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0159",
+    "id": "ALB-0259",
     "category": "School Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4712,7 +5224,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0160",
+    "id": "ALB-0260",
     "category": "School Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4744,7 +5256,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0161",
+    "id": "ALB-0261",
     "category": "Playground Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4776,7 +5288,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0162",
+    "id": "ALB-0262",
     "category": "Playground Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4808,7 +5320,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0163",
+    "id": "ALB-0263",
     "category": "Playground Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4840,7 +5352,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0164",
+    "id": "ALB-0264",
     "category": "Playground Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -4872,7 +5384,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0165",
+    "id": "ALB-0265",
     "category": "Construction Zones",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -4904,7 +5416,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0166",
+    "id": "ALB-0266",
     "category": "Construction Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4936,7 +5448,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0167",
+    "id": "ALB-0267",
     "category": "Construction Zones",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -4968,7 +5480,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0168",
+    "id": "ALB-0268",
     "category": "Construction Zones",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5000,7 +5512,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0169",
+    "id": "ALB-0269",
     "category": "Railway Crossings",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5032,7 +5544,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0170",
+    "id": "ALB-0270",
     "category": "Railway Crossings",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5064,7 +5576,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0171",
+    "id": "ALB-0271",
     "category": "Railway Crossings",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5096,7 +5608,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0172",
+    "id": "ALB-0272",
     "category": "Railway Crossings",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5128,7 +5640,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0173",
+    "id": "ALB-0273",
     "category": "Pedestrian Safety",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5160,7 +5672,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0174",
+    "id": "ALB-0274",
     "category": "Pedestrian Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5192,7 +5704,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0175",
+    "id": "ALB-0275",
     "category": "Pedestrian Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5224,7 +5736,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0176",
+    "id": "ALB-0276",
     "category": "Pedestrian Safety",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5256,7 +5768,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0177",
+    "id": "ALB-0277",
     "category": "Cyclists",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5288,7 +5800,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0178",
+    "id": "ALB-0278",
     "category": "Cyclists",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5320,7 +5832,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0179",
+    "id": "ALB-0279",
     "category": "Cyclists",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5352,7 +5864,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0180",
+    "id": "ALB-0280",
     "category": "Cyclists",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5384,7 +5896,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0181",
+    "id": "ALB-0281",
     "category": "Motorcycles",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5416,7 +5928,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0182",
+    "id": "ALB-0282",
     "category": "Motorcycles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5448,7 +5960,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0183",
+    "id": "ALB-0283",
     "category": "Motorcycles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5480,7 +5992,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0184",
+    "id": "ALB-0284",
     "category": "Motorcycles",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5512,7 +6024,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0185",
+    "id": "ALB-0285",
     "category": "Emergency Vehicles",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5544,7 +6056,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0186",
+    "id": "ALB-0286",
     "category": "Emergency Vehicles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5576,7 +6088,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0187",
+    "id": "ALB-0287",
     "category": "Emergency Vehicles",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5608,7 +6120,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0188",
+    "id": "ALB-0288",
     "category": "Emergency Vehicles",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5640,7 +6152,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0189",
+    "id": "ALB-0289",
     "category": "School Buses",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5672,7 +6184,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0190",
+    "id": "ALB-0290",
     "category": "School Buses",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5704,7 +6216,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0191",
+    "id": "ALB-0291",
     "category": "School Buses",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5736,7 +6248,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0192",
+    "id": "ALB-0292",
     "category": "School Buses",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5768,7 +6280,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0193",
+    "id": "ALB-0293",
     "category": "Parking",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5800,7 +6312,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0194",
+    "id": "ALB-0294",
     "category": "Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5832,7 +6344,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0195",
+    "id": "ALB-0295",
     "category": "Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5864,7 +6376,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0196",
+    "id": "ALB-0296",
     "category": "Parking",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -5896,7 +6408,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0197",
+    "id": "ALB-0297",
     "category": "Hill Parking",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -5928,7 +6440,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0198",
+    "id": "ALB-0298",
     "category": "Hill Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5960,7 +6472,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0199",
+    "id": "ALB-0299",
     "category": "Hill Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -5992,7 +6504,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0200",
+    "id": "ALB-0300",
     "category": "Hill Parking",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6024,7 +6536,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0201",
+    "id": "ALB-0301",
     "category": "Parallel Parking",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6056,7 +6568,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0202",
+    "id": "ALB-0302",
     "category": "Parallel Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6088,7 +6600,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0203",
+    "id": "ALB-0303",
     "category": "Parallel Parking",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6120,7 +6632,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0204",
+    "id": "ALB-0304",
     "category": "Parallel Parking",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6152,7 +6664,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0205",
+    "id": "ALB-0305",
     "category": "Following Distance",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6184,7 +6696,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0206",
+    "id": "ALB-0306",
     "category": "Following Distance",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6216,7 +6728,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0207",
+    "id": "ALB-0307",
     "category": "Following Distance",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6248,7 +6760,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0208",
+    "id": "ALB-0308",
     "category": "Following Distance",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6280,7 +6792,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0209",
+    "id": "ALB-0309",
     "category": "Defensive Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6312,7 +6824,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0210",
+    "id": "ALB-0310",
     "category": "Defensive Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6344,7 +6856,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0211",
+    "id": "ALB-0311",
     "category": "Defensive Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6376,7 +6888,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0212",
+    "id": "ALB-0312",
     "category": "Defensive Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6408,7 +6920,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0213",
+    "id": "ALB-0313",
     "category": "Sharing the Road",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6440,7 +6952,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0214",
+    "id": "ALB-0314",
     "category": "Sharing the Road",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6472,7 +6984,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0215",
+    "id": "ALB-0315",
     "category": "Sharing the Road",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6504,7 +7016,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0216",
+    "id": "ALB-0316",
     "category": "Sharing the Road",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6536,7 +7048,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0217",
+    "id": "ALB-0317",
     "category": "Winter Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6568,7 +7080,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0218",
+    "id": "ALB-0318",
     "category": "Winter Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6600,7 +7112,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0219",
+    "id": "ALB-0319",
     "category": "Winter Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6632,7 +7144,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0220",
+    "id": "ALB-0320",
     "category": "Winter Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6664,7 +7176,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0221",
+    "id": "ALB-0321",
     "category": "Ice and Snow",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6696,7 +7208,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0222",
+    "id": "ALB-0322",
     "category": "Ice and Snow",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6728,7 +7240,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0223",
+    "id": "ALB-0323",
     "category": "Ice and Snow",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6760,7 +7272,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0224",
+    "id": "ALB-0324",
     "category": "Ice and Snow",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6792,7 +7304,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0225",
+    "id": "ALB-0325",
     "category": "Reduced Visibility",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6824,7 +7336,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0226",
+    "id": "ALB-0326",
     "category": "Reduced Visibility",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6856,7 +7368,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0227",
+    "id": "ALB-0327",
     "category": "Reduced Visibility",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6888,7 +7400,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0228",
+    "id": "ALB-0328",
     "category": "Reduced Visibility",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -6920,7 +7432,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0229",
+    "id": "ALB-0329",
     "category": "Night Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -6952,7 +7464,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0230",
+    "id": "ALB-0330",
     "category": "Night Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -6984,7 +7496,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0231",
+    "id": "ALB-0331",
     "category": "Night Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7016,7 +7528,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0232",
+    "id": "ALB-0332",
     "category": "Night Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7048,7 +7560,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0233",
+    "id": "ALB-0333",
     "category": "Hydroplaning",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7080,7 +7592,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0234",
+    "id": "ALB-0334",
     "category": "Hydroplaning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7112,7 +7624,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0235",
+    "id": "ALB-0335",
     "category": "Hydroplaning",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7144,7 +7656,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0236",
+    "id": "ALB-0336",
     "category": "Hydroplaning",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7176,7 +7688,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0237",
+    "id": "ALB-0337",
     "category": "Vehicle Emergencies",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7208,7 +7720,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0238",
+    "id": "ALB-0338",
     "category": "Vehicle Emergencies",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7240,7 +7752,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0239",
+    "id": "ALB-0339",
     "category": "Vehicle Emergencies",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7272,7 +7784,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0240",
+    "id": "ALB-0340",
     "category": "Vehicle Emergencies",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7304,7 +7816,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0241",
+    "id": "ALB-0341",
     "category": "Collision Procedures",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7336,7 +7848,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0242",
+    "id": "ALB-0342",
     "category": "Collision Procedures",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7368,7 +7880,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0243",
+    "id": "ALB-0343",
     "category": "Collision Procedures",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7400,7 +7912,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0244",
+    "id": "ALB-0344",
     "category": "Collision Procedures",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7432,7 +7944,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0245",
+    "id": "ALB-0345",
     "category": "Distracted Driving",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7464,7 +7976,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0246",
+    "id": "ALB-0346",
     "category": "Distracted Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7496,7 +8008,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0247",
+    "id": "ALB-0347",
     "category": "Distracted Driving",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7528,7 +8040,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0248",
+    "id": "ALB-0348",
     "category": "Distracted Driving",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7560,7 +8072,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0249",
+    "id": "ALB-0349",
     "category": "Alcohol and Drugs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7592,7 +8104,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0250",
+    "id": "ALB-0350",
     "category": "Alcohol and Drugs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7624,7 +8136,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0251",
+    "id": "ALB-0351",
     "category": "Alcohol and Drugs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7656,7 +8168,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0252",
+    "id": "ALB-0352",
     "category": "Alcohol and Drugs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7688,7 +8200,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0253",
+    "id": "ALB-0353",
     "category": "Seat Belts",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7720,7 +8232,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0254",
+    "id": "ALB-0354",
     "category": "Seat Belts",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7752,7 +8264,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0255",
+    "id": "ALB-0355",
     "category": "Seat Belts",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7784,7 +8296,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0256",
+    "id": "ALB-0356",
     "category": "Seat Belts",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7816,7 +8328,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0257",
+    "id": "ALB-0357",
     "category": "Child Restraints",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7848,7 +8360,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0258",
+    "id": "ALB-0358",
     "category": "Child Restraints",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7880,7 +8392,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0259",
+    "id": "ALB-0359",
     "category": "Child Restraints",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -7912,7 +8424,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0260",
+    "id": "ALB-0360",
     "category": "Child Restraints",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -7944,7 +8456,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0261",
+    "id": "ALB-0361",
     "category": "Licence Restrictions",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -7976,7 +8488,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0262",
+    "id": "ALB-0362",
     "category": "Licence Restrictions",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8008,7 +8520,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0263",
+    "id": "ALB-0363",
     "category": "Licence Restrictions",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8040,7 +8552,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0264",
+    "id": "ALB-0364",
     "category": "Licence Restrictions",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8072,7 +8584,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0265",
+    "id": "ALB-0365",
     "category": "Demerit Points",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8104,7 +8616,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0266",
+    "id": "ALB-0366",
     "category": "Demerit Points",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8136,7 +8648,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0267",
+    "id": "ALB-0367",
     "category": "Demerit Points",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8168,7 +8680,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0268",
+    "id": "ALB-0368",
     "category": "Demerit Points",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8200,7 +8712,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0269",
+    "id": "ALB-0369",
     "category": "Driver Responsibilities",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8232,7 +8744,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0270",
+    "id": "ALB-0370",
     "category": "Driver Responsibilities",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8264,7 +8776,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0271",
+    "id": "ALB-0371",
     "category": "Driver Responsibilities",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8296,7 +8808,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0272",
+    "id": "ALB-0372",
     "category": "Driver Responsibilities",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8328,7 +8840,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0273",
+    "id": "ALB-0373",
     "category": "Vehicle Equipment",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8360,7 +8872,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0274",
+    "id": "ALB-0374",
     "category": "Vehicle Equipment",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8392,7 +8904,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0275",
+    "id": "ALB-0375",
     "category": "Vehicle Equipment",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8424,7 +8936,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0276",
+    "id": "ALB-0376",
     "category": "Vehicle Equipment",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8456,7 +8968,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0277",
+    "id": "ALB-0377",
     "category": "Basic Vehicle Safety",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8488,7 +9000,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0278",
+    "id": "ALB-0378",
     "category": "Basic Vehicle Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8520,7 +9032,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0279",
+    "id": "ALB-0379",
     "category": "Basic Vehicle Safety",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8552,7 +9064,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0280",
+    "id": "ALB-0380",
     "category": "Basic Vehicle Safety",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8584,7 +9096,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0281",
+    "id": "ALB-0381",
     "category": "Signs by Shape",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8616,7 +9128,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0282",
+    "id": "ALB-0382",
     "category": "Signs by Shape",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8648,7 +9160,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0283",
+    "id": "ALB-0383",
     "category": "Signs by Shape",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8680,7 +9192,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0284",
+    "id": "ALB-0384",
     "category": "Signs by Shape",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8712,7 +9224,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0285",
+    "id": "ALB-0385",
     "category": "Signs by Colour",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8744,7 +9256,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0286",
+    "id": "ALB-0386",
     "category": "Signs by Colour",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8776,7 +9288,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0287",
+    "id": "ALB-0387",
     "category": "Signs by Colour",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8808,7 +9320,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0288",
+    "id": "ALB-0388",
     "category": "Signs by Colour",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8840,7 +9352,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0289",
+    "id": "ALB-0389",
     "category": "Regulatory Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -8872,7 +9384,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0290",
+    "id": "ALB-0390",
     "category": "Regulatory Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8904,7 +9416,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0291",
+    "id": "ALB-0391",
     "category": "Regulatory Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -8936,7 +9448,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0292",
+    "id": "ALB-0392",
     "category": "Regulatory Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -8968,7 +9480,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0293",
+    "id": "ALB-0393",
     "category": "Warning Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -9000,7 +9512,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0294",
+    "id": "ALB-0394",
     "category": "Warning Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9032,7 +9544,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0295",
+    "id": "ALB-0395",
     "category": "Warning Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9064,7 +9576,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0296",
+    "id": "ALB-0396",
     "category": "Warning Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",
@@ -9096,7 +9608,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0297",
+    "id": "ALB-0397",
     "category": "Information Signs",
     "difficulty": "easy",
     "sourceAuthority": "Government of Alberta",
@@ -9128,7 +9640,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0298",
+    "id": "ALB-0398",
     "category": "Information Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9160,7 +9672,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0299",
+    "id": "ALB-0399",
     "category": "Information Signs",
     "difficulty": "medium",
     "sourceAuthority": "Government of Alberta",
@@ -9192,7 +9704,7 @@ export const questionsEn = [
     ]
   },
   {
-    "id": "ALB-0300",
+    "id": "ALB-0400",
     "category": "Information Signs",
     "difficulty": "hard",
     "sourceAuthority": "Government of Alberta",

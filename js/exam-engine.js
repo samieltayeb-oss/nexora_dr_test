@@ -84,11 +84,16 @@ export class ExamEngine {
     // Recompute session stats
     this.recomputeStats();
 
-    // Real Exam Simulation Early-Failure Check:
-    // Once 6 incorrect answers are reached, achieving 25 is mathematically impossible
+    // Real Exam Simulation Early-Completion Checks (Registry Simulation Fidelity):
+    // 1. Reaching 25 correct answers achieves the passing threshold
+    if (this.session.mode === 'real-exam' && this.session.score >= albertaConfig.passingScore) {
+      this.session.earlyPassed = true;
+      return this.finishSession(false);
+    }
+
+    // 2. Once 6 incorrect answers are reached, achieving 25 is mathematically impossible
     if (this.session.mode === 'real-exam' && this.session.wrongCount >= albertaConfig.earlyFailureWrongThreshold) {
       this.session.earlyFailed = true;
-      // In real exam simulator, finalize fail
       return this.finishSession(true);
     }
 

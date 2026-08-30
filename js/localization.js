@@ -12,7 +12,7 @@ export const translations = {
     navSigns: "Road Signs",
     langToggle: "العربية",
 
-    heroEyebrow: "Official Curriculum Practice Engine",
+    heroEyebrow: "Alberta Driver's Guide Practice Engine",
     heroTitle: "Master the Alberta Class 7",
     heroTitleAccent: "Learner Driver Exam",
     heroSubtitle: "Prepare with precision using realistic examinations, road-sign simulations, and situational road diagrams based on the official Alberta Driver's Guide.",
@@ -23,7 +23,7 @@ export const translations = {
     statQuestionsLabel: "Questions Per Exam",
     statPassMark: "25 / 30",
     statPassMarkLabel: "Passing Threshold (83%)",
-    statBankSize: "290+",
+    statBankSize: "300+",
     statBankSizeLabel: "Practice Question Bank",
     statOfficialTimer: "No Timer",
     statOfficialTimerLabel: "Real Exam Simulation",
@@ -45,10 +45,10 @@ export const translations = {
 
     modeSmartReviewTitle: "Smart Weakness Review",
     modeSmartReviewDesc: "Personalized exam generated automatically from your historical weak categories and missed questions.",
-    modeSmartReviewBadge: "Adaptive AI",
+    modeSmartReviewBadge: "Smart Adaptive Review",
 
     modeRoadSignsTitle: "Road Sign Challenge",
-    modeRoadSignsDesc: "Master 100% of Alberta regulatory, warning, and information signs with high-contrast vector illustrations.",
+    modeRoadSignsDesc: "Practice essential Alberta regulatory, warning, and information signs with high-contrast vector illustrations.",
     modeRoadSignsBadge: "Visual Focus",
 
     modeStudyGuideTitle: "Concise Study Notes",
@@ -116,7 +116,7 @@ export const translations = {
     navSigns: "شواخص المرور",
     langToggle: "English",
 
-    heroEyebrow: "منظومة التدريب الرسمية لاختبار القيادة",
+    heroEyebrow: "منظومة التدريب على دليل السائق بألبرتا",
     heroTitle: "اجتز اختبار قيادة ألبرتا",
     heroTitleAccent: "للمتعلمين (الفئة السابعة)",
     heroSubtitle: "استعد بدقة متناهية عبر اختبارات واقعية تحاكي نظام السجل المدني بألبرتا، ورسوم ثلاثية الأبعاد لمواقف الطريق وشواخص المرور المعتمدة.",
@@ -127,7 +127,7 @@ export const translations = {
     statQuestionsLabel: "سؤالاً في كل اختبار",
     statPassMark: "25 / 30",
     statPassMarkLabel: "درجة النجاح (83%)",
-    statBankSize: "+290",
+    statBankSize: "+300",
     statBankSizeLabel: "سؤال تدريبي شامل",
     statOfficialTimer: "بدون مؤقت",
     statOfficialTimerLabel: "محاكاة واقعية للاختبار",
@@ -147,12 +147,12 @@ export const translations = {
     modeTimedDesc: "تدريب على سرعة الإجابة تحت ضغط التوقيت مع خيارات مؤقت 15 أو 20 أو 30 دقيقة.",
     modeTimedBadge: "تدريب السرعة",
 
-    modeSmartReviewTitle: "المراجعة الذكية لنقاط الضعف",
+    modeSmartReviewTitle: "المراجعة التكيفية الذكية",
     modeSmartReviewDesc: "اختبار مخصص يتم إنشاؤه تلقائياً بالتركيز على الأسئلة والأقسام التي أخطأت فيها سابقاً.",
-    modeSmartReviewBadge: "مراجعة ذكية",
+    modeSmartReviewBadge: "مراجعة تكيفية ذكية",
 
     modeRoadSignsTitle: "تحدي شواخص المرور",
-    modeRoadSignsDesc: "إتقان كافة شواخص وإشارات المرور التحذيرية والتنظيمية والإرشادية في ألبرتا برسوم عالية الدقة.",
+    modeRoadSignsDesc: "التدريب على شواخص وإشارات المرور التحذيرية والتنظيمية والإرشادية الأساسية في ألبرتا برسوم عالية الدقة.",
     modeRoadSignsBadge: "شواخص بصرية",
 
     modeStudyGuideTitle: "ملخص القواعد الأساسية",

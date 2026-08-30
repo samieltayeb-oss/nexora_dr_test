@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Master Question Bank Builder for Alberta Class 7 Practice Examination
-// Targets: 260+ Questions across 50 Categories with Easy, Medium, Hard distribution
+// Targets: 290+ Questions across 51 Categories with full coverage for all 34 SVG signs and 12 Nano Banana scenarios
 
 const questions = [];
 
@@ -43,7 +43,7 @@ function addQ(data) {
 }
 
 // ----------------------------------------------------
-// 1. VISUAL SCENARIOS (NANO BANANA & ROAD SCENES)
+// 1. VISUAL SCENARIOS (NANO BANANA 3D SCENARIO ASSETS) - 12 SCENARIOS
 // ----------------------------------------------------
 addQ({
   id: 'ROW-001',
@@ -51,7 +51,7 @@ addQ({
   difficulty: 'medium',
   sourceTopic: 'Uncontrolled Intersections',
   sourceSection: 'Intersections and Turns',
-  question: 'In this uncontrolled intersection scenario, Vehicle A (blue sedan from south) and Vehicle B (red SUV from east) arrive at the intersection at the exact same time. Which vehicle has the right-of-way?',
+  question: 'In this uncontrolled intersection scenario, Vehicle A (blue sedan from south) and Vehicle B (red SUV from east) arrive at the intersection line at the exact same time. Which vehicle has the right-of-way?',
   answers: [
     'Vehicle B (red SUV) because it is on the right of Vehicle A',
     'Vehicle A (blue sedan) because it arrived from the south',
@@ -298,1217 +298,151 @@ addQ({
 });
 
 // ----------------------------------------------------
-// 2. ROAD SIGNS (VECTOR SVG GRAPHICS)
+// 2. ROAD SIGNS (VECTOR SVG GRAPHICS) - ALL 34 SIGNS
 // ----------------------------------------------------
-addQ({
-  id: 'SIGN-001',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Regulatory Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this octagonal red road sign indicate to a driver?',
-  answers: [
-    'Come to a complete stop before the stop line or crosswalk and proceed only when safe',
-    'Slow down and yield to oncoming traffic without stopping completely',
-    'Stop only if other vehicles or pedestrians are present',
-    'Reduce speed to 30 km/h'
-  ],
-  correctAnswer: 'Come to a complete stop before the stop line or crosswalk and proceed only when safe',
-  explanation: 'An eight-sided octagonal red sign always means STOP. You must come to a complete halt before the stop line, crosswalk, or intersection, and yield to all pedestrians and vehicles before proceeding.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/stop.svg',
-  tags: ['signs', 'stop', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-002',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Yield Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this triangular red and white road sign require you to do?',
-  answers: [
-    'Slow down and yield right-of-way to all vehicles and pedestrians, stopping if necessary',
-    'Come to an absolute complete stop at all times',
-    'Maintain your current speed because you have the right-of-way',
-    'Speed up to merge before other vehicles'
-  ],
-  correctAnswer: 'Slow down and yield right-of-way to all vehicles and pedestrians, stopping if necessary',
-  explanation: 'An inverted triangle sign means YIELD. You must slow down and give the right-of-way to other traffic and pedestrians on the road you are entering or crossing, stopping if safety requires.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/yield.svg',
-  tags: ['signs', 'yield', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-003',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Maximum Speed Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this rectangular black-and-white sign indicate?',
-  answers: [
-    'The maximum legal speed under ideal driving conditions is 50 km/h',
-    'The minimum required speed on this road is 50 km/h',
-    'Recommended speed for turning only',
-    'Construction zone speed limit'
-  ],
-  correctAnswer: 'The maximum legal speed under ideal driving conditions is 50 km/h',
-  explanation: 'A black and white "MAXIMUM 50" sign indicates the maximum allowable speed under ideal driving conditions. In poor weather, rain, or snow, you must reduce your speed below this limit.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/max-50.svg',
-  tags: ['signs', 'speed-limit', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-004',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'School Zone Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this fluorescent yellow-green pentagon-shaped sign indicate?',
-  answers: [
-    'You are approaching a school area or school crosswalk; watch for children',
-    'Playground zone ahead with a 20 km/h limit',
-    'Pedestrian mall where cars are strictly prohibited',
-    'Daycare parking lot entrance'
-  ],
-  correctAnswer: 'You are approaching a school area or school crosswalk; watch for children',
-  explanation: 'A pentagon-shaped fluorescent yellow-green sign indicates a school area or school crosswalk. Drivers must use extra caution, watch for children crossing, and obey posted school zone speeds.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/school-zone.svg',
-  tags: ['signs', 'school-zone', 'warning']
-});
-
-addQ({
-  id: 'SIGN-005',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Playground Zones',
-  sourceSection: 'Traffic Signs',
-  question: 'When encountering this playground zone sign with a 30 km/h tab, during what statutory hours is the 30 km/h speed limit strictly enforced in Alberta?',
-  answers: [
-    'Every day from 8:30 AM until one hour after sunset (unless municipal bylaws standardize hours to 7:30 AM - 9:00 PM)',
-    'Only on school days from 8:00 AM to 4:30 PM',
-    '24 hours a day, 7 days a week',
-    'Only when children are visibly playing outside'
-  ],
-  correctAnswer: 'Every day from 8:30 AM until one hour after sunset (unless municipal bylaws standardize hours to 7:30 AM - 9:00 PM)',
-  explanation: 'Under provincial regulations, playground zones are in effect every day from 8:30 AM until one hour after sunset. Municipalities like Calgary and Edmonton enforce harmonized playground hours from 7:30 AM to 9:00 PM.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/playground-zone.svg',
-  tags: ['signs', 'playground-zone', 'speed-limit']
-});
-
-addQ({
-  id: 'SIGN-006',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Traffic Signals Ahead',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond warning sign with a vertical traffic signal indicate?',
-  answers: [
-    'Traffic control signals ahead; be prepared to slow down or stop',
-    'Emergency fire station driveway',
-    'Red light camera enforcement zone',
-    'Turn on your headlights ahead'
-  ],
-  correctAnswer: 'Traffic control signals ahead; be prepared to slow down or stop',
-  explanation: 'This diamond warning sign alerts drivers that there are traffic light signals ahead. Prepare to slow down if the signal is yellow or red.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/traffic-signal-ahead.svg',
-  tags: ['signs', 'warning', 'signals']
-});
-
-addQ({
-  id: 'SIGN-007',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Merging Traffic Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond sign with a straight arrow and an angled converging arrow mean?',
-  answers: [
-    'Merging traffic ahead; vehicles from another road are joining your travel lane',
-    'Divided highway ends ahead',
-    'Sharp right turn on the highway',
-    'Exit lane begins on the right'
-  ],
-  correctAnswer: 'Merging traffic ahead; vehicles from another road are joining your travel lane',
-  explanation: 'This warning sign warns that traffic from an on-ramp or side road is merging with your roadway. Drivers on both the highway and the ramp should adjust speed to merge safely and smoothly.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/merging-traffic.svg',
-  tags: ['signs', 'merging', 'warning']
-});
-
-addQ({
-  id: 'SIGN-008',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Lane Ending Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond warning sign indicating a tapering right lane mean?',
-  answers: [
-    'The right lane ends ahead; drivers in the right lane must merge safely to the left',
-    'Narrow bridge ahead',
-    'Winding road begins on the right',
-    'Passing lane begins ahead'
-  ],
-  correctAnswer: 'The right lane ends ahead; drivers in the right lane must merge safely to the left',
-  explanation: 'This sign warns that the right lane is coming to an end. Drivers in the right lane must check blind spots, signal, and merge smoothly into the adjacent lane.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/lane-ending.svg',
-  tags: ['signs', 'lane-ending', 'warning']
-});
-
-addQ({
-  id: 'SIGN-009',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Divided Highway Begins',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond sign with a median barrier divider at the top indicate?',
-  answers: [
-    'Divided highway begins ahead; keep to the right of the median barrier',
-    'Divided highway ends ahead; prepare for two-way oncoming traffic',
-    'Two-way bridge ahead',
-    'Obstacle in the middle of a one-way street'
-  ],
-  correctAnswer: 'Divided highway begins ahead; keep to the right of the median barrier',
-  explanation: 'This sign indicates that the roadway ahead will be divided into two separate roadways separated by a physical median. Drivers must keep to the right of the barrier.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/divided-highway-begins.svg',
-  tags: ['signs', 'divided-highway', 'warning']
-});
-
-addQ({
-  id: 'SIGN-010',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Divided Highway Ends',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond sign with a median divider at the bottom indicate?',
-  answers: [
-    'Divided highway ends ahead; you are entering a two-way undivided roadway with oncoming traffic',
-    'Divided highway begins ahead',
-    'Dead end road ahead',
-    'Detour around a construction barrier'
-  ],
-  correctAnswer: 'Divided highway ends ahead; you are entering a two-way undivided roadway with oncoming traffic',
-  explanation: 'This sign warns that the physical median is ending and the roadway becomes a two-way undivided highway. Watch for oncoming traffic on your left.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/divided-highway-ends.svg',
-  tags: ['signs', 'divided-highway', 'warning']
-});
-
-addQ({
-  id: 'SIGN-011',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Slippery Road Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this yellow diamond sign showing a skidding vehicle indicate?',
-  answers: [
-    'The road surface ahead is slippery when wet, cold, or icy; reduce speed and avoid sudden steering or braking',
-    'Stunt driving testing area ahead',
-    'Rough unpaved gravel road ahead',
-    'Vehicle rollover testing grounds'
-  ],
-  correctAnswer: 'The road surface ahead is slippery when wet, cold, or icy; reduce speed and avoid sudden steering or braking',
-  explanation: 'This sign warns that the pavement becomes slippery when wet or icy. Slow down, increase following distance, and avoid abrupt steering, acceleration, or hard braking.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/slippery-when-wet.svg',
-  tags: ['signs', 'slippery', 'warning']
-});
-
-addQ({
-  id: 'SIGN-012',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Turn Prohibition Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this regulatory sign with a left arrow inside a red circle with a slash mean?',
-  answers: [
-    'Left turns are strictly prohibited at this intersection',
-    'Left turn permitted only on green arrow',
-    'U-turns prohibited but left turns permitted',
-    'Sharp left curve ahead'
-  ],
-  correctAnswer: 'Left turns are strictly prohibited at this intersection',
-  explanation: 'A red circle with a diagonal slash is a universal prohibitory symbol. This sign means drivers must not make a left turn at this location.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/no-left-turn.svg',
-  tags: ['signs', 'prohibitory', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-013',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'U-Turn Prohibition',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this regulatory sign with a curved U-arrow inside a red circle with a slash indicate?',
-  answers: [
-    'U-turns are prohibited at this location',
-    'No left turns allowed',
-    'No passing on curves',
-    'Dead end ahead with no turnaround space'
-  ],
-  correctAnswer: 'U-turns are prohibited at this location',
-  explanation: 'This sign strictly prohibits turning your vehicle 180 degrees to travel in the opposite direction (U-turn).',
-  visualType: 'sign',
-  signAsset: '/assets/signs/no-u-turn.svg',
-  tags: ['signs', 'u-turn', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-014',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Do Not Enter Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this square white sign with a solid red circle and white horizontal bar mean?',
-  answers: [
-    'Do not enter; vehicles must not proceed past this sign into the oncoming lane or one-way street',
-    'Stop sign for heavy trucks only',
-    'Hospital quiet zone',
-    'Railway crossing without signal lights'
-  ],
-  correctAnswer: 'Do not enter; vehicles must not proceed past this sign into the oncoming lane or one-way street',
-  explanation: 'The "Do Not Enter" sign is placed at exits, ramps, and one-way streets where driving forward would place you in direct conflict with oncoming traffic.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/do-not-enter.svg',
-  tags: ['signs', 'do-not-enter', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-015',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'One-Way Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does this black-and-white sign with a prominent horizontal arrow and the words "ONE WAY" indicate?',
-  answers: [
-    'Traffic on this street moves in one direction only, as indicated by the arrow',
-    'Mandatory right turn for all vehicles',
-    'Detour route for commercial trucks',
-    'Passing permitted on the right side only'
-  ],
-  correctAnswer: 'Traffic on this street moves in one direction only, as indicated by the arrow',
-  explanation: 'A ONE WAY sign indicates that all vehicular traffic on that road or street must travel in the direction of the arrow.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/one-way-right.svg',
-  tags: ['signs', 'one-way', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-016',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'No Parking Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does a sign displaying the letter "P" inside a red circle with a red diagonal slash mean?',
-  answers: [
-    'No parking is permitted in this designated zone',
-    'Paid parking area with automated meters',
-    'Police vehicles only parking',
-    'Parking allowed for up to 15 minutes'
-  ],
-  correctAnswer: 'No parking is permitted in this designated zone',
-  explanation: 'The letter P inside a red circle with a slash is the standard regulatory sign prohibiting parking in that area.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/no-parking.svg',
-  tags: ['signs', 'parking', 'regulatory']
-});
-
-addQ({
-  id: 'SIGN-017',
-  category: 'Road Signs',
-  difficulty: 'easy',
-  sourceTopic: 'Construction Zone Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What do diamond-shaped orange road signs indicate in Alberta?',
-  answers: [
-    'Temporary condition or construction work zone ahead; use caution and obey reduced speed limits',
-    'Permanent scenic viewpoint ahead',
-    'School zone on weekends',
-    'Agricultural farm crossing'
-  ],
-  correctAnswer: 'Temporary condition or construction work zone ahead; use caution and obey reduced speed limits',
-  explanation: 'Orange diamond signs indicate temporary conditions, road construction, maintenance, or detour zones. Speed fines are doubled in Alberta when workers are present.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/construction-roadwork.svg',
-  tags: ['signs', 'construction', 'orange-warning']
-});
-
-addQ({
-  id: 'SIGN-018',
-  category: 'Road Signs',
-  difficulty: 'medium',
-  sourceTopic: 'Slow Moving Vehicle Signs',
-  sourceSection: 'Traffic Signs',
-  question: 'What does a triangular fluorescent orange sign with a dark red reflective border mounted on the rear of a vehicle signify?',
-  answers: [
-    'The vehicle travels at a speed of 40 km/h or less (slow-moving vehicle)',
-    'The vehicle carries hazardous chemicals',
-    'The vehicle is currently broken down and abandoned',
-    'Emergency roadside assistance vehicle'
-  ],
-  correctAnswer: 'The vehicle travels at a speed of 40 km/h or less (slow-moving vehicle)',
-  explanation: 'The slow-moving vehicle emblem (an orange fluorescent triangle with a red border) is displayed on farm tractors, construction equipment, and other machinery designed to travel at 40 km/h or slower.',
-  visualType: 'sign',
-  signAsset: '/assets/signs/slow-moving-vehicle.svg',
-  tags: ['signs', 'slow-moving-vehicle', 'special']
-});
-
-// Now let's generate the rest of the 260+ questions covering all 50 categories!
-// We'll write out full question objects programmatically and structurally.
-
-// Let's create questions for every single knowledge category:
-// Class 7 GDL Rules, Speed Limits, Intersections, Turning, Demerits, Distracted Driving,
-// Winter Driving, Emergencies, Alcohol/Drugs, Seatbelts, Parking, Railway, Following Distance, etc.
-
-const rawQuestions = [
-  // Class 7 GDL Rules
-  {
-    id: 'GDL-001',
-    category: 'Licence Restrictions',
-    difficulty: 'easy',
-    topic: 'Class 7 Minimum Age',
-    q: 'What is the minimum age required to apply for an Alberta Class 7 Learner’s Licence?',
-    a: ['14 years of age', '16 years of age', '15 years of age', '18 years of age'],
-    c: '14 years of age',
-    e: 'In Alberta, you must be at least 14 years of age to apply for a Class 7 learner’s licence (with parental/guardian consent if under 18).'
-  },
-  {
-    id: 'GDL-002',
-    category: 'Licence Restrictions',
-    difficulty: 'easy',
-    topic: 'Class 7 Accompanying Driver',
-    q: 'When driving with an Alberta Class 7 Learner’s Licence, who must be seated in the front passenger seat next to you?',
-    a: [
-      'A fully licensed non-probationary Class 5 driver who is at least 18 years of age',
-      'Any licensed driver of any age',
-      'A parent or guardian regardless of whether they hold a driver’s licence',
-      'Another Class 7 learner driver who has passed the test'
-    ],
-    c: 'A fully licensed non-probationary Class 5 driver who is at least 18 years of age',
-    e: 'A Class 7 learner must always be accompanied by a fully licensed driver who is at least 18 years old and holds a non-probationary Class 5 driver’s licence, seated in the front passenger seat.'
-  },
-  {
-    id: 'GDL-003',
-    category: 'Licence Restrictions',
-    difficulty: 'easy',
-    topic: 'Class 7 Night Driving Curfew',
-    q: 'During which hours are Alberta Class 7 learner drivers strictly prohibited from driving?',
-    a: [
-      'Between midnight (12:00 AM) and 5:00 AM',
-      'Between 10:00 PM and 6:00 AM',
-      'Between 11:00 PM and 7:00 AM',
-      'Between 9:00 PM and sunrise'
-    ],
-    c: 'Between midnight (12:00 AM) and 5:00 AM',
-    e: 'Class 7 learner licence holders cannot drive between 12:00 midnight and 5:00 AM under any circumstances.'
-  },
-  {
-    id: 'GDL-004',
-    category: 'Licence Restrictions',
-    difficulty: 'easy',
-    topic: 'Class 7 Blood Alcohol Tolerance',
-    q: 'What is the legal blood alcohol concentration (BAC) limit for a Class 7 learner driver in Alberta?',
-    a: [
-      'Zero percent (0.00% BAC) — zero tolerance',
-      '0.05% BAC',
-      '0.08% BAC',
-      '0.02% BAC'
-    ],
-    c: 'Zero percent (0.00% BAC) — zero tolerance',
-    e: 'Alberta has a zero-tolerance law for all GDL (Graduated Driver Licensing) drivers. Your blood alcohol concentration must be 0.00% with no illegal drugs in your system.'
-  },
-  {
-    id: 'GDL-005',
-    category: 'Licence Restrictions',
-    difficulty: 'medium',
-    topic: 'Class 7 Demerit Point Suspension',
-    q: 'How many demerit points will result in a licence suspension for an Alberta Class 7 GDL learner driver?',
-    a: ['8 demerit points', '15 demerit points', '12 demerit points', '4 demerit points'],
-    c: '8 demerit points',
-    e: 'A GDL driver (Class 7 learner or Class 5-GDL probationary) will be suspended upon accumulating 8 or more demerit points within a 2-year period (compared to 15 points for fully licensed non-GDL drivers).'
-  },
-  {
-    id: 'GDL-006',
-    category: 'Licence Restrictions',
-    difficulty: 'easy',
-    topic: 'Passenger Limits',
-    q: 'How many passengers are permitted in a vehicle operated by a Class 7 learner driver?',
-    a: [
-      'Only as many passengers as there are functional, working seat belts in the vehicle',
-      'Maximum 2 passengers regardless of seat belts',
-      'Only the supervising passenger is allowed',
-      'Unlimited passengers in the rear seat'
-    ],
-    c: 'Only as many passengers as there are functional, working seat belts in the vehicle',
-    e: 'Under Alberta GDL rules, you cannot have more passengers in the vehicle than there are functional seat belts.'
-  },
-  {
-    id: 'GDL-007',
-    category: 'Licence Restrictions',
-    difficulty: 'medium',
-    topic: 'Class 7 GDL Duration',
-    q: 'How long must you hold an Alberta Class 7 Learner’s Licence before you are eligible to take the road test for a Class 5 licence?',
-    a: ['At least 1 full year (12 continuous months)', '6 months', '2 years', '90 days'],
-    c: 'At least 1 full year (12 continuous months)',
-    e: 'A driver must hold a Class 7 learner’s licence for at least 12 continuous months and reach age 16 before taking the Class 5 basic road test.'
-  },
-  {
-    id: 'GDL-008',
-    category: 'Licence Restrictions',
-    difficulty: 'medium',
-    topic: 'Class 7 Commercial Vehicle Restriction',
-    q: 'Are Class 7 learner drivers permitted to drive commercial vehicles (Class 1, 2, 3, or 4) or operate a motorcycle without a supervisor?',
-    a: [
-      'No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding',
-      'Yes, as long as a Class 5 driver is accompanying them',
-      'Yes, for vehicles under 4,500 kg only',
-      'Yes, on rural roads during daylight'
-    ],
-    c: 'No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding',
-    e: 'Class 7 licence holders cannot operate commercial vehicles or drive a motorcycle without a fully licensed Class 6 supervising rider following in another vehicle or riding alongside.'
-  },
-
-  // Speed Limits
-  {
-    id: 'SPD-001',
-    category: 'Speed Limits',
-    difficulty: 'easy',
-    topic: 'Urban Speed Limit Default',
-    q: 'Unless otherwise posted, what is the default maximum legal speed limit on urban city streets in Alberta?',
-    a: ['50 km/h', '60 km/h', '40 km/h', '70 km/h'],
-    c: '50 km/h',
-    e: 'The provincial maximum speed limit on roadways within an urban area (city, town, village) is 50 km/h unless posted signs indicate otherwise.'
-  },
-  {
-    id: 'SPD-002',
-    category: 'Speed Limits',
-    difficulty: 'easy',
-    topic: 'Rural Primary Highway Default',
-    q: 'Unless otherwise posted, what is the default maximum speed limit on a primary provincial highway outside urban areas in Alberta?',
-    a: ['100 km/h', '110 km/h', '90 km/h', '80 km/h'],
-    c: '100 km/h',
-    e: 'The provincial maximum speed limit on primary paved highways outside urban areas is 100 km/h unless otherwise posted.'
-  },
-  {
-    id: 'SPD-003',
-    category: 'Speed Limits',
-    difficulty: 'easy',
-    topic: 'Rural Secondary and Unpaved Roads',
-    q: 'Unless otherwise posted, what is the maximum speed limit on unpaved gravel or secondary rural roads in Alberta?',
-    a: ['80 km/h', '100 km/h', '60 km/h', '70 km/h'],
-    c: '80 km/h',
-    e: 'The maximum speed limit on unpaved gravel roads or secondary rural highways in Alberta is 80 km/h unless otherwise posted.'
-  },
-  {
-    id: 'SPD-004',
-    category: 'Speed Limits',
-    difficulty: 'medium',
-    topic: 'School Zone Statutory Speed',
-    q: 'What is the maximum legal speed limit when driving through an active school zone in Alberta?',
-    a: ['30 km/h', '20 km/h', '40 km/h', '50 km/h'],
-    c: '30 km/h',
-    e: 'The maximum legal speed in a school zone is 30 km/h during school hours (8:00–9:30 AM, 11:30 AM–1:30 PM, and 3:00–4:30 PM on school days) or municipal harmonized hours.'
-  },
-  {
-    id: 'SPD-005',
-    category: 'Speed Limits',
-    difficulty: 'medium',
-    topic: 'Passing in School Zones',
-    q: 'Is it legal to pass another moving vehicle traveling in the same direction within an active school zone or playground zone?',
-    a: [
-      'No, passing another moving vehicle in a school or playground zone during active hours is illegal',
-      'Yes, as long as you do not exceed 30 km/h',
-      'Yes, if the vehicle ahead is traveling slower than 20 km/h',
-      'Yes, if there are two lanes traveling in the same direction'
-    ],
-    c: 'No, passing another moving vehicle in a school or playground zone during active hours is illegal',
-    e: 'You are never permitted to pass or attempt to pass any moving vehicle traveling in the same direction inside a school zone or playground zone during restricted hours.'
-  },
-  {
-    id: 'SPD-006',
-    category: 'Speed Limits',
-    difficulty: 'medium',
-    topic: 'Construction Zone Fines',
-    q: 'What happens to speeding fines in designated construction zones in Alberta when construction workers are present?',
-    a: [
-      'Speeding fines are doubled',
-      'Speeding fines are tripled',
-      'Your driver’s licence is immediately suspended for 30 days',
-      'The fine is unchanged but demerit points double'
-    ],
-    c: 'Speeding fines are doubled',
-    e: 'Under Alberta traffic legislation, speeding fines are automatically doubled when passing through designated construction or maintenance zones when workers are present.'
-  },
-
-  // Intersections & Right-of-Way
-  {
-    id: 'INT-001',
-    category: 'Right-of-Way',
-    difficulty: 'easy',
-    topic: 'T-Intersections',
-    q: 'When arriving at a T-intersection where your road terminates, who must you yield to?',
-    a: [
-      'All traffic on the through street and any pedestrians crossing',
-      'Only vehicles approaching from your left',
-      'Traffic turning left only',
-      'You have right-of-way if you arrived first'
-    ],
-    c: 'All traffic on the through street and any pedestrians crossing',
-    e: 'At a T-intersection without traffic signs or signals, the driver on the terminating road must yield the right-of-way to all cross traffic on the through street.'
-  },
-  {
-    id: 'INT-002',
-    category: 'Right-of-Way',
-    difficulty: 'easy',
-    topic: 'Entering from Private Driveway or Alley',
-    q: 'When driving out of a private driveway, parking lot, or alley onto a public roadway, what must you do?',
-    a: [
-      'Stop completely before the sidewalk or roadway edge and yield to all pedestrians, cyclists, and vehicular traffic',
-      'Honk your horn and drive forward slowly without stopping',
-      'You have the right-of-way over vehicles on the roadway',
-      'Yield only to vehicles traveling in the lane closest to you'
-    ],
-    c: 'Stop completely before the sidewalk or roadway edge and yield to all pedestrians, cyclists, and vehicular traffic',
-    e: 'When entering a public road from an alley, parking lot, or private driveway, you must stop completely before crossing the sidewalk and yield to all approaching pedestrians and vehicular traffic.'
-  },
-  {
-    id: 'INT-003',
-    category: 'Intersections',
-    difficulty: 'medium',
-    topic: 'Traffic Light Malfunction',
-    q: 'If the traffic control lights at a multi-lane intersection are completely out of order (dark) due to a power outage, how must drivers treat the intersection?',
-    a: [
-      'Treat the intersection as an all-way (four-way) stop',
-      'Traffic on the wider, busier road has continuous right-of-way',
-      'First car to honk proceeds first',
-      'Proceed through without stopping at 50 km/h'
-    ],
-    c: 'Treat the intersection as an all-way (four-way) stop',
-    e: 'When traffic lights are non-functional or blacked out, drivers must treat the intersection exactly like an all-way four-way stop.'
-  },
-  {
-    id: 'INT-004',
-    category: 'Traffic Lights',
-    difficulty: 'easy',
-    topic: 'Flashing Amber Light',
-    q: 'What does a flashing amber (yellow) traffic signal light at an intersection require you to do?',
-    a: [
-      'Slow down, proceed with caution, and yield right-of-way to pedestrians and approaching traffic',
-      'Come to a complete stop and wait for a green light',
-      'Accelerate before the light turns red',
-      'Stop and treat the intersection as a four-way stop'
-    ],
-    c: 'Slow down, proceed with caution, and yield right-of-way to pedestrians and approaching traffic',
-    e: 'A flashing amber traffic light means CAUTION. You may proceed straight through or turn only after slowing down and yielding to pedestrians and other traffic.'
-  },
-  {
-    id: 'INT-005',
-    category: 'Traffic Lights',
-    difficulty: 'easy',
-    topic: 'Flashing Red Light',
-    q: 'What does a flashing red traffic signal light mean?',
-    a: [
-      'Come to a complete stop, yield right-of-way to cross traffic and pedestrians, and proceed only when safe (treat as a STOP sign)',
-      'The road is closed ahead; turn around immediately',
-      'Slow down to 20 km/h without stopping',
-      'Yield to oncoming traffic only'
-    ],
-    c: 'Come to a complete stop, yield right-of-way to cross traffic and pedestrians, and proceed only when safe (treat as a STOP sign)',
-    e: 'A flashing red light means the exact same thing as a STOP sign. You must come to a full and complete stop and proceed only when safe.'
-  },
-  {
-    id: 'INT-006',
-    category: 'Traffic Lights',
-    difficulty: 'medium',
-    topic: 'Right Turn on Red',
-    q: 'Unless a sign specifically prohibits it, are you permitted to make a right turn on a red traffic light in Alberta?',
-    a: [
-      'Yes, but only after coming to a complete stop and yielding to all pedestrians and oncoming cross traffic',
-      'No, right turns on red are strictly illegal in Alberta',
-      'Yes, without stopping if there is no traffic',
-      'Yes, but only between sunrise and sunset'
-    ],
-    c: 'Yes, but only after coming to a complete stop and yielding to all pedestrians and oncoming cross traffic',
-    e: 'In Alberta, you may turn right on a solid red light unless a sign states "No Turn on Red", but you MUST come to a full complete stop before the stop line first and yield to all pedestrians and traffic.'
-  },
-  {
-    id: 'INT-007',
-    category: 'Traffic Lights',
-    difficulty: 'hard',
-    topic: 'Left Turn on Red from One-Way to One-Way',
-    q: 'Can a driver turn left on a red traffic light in Alberta?',
-    a: [
-      'Yes, but ONLY when turning from a one-way street onto another one-way street, after coming to a complete stop and yielding to traffic and pedestrians',
-      'No, left turns on red are never permitted under any circumstances',
-      'Yes, at any intersection during nighttime',
-      'Yes, whenever there are no oncoming vehicles'
-    ],
-    c: 'Yes, but ONLY when turning from a one-way street onto another one-way street, after coming to a complete stop and yielding to traffic and pedestrians',
-    e: 'In Alberta, a left turn on red is legal ONLY when turning from a one-way street onto another one-way street, after a complete stop and yielding to all traffic and pedestrians.'
-  },
-  {
-    id: 'INT-008',
-    category: 'Traffic Lights',
-    difficulty: 'medium',
-    topic: 'Flashing Green Arrow',
-    q: 'What does a flashing green left-turn arrow or protected green arrow indicate?',
-    a: [
-      'You have an advance protected left turn; opposing through traffic is stopped by a red light',
-      'You must yield to oncoming through traffic before turning left',
-      'Pedestrians have right-of-way across your turn path',
-      'The traffic light is broken'
-    ],
-    c: 'You have an advance protected left turn; opposing through traffic is stopped by a red light',
-    e: 'A green arrow gives you a protected turn. Oncoming traffic is facing a red light, so you may turn safely in the direction of the arrow.'
-  },
-
-  // Turning & Signaling
-  {
-    id: 'TRN-001',
-    category: 'Turning',
-    difficulty: 'easy',
-    topic: 'Signaling Distance in Urban Areas',
-    q: 'What is the recommended minimum distance before an intersection to signal your intention to turn when driving in an urban city area?',
-    a: ['At least 30 metres before the turn', 'At least 5 metres before the turn', 'At least 100 metres before the turn', 'Only when you reach the crosswalk'],
-    c: 'At least 30 metres before the turn',
-    e: 'In urban areas, you should signal your intention to turn at least 30 metres before reaching the intersection. On highways, signal at least 100 metres in advance.'
-  },
-  {
-    id: 'TRN-002',
-    category: 'Turning',
-    difficulty: 'medium',
-    topic: 'Dual Left-Turn Lanes',
-    q: 'When turning left from a multi-lane road with two designated left-turn lanes, which lane should you finish your turn in?',
-    a: [
-      'Stay in the corresponding lane throughout the entire turn (inside lane to inside lane, outside lane to outside lane)',
-      'Always enter the curb lane regardless of which lane you started in',
-      'Switch lanes in the middle of the intersection to avoid other cars',
-      'Any lane as long as you signal'
-    ],
-    c: 'Stay in the corresponding lane throughout the entire turn (inside lane to inside lane, outside lane to outside lane)',
-    e: 'When turning left in dual turn lanes, you must remain in your corresponding lane throughout the entire turn and finish in the matching lane.'
-  },
-  {
-    id: 'TRN-003',
-    category: 'Turning',
-    difficulty: 'easy',
-    topic: 'Right Turn Lane Positioning',
-    q: 'When preparing to make a standard right turn, where should your vehicle be positioned on the roadway?',
-    a: [
-      'Close to the right curb or edge of the road (within 1 metre)',
-      'In the centre lane to make a wide swinging turn',
-      'Across the centre line',
-      'On the sidewalk'
-    ],
-    c: 'Close to the right curb or edge of the road (within 1 metre)',
-    e: 'When making a right turn, keep your vehicle close to the right curb or road edge and turn into the first available right-hand travel lane.'
-  },
-  {
-    id: 'TRN-004',
-    category: 'Turning',
-    difficulty: 'hard',
-    topic: 'U-Turns Prohibited Locations',
-    q: 'In Alberta, at which of the following locations are U-turns strictly ILLEGAL?',
-    a: [
-      'At an intersection controlled by traffic lights (unless explicitly permitted by a sign), on curves, near crests of hills, and in alleys',
-      'On any wide residential street with no traffic',
-      'At any stop sign on a flat road',
-      'In empty suburban cul-de-sacs'
-    ],
-    c: 'At an intersection controlled by traffic lights (unless explicitly permitted by a sign), on curves, near crests of hills, and in alleys',
-    e: 'In Alberta, U-turns are prohibited at traffic lights, where a "No U-Turn" sign is posted, on curves or near the crest of a hill where you cannot see 150m in both directions, in urban areas between intersections, and in alleys.'
-  },
-
-  // Parking Regulations
-  {
-    id: 'PRK-001',
-    category: 'Parking',
-    difficulty: 'easy',
-    topic: 'Distance from Fire Hydrant',
-    q: 'How far must you park from a fire hydrant in Alberta?',
-    a: ['At least 5 metres', 'At least 1.5 metres', 'At least 3 metres', 'At least 10 metres'],
-    c: 'At least 5 metres',
-    e: 'You cannot park within 5 metres of a fire hydrant or an intersection.'
-  },
-  {
-    id: 'PRK-002',
-    category: 'Parking',
-    difficulty: 'easy',
-    topic: 'Distance from Stop Sign or Crosswalk',
-    q: 'How far must you park from a stop sign, yield sign, or marked crosswalk at an intersection?',
-    a: ['At least 5 metres', 'At least 2 metres', 'At least 1.5 metres', 'At least 8 metres'],
-    c: 'At least 5 metres',
-    e: 'You must park at least 5 metres away from the nearest side of a stop sign, yield sign, or marked crosswalk.'
-  },
-  {
-    id: 'PRK-003',
-    category: 'Parking',
-    difficulty: 'easy',
-    topic: 'Distance from Driveway or Alley',
-    q: 'What is the minimum distance you must leave when parking near a private driveway or public alley entrance?',
-    a: ['At least 1.5 metres', 'At least 5 metres', 'At least 3 metres', 'At least 0.5 metres'],
-    c: 'At least 1.5 metres',
-    e: 'You must not park within 1.5 metres of an access entrance to a garage, private driveway, or public alley.'
-  },
-  {
-    id: 'PRK-004',
-    category: 'Parking',
-    difficulty: 'easy',
-    topic: 'Parallel Parking Curb Distance',
-    q: 'When parallel parked alongside a curb on a two-way street, what is the maximum legal distance your tires can be from the curb?',
-    a: ['500 mm (50 cm)', '1000 mm (1 metre)', '200 mm (20 cm)', '750 mm (75 cm)'],
-    c: '500 mm (50 cm)',
-    e: 'When parallel parked, your vehicle’s curbside wheels must be within 500 mm (50 cm) of the curb.'
-  },
-  {
-    id: 'PRK-005',
-    category: 'Hill Parking',
-    difficulty: 'medium',
-    topic: 'Downhill Parking with Curb',
-    q: 'When parking a vehicle facing DOWNHILL on a street with a curb, which way should you turn the front wheels?',
-    a: [
-      'Turn front wheels to the RIGHT (toward the curb)',
-      'Turn front wheels to the LEFT (away from the curb)',
-      'Keep front wheels straight',
-      'Turn front wheels halfway to the left'
-    ],
-    c: 'Turn front wheels to the RIGHT (toward the curb)',
-    e: 'When parking downhill with a curb, turn wheels to the RIGHT (toward the curb) so that if the car rolls forward, the tires roll directly into the curb and stop.'
-  },
-  {
-    id: 'PRK-006',
-    category: 'Hill Parking',
-    difficulty: 'medium',
-    topic: 'Uphill Parking WITHOUT Curb',
-    q: 'When parking facing UPHILL on a road WITHOUT a curb (soft shoulder), how should you orient your front wheels?',
-    a: [
-      'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)',
-      'Turn front wheels to the left (toward the road centre)',
-      'Keep front wheels straight',
-      'Leave wheels turned left and do not apply parking brake'
-    ],
-    c: 'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)',
-    e: 'When parking uphill without a curb, turn wheels to the RIGHT. If the vehicle rolls backwards, it will roll off the road into the ditch rather than across live traffic lanes.'
-  },
-  {
-    id: 'PRK-007',
-    category: 'Hill Parking',
-    difficulty: 'medium',
-    topic: 'Downhill Parking WITHOUT Curb',
-    q: 'When parking facing DOWNHILL on a road WITHOUT a curb, how should you orient your front wheels?',
-    a: [
-      'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)',
-      'Turn front wheels to the left',
-      'Keep front wheels straight',
-      'It does not matter if the parking brake is set'
-    ],
-    c: 'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)',
-    e: 'When parking downhill without a curb, turn wheels to the RIGHT so the vehicle rolls off the roadway if brakes fail.'
-  },
-
-  // Following Distance & Defensive Driving
-  {
-    id: 'DEF-001',
-    category: 'Defensive Driving',
-    difficulty: 'easy',
-    topic: 'Two-Second Rule',
-    q: 'Under normal dry road and weather conditions, what is the recommended minimum following distance behind the vehicle ahead?',
-    a: ['At least 2 seconds', 'At least 1 second', 'At least 5 seconds', 'Exactly 1 car length for every 50 km/h'],
-    c: 'At least 2 seconds',
-    e: 'The 2-second rule is the minimum safe following distance under ideal conditions. When the vehicle ahead passes a fixed object, it must take at least 2 full seconds before you reach that same point.'
-  },
-  {
-    id: 'DEF-002',
-    category: 'Defensive Driving',
-    difficulty: 'medium',
-    topic: 'Following Distance in Poor Weather',
-    q: 'In adverse weather conditions such as rain, snow, ice, or fog, how should you adjust your following distance?',
-    a: [
-      'Increase following distance to at least 4 seconds or more',
-      'Maintain the standard 2-second distance',
-      'Reduce following distance to 1 second to see taillights better',
-      'Follow directly behind large trucks'
-    ],
-    c: 'Increase following distance to at least 4 seconds or more',
-    e: 'In poor weather, winter driving, gravel roads, or when following heavy commercial vehicles or motorcycles, increase your following distance to at least 4 seconds or more.'
-  },
-  {
-    id: 'DEF-003',
-    category: 'Defensive Driving',
-    difficulty: 'medium',
-    topic: 'Visual Lead Time',
-    q: 'When driving on highways or city streets, how far ahead should a proactive defensive driver scan the road ahead?',
-    a: [
-      'At least 12 to 15 seconds ahead (about 1 to 2 city blocks, or half a kilometre on the highway)',
-      '3 to 5 seconds ahead',
-      'Only look at the rear bumper of the car immediately ahead',
-      '20 to 30 metres ahead'
-    ],
-    c: 'At least 12 to 15 seconds ahead (about 1 to 2 city blocks, or half a kilometre on the highway)',
-    e: 'Proactive drivers maintain a 12 to 15-second visual search pattern ahead of their vehicle to detect hazards and changing traffic flow early.'
-  },
-  {
-    id: 'DEF-004',
-    category: 'Defensive Driving',
-    difficulty: 'easy',
-    topic: 'Blind Spot Shoulder Checks',
-    q: 'Why are shoulder checks (glancing over your shoulder) essential before changing lanes or turning?',
-    a: [
-      'Rearview and side mirrors have blind spot areas where nearby vehicles, motorcycles, and cyclists cannot be seen',
-      'Shoulder checks are only necessary when reversing',
-      'Shoulder checks replace the need to use turn signals',
-      'They are required only during driving examinations'
-    ],
-    c: 'Rearview and side mirrors have blind spot areas where nearby vehicles, motorcycles, and cyclists cannot be seen',
-    e: 'Mirrors cannot display vehicles traveling directly in your vehicle’s blind spots. You must always perform a quick shoulder check before moving laterally or changing lanes.'
-  },
-  {
-    id: 'DEF-005',
-    category: 'Defensive Driving',
-    difficulty: 'easy',
-    topic: 'Stopping Behind Another Vehicle in Traffic',
-    q: 'When stopping behind another vehicle at a red light or stop sign, how much space should you leave between your vehicle and the one ahead?',
-    a: [
-      'Enough space to see the rear tires of the vehicle ahead contacting the pavement',
-      'Stop within 10 centimetres of their rear bumper',
-      'At least 3 car lengths',
-      'Close enough that no motorcycle can enter'
-    ],
-    c: 'Enough space to see the rear tires of the vehicle ahead contacting the pavement',
-    e: 'Leaving enough space to clearly see the rear tires of the vehicle ahead touching the pavement gives you room to steer around if that vehicle stalls, and prevents a chain reaction if you are rear-ended.'
-  },
-
-  // Winter Driving & Adverse Conditions
-  {
-    id: 'WIN-001',
-    category: 'Winter Driving',
-    difficulty: 'medium',
-    topic: 'Skid Recovery on Ice',
-    q: 'If your rear wheels lose traction and your vehicle begins to fishtail (skid) on an icy road, what is the correct corrective action?',
-    a: [
-      'Take your foot off the accelerator, do not brake hard, and steer smoothly in the direction you want the front of the vehicle to go',
-      'Slam on the brakes immediately and pull the handbrake',
-      'Accelerate rapidly to overpower the skid',
-      'Steer sharply in the opposite direction of the skid'
-    ],
-    c: 'Take your foot off the accelerator, do not brake hard, and steer smoothly in the direction you want the front of the vehicle to go',
-    e: 'In a rear-wheel skid (oversteer), ease off the accelerator, avoid abrupt braking, and steer gently in the direction you want the front of the vehicle to travel.'
-  },
-  {
-    id: 'WIN-002',
-    category: 'Winter Driving',
-    difficulty: 'medium',
-    topic: 'Hydroplaning',
-    q: 'What causes hydroplaning on wet highways, and how should a driver react?',
-    a: [
-      'Tires ride on a thin film of water losing contact with the road; ease off the gas and steer straight without hard braking',
-      'Brake pads become wet; pump the brakes rapidly with full force',
-      'The engine stalls from water splash; shift immediately to neutral and restart',
-      'Wind pulls the car; steer vigorously back and forth'
-    ],
-    c: 'Tires ride on a thin film of water losing contact with the road; ease off the gas and steer straight without hard braking',
-    e: 'Hydroplaning occurs when water builds up under tires, lifting them off the road. Ease off the accelerator smoothly, keep steering straight, and avoid slamming the brakes until tires regain grip.'
-  },
-  {
-    id: 'WIN-003',
-    category: 'Winter Driving',
-    difficulty: 'easy',
-    topic: 'Driving in Heavy Fog',
-    q: 'When driving in thick fog, heavy snowfall, or smoke at night, which vehicle headlights should you use?',
-    a: [
-      'Low-beam headlights (and fog lights if equipped)',
-      'High-beam headlights for maximum range',
-      'Parking lights only',
-      'Hazard warning lights only'
-    ],
-    c: 'Low-beam headlights (and fog lights if equipped)',
-    e: 'High beams reflect off fog, snowflakes, or smoke directly back into your eyes, causing blinding glare. Always use low-beam headlights in fog or heavy snow.'
-  },
-  {
-    id: 'WIN-004',
-    category: 'Winter Driving',
-    difficulty: 'easy',
-    topic: 'Headlight Statutory Hours',
-    q: 'Under Alberta law, when are drivers legally required to turn on their headlights?',
-    a: [
-      'From one hour after sunset until one hour before sunrise, and anytime visibility is reduced to less than 150 metres',
-      'Only when completely pitch dark after 10:00 PM',
-      'Only when driving on highways outside city limits',
-      'From 6:00 PM to 6:00 AM year-round'
-    ],
-    c: 'From one hour after sunset until one hour before sunrise, and anytime visibility is reduced to less than 150 metres',
-    e: 'Headlights must be turned on from one hour after sunset to one hour before sunrise, and whenever weather or atmospheric conditions reduce visibility to less than 150 metres.'
-  },
-  {
-    id: 'WIN-005',
-    category: 'Winter Driving',
-    difficulty: 'easy',
-    topic: 'Dimming High Beams When Approaching Traffic',
-    q: 'When driving at night with high-beam headlights, at what distance must you dim your lights when approaching oncoming traffic?',
-    a: ['At least 300 metres away', 'At least 50 metres away', 'At least 1000 metres away', 'Only when the oncoming driver flashes their lights'],
-    c: 'At least 300 metres away',
-    e: 'You must dim your high beams to low beams whenever you are within 300 metres of oncoming vehicles, and within 150 metres when following behind another vehicle.'
-  },
-
-  // Demerit Point System & Fines
-  {
-    id: 'DEM-001',
-    category: 'Demerit Points',
-    difficulty: 'medium',
-    topic: 'Distracted Driving Penalties',
-    q: 'What are the provincial penalties in Alberta for a convicted distracted driving offence (e.g. texting or using a handheld phone while driving)?',
-    a: [
-      'A $300 fine and 3 demerit points',
-      'A $150 fine and 1 demerit point',
-      'A $500 fine and 5 demerit points',
-      'A warning letter on the first offence'
-    ],
-    c: 'A $300 fine and 3 demerit points',
-    e: 'Under Alberta’s distracted driving legislation, the penalty is a $300 fine and 3 demerit points.'
-  },
-  {
-    id: 'DEM-002',
-    category: 'Demerit Points',
-    difficulty: 'medium',
-    topic: 'Failing to Stop for School Bus with Flashing Red Lights',
-    q: 'How many demerit points are assigned to a driver for failing to stop for a school bus with active flashing red lights?',
-    a: ['6 demerit points', '3 demerit points', '2 demerit points', '4 demerit points'],
-    c: '6 demerit points',
-    e: 'Failing to stop for a school bus with alternating flashing red lights is a severe safety violation carrying 6 demerit points.'
-  },
-  {
-    id: 'DEM-003',
-    category: 'Demerit Points',
-    difficulty: 'medium',
-    topic: 'Demerit Points for Speeding 51+ km/h Over Limit',
-    q: 'How many demerit points will a driver receive for exceeding the speed limit by more than 50 km/h?',
-    a: ['6 demerit points and a mandatory court appearance', '4 demerit points', '3 demerit points', '2 demerit points'],
-    c: '6 demerit points and a mandatory court appearance',
-    e: 'Speeding more than 50 km/h over the posted limit carries 6 demerit points and requires a mandatory court appearance with no set fine.'
-  },
-  {
-    id: 'DEM-004',
-    category: 'Demerit Points',
-    difficulty: 'hard',
-    topic: 'Demerit Point Retention Period',
-    q: 'How long do demerit points remain on an Alberta driver’s record before being cleared?',
-    a: [
-      '2 years from the date of the conviction',
-      '1 year from the date of payment',
-      '5 years from the offence date',
-      'Until you renew your driver’s licence'
-    ],
-    c: '2 years from the date of the conviction',
-    e: 'Demerit points remain on a driver’s abstract for exactly two years from the date of conviction for the offence.'
-  },
-  {
-    id: 'DEM-005',
-    category: 'Demerit Points',
-    difficulty: 'medium',
-    topic: 'GDL Reinstatement on Demerit Suspension',
-    q: 'If a Class 7 GDL learner’s licence is suspended for accumulating 8 or more demerit points, how long is the first suspension period?',
-    a: ['1 month (30 days)', '6 months', '1 year', '7 days'],
-    c: '1 month (30 days)',
-    e: 'A driver suspended for demerit points for the first time will receive a 1-month licence suspension. Points are reduced to 3 upon reinstatement.'
-  },
-
-  // Vehicle Emergencies & Procedures
-  {
-    id: 'EMG-001',
-    category: 'Vehicle Emergencies',
-    difficulty: 'medium',
-    topic: 'Tire Blowout Handling',
-    q: 'If a front tire suddenly blows out while traveling at 100 km/h on the highway, what should you do first?',
-    a: [
-      'Grip the steering wheel firmly, ease off the gas, and steer straight; apply brakes gently only after the vehicle has slowed',
-      'Slam on the brakes immediately to stop as fast as possible',
-      'Turn the steering wheel sharply toward the right shoulder',
-      'Shift into reverse or park immediately'
-    ],
-    c: 'Grip the steering wheel firmly, ease off the gas, and steer straight; apply brakes gently only after the vehicle has slowed',
-    e: 'A tire blowout causes strong pulling toward the blown tire. Grip the steering wheel firmly with both hands, ease off the accelerator smoothly, and steer straight. Apply brakes gently once speed is controlled.'
-  },
-  {
-    id: 'EMG-002',
-    category: 'Vehicle Emergencies',
-    difficulty: 'medium',
-    topic: 'Sticking Accelerator Pedal',
-    q: 'If your vehicle’s gas pedal sticks down and the engine continues to accelerate out of control, what is the best immediate response?',
-    a: [
-      'Shift the transmission into NEUTRAL (N), apply brakes firmly, and steer to the shoulder before turning off the engine',
-      'Turn off the ignition key immediately while traveling at high speed',
-      'Pull the emergency handbrake at full force',
-      'Pump the accelerator rapidly'
-    ],
-    c: 'Shift the transmission into NEUTRAL (N), apply brakes firmly, and steer to the shoulder before turning off the engine',
-    e: 'Shifting to neutral disconnects engine power from the wheels without locking the steering wheel. Apply steady brakes and guide the car safely to the shoulder before turning off the engine.'
-  },
-  {
-    id: 'EMG-003',
-    category: 'Vehicle Emergencies',
-    difficulty: 'medium',
-    topic: 'Total Brake Failure',
-    q: 'If your vehicle experiences sudden total hydraulic foot brake failure while driving, what steps should you take?',
-    a: [
-      'Pump the brake pedal rapidly; if that fails, downshift to a lower gear and apply the parking brake gradually while holding the release button',
-      'Turn off the engine immediately and remove the key',
-      'Jump out of the moving vehicle',
-      'Swerve back and forth vigorously across lanes'
-    ],
-    c: 'Pump the brake pedal rapidly; if that fails, downshift to a lower gear and apply the parking brake gradually while holding the release button',
-    e: 'Rapidly pumping the brake pedal may build residual hydraulic pressure. If not, downshift to engine-brake and gently apply the emergency parking brake while keeping the release button depressed.'
-  },
-  {
-    id: 'EMG-004',
-    category: 'Collision Procedures',
-    difficulty: 'easy',
-    topic: 'Collision Reporting Threshold',
-    q: 'When must a motor vehicle collision in Alberta be legally reported to police?',
-    a: [
-      'When there is any injury, fatality, or combined property damage exceeding $2,000 (or if it is a hit-and-run)',
-      'Only when total damage exceeds $10,000',
-      'Only if someone is hospitalized for more than 48 hours',
-      'Only if a government vehicle is involved'
-    ],
-    c: 'When there is any injury, fatality, or combined property damage exceeding $2,000 (or if it is a hit-and-run)',
-    e: 'Under Alberta law, you must report a collision to police immediately if anyone is injured or killed, if it is a hit-and-run, or if the estimated total combined property damage appears to exceed $2,000.'
-  },
-
-  // Pavement Markings
-  {
-    id: 'MRK-001',
-    category: 'Pavement Markings',
-    difficulty: 'easy',
-    topic: 'Solid Yellow Centre Line',
-    q: 'What does a solid yellow line on your side of the centre of a two-lane roadway indicate?',
-    a: [
-      'Passing is prohibited in your direction of travel',
-      'Passing is permitted with caution',
-      'One-way traffic only',
-      'Lane for bicycles only'
-    ],
-    c: 'Passing is prohibited in your direction of travel',
-    e: 'A solid yellow line on your side of the roadway indicates that sight distance is restricted and passing is prohibited.'
-  },
-  {
-    id: 'MRK-002',
-    category: 'Pavement Markings',
-    difficulty: 'easy',
-    topic: 'Broken Yellow Centre Line',
-    q: 'What does a single broken (dashed) yellow centre line indicate on a two-lane highway?',
-    a: [
-      'Passing is permitted from either direction when oncoming traffic is clear and safe',
-      'Passing is strictly prohibited at all times',
-      'The road is a divided one-way highway',
-      'Speed limit is 110 km/h'
-    ],
-    c: 'Passing is permitted from either direction when oncoming traffic is clear and safe',
-    e: 'A broken yellow centre line separates opposing directions of traffic and indicates that passing is permitted in either direction when the road ahead is clear.'
-  },
-  {
-    id: 'MRK-003',
-    category: 'Pavement Markings',
-    difficulty: 'easy',
-    topic: 'Solid White Line Between Travel Lanes',
-    q: 'What does a solid white line painted between lanes traveling in the same direction indicate?',
-    a: [
-      'Lane changes are discouraged and hazardous (or prohibited)',
-      'Lane changes are encouraged at intersections',
-      'Opposing traffic travels in that lane',
-      'The lane is for parking only'
-    ],
-    c: 'Lane changes are discouraged and hazardous (or prohibited)',
-    e: 'Solid white lines separate traffic lanes moving in the same direction. Crossing a solid white line is discouraged and should be avoided because of hazards.'
-  },
-  {
-    id: 'MRK-004',
-    category: 'Pavement Markings',
-    difficulty: 'medium',
-    topic: 'Diamond Symbol Painted on Lane',
-    q: 'What does a white diamond symbol painted directly on a roadway lane indicate in Alberta?',
-    a: [
-      'The lane is reserved for specific designated vehicles only (e.g. transit buses, carpools / HOV, or bicycles)',
-      'Dangerous bump ahead in the pavement',
-      'Emergency vehicles must not use this lane',
-      'Passing lane on a two-lane highway'
-    ],
-    c: 'The lane is reserved for specific designated vehicles only (e.g. transit buses, carpools / HOV, or bicycles)',
-    e: 'A diamond marking indicates a reserved special-purpose lane, such as High Occupancy Vehicle (HOV) lanes, bus-only lanes, or bicycle lanes.'
-  },
-
-  // Alcohol & Drugs
-  {
-    id: 'ALC-001',
-    category: 'Alcohol and Drugs',
-    difficulty: 'easy',
-    topic: 'Alcohol Elimination Rate',
-    q: 'What is the only factor that will lower blood alcohol concentration (BAC) and sober up an impaired driver?',
-    a: [
-      'Time (allowing the liver sufficient time to metabolize the alcohol)',
-      'Drinking black coffee or energy drinks',
-      'Taking a cold shower',
-      'Exercising or fresh air'
-    ],
-    c: 'Time (allowing the liver sufficient time to metabolize the alcohol)',
-    e: 'Only time can eliminate alcohol from your body. Coffee, cold showers, fresh air, and exercise do not speed up the liver’s metabolic rate or reduce your blood alcohol concentration.'
-  },
-  {
-    id: 'ALC-002',
-    category: 'Alcohol and Drugs',
-    difficulty: 'easy',
-    topic: 'Immediate Roadside Sanctions (IRS)',
-    q: 'Under Alberta’s Immediate Roadside Sanctions (IRS) program, what happens to a driver who tests 0.08% BAC or refuses a breath test?',
-    a: [
-      'Immediate 90-day driving suspension, 30-day vehicle seizure, mandatory ignition interlock for 12 months, and substantial monetary penalties',
-      'A 24-hour suspension and small warning fine only',
-      'No suspension unless convicted in criminal court 6 months later',
-      '1 demerit point and a verbal warning'
-    ],
-    c: 'Immediate 90-day driving suspension, 30-day vehicle seizure, mandatory ignition interlock for 12 months, and substantial monetary penalties',
-    e: 'Under Alberta IRS Fail penalties, drivers face immediate roadside consequences: 90-day complete suspension, 30-day vehicle seizure, mandatory participation in ignition interlock for 12 months, and a $1,000+ fine.'
-  },
-
-  // Seat Belts and Child Restraints
-  {
-    id: 'SBT-001',
-    category: 'Seat Belts',
-    difficulty: 'easy',
-    topic: 'Seat Belt Responsibility for Minors',
-    q: 'Who is legally responsible under Alberta law to ensure that passengers under the age of 16 are properly wearing seat belts or secured in child car seats?',
-    a: [
-      'The driver of the vehicle',
-      'The passenger themselves',
-      'The parents even if they are not in the vehicle',
-      'The vehicle owner only'
-    ],
-    c: 'The driver of the vehicle',
-    e: 'The driver is legally responsible for ensuring that all passengers under 16 years of age are properly buckled in seat belts or appropriate child safety seats.'
-  },
-  {
-    id: 'SBT-002',
-    category: 'Seat Belts',
-    difficulty: 'medium',
-    topic: 'Child Safety Restraint Requirements',
-    q: 'In Alberta, when must a child passenger be secured in an approved forward-facing child safety seat?',
-    a: [
-      'When the child weighs between 9 kg (20 lbs) and 18 kg (40 lbs)',
-      'Only up to 6 months of age',
-      'Whenever the child is seated in the front passenger seat',
-      'Only until the child reaches 5 kg'
-    ],
-    c: 'When the child weighs between 9 kg (20 lbs) and 18 kg (40 lbs)',
-    e: 'Under Alberta law, infants up to 9 kg must be in rear-facing seats. Children between 9 kg and 18 kg (20 to 40 lbs) must be secured in a forward-facing child safety seat.'
-  }
+const signDefinitions = [
+  { id: 'SIGN-001', asset: '/assets/signs/stop.svg', topic: 'Stop Signs', q: 'What does this octagonal red road sign indicate to a driver?', a: ['Come to a complete stop before the stop line or crosswalk and proceed only when safe', 'Slow down and yield to oncoming traffic without stopping completely', 'Stop only if other vehicles or pedestrians are present', 'Reduce speed to 30 km/h'], c: 'Come to a complete stop before the stop line or crosswalk and proceed only when safe', e: 'An eight-sided octagonal red sign always means STOP. You must come to a complete halt before the stop line, crosswalk, or intersection.' },
+  { id: 'SIGN-002', asset: '/assets/signs/yield.svg', topic: 'Yield Signs', q: 'What does this triangular red and white road sign require you to do?', a: ['Slow down and yield right-of-way to all vehicles and pedestrians, stopping if necessary', 'Come to an absolute complete stop at all times', 'Maintain your current speed because you have the right-of-way', 'Speed up to merge before other vehicles'], c: 'Slow down and yield right-of-way to all vehicles and pedestrians, stopping if necessary', e: 'An inverted triangle sign means YIELD. You must slow down and give the right-of-way to other traffic.' },
+  { id: 'SIGN-003', asset: '/assets/signs/max-50.svg', topic: 'Speed Limits', q: 'What does this rectangular black-and-white sign indicate?', a: ['The maximum legal speed under ideal driving conditions is 50 km/h', 'The minimum required speed on this road is 50 km/h', 'Recommended speed for turning only', 'Construction zone speed limit'], c: 'The maximum legal speed under ideal driving conditions is 50 km/h', e: 'A black and white MAXIMUM 50 sign indicates the maximum allowable speed under ideal driving conditions.' },
+  { id: 'SIGN-004', asset: '/assets/signs/school-zone.svg', topic: 'School Zones', q: 'What does this fluorescent yellow-green pentagon-shaped sign indicate?', a: ['You are approaching a school area or school crosswalk; watch for children', 'Playground zone ahead with a 20 km/h limit', 'Pedestrian mall where cars are strictly prohibited', 'Daycare parking lot entrance'], c: 'You are approaching a school area or school crosswalk; watch for children', e: 'A pentagon-shaped fluorescent yellow-green sign indicates a school area or school crosswalk.' },
+  { id: 'SIGN-005', asset: '/assets/signs/playground-zone.svg', topic: 'Playground Zones', q: 'When encountering this playground zone sign with a 30 km/h tab, during what statutory hours is the 30 km/h speed limit strictly enforced in Alberta?', a: ['Every day from 8:30 AM until one hour after sunset (unless municipal bylaws standardize hours to 7:30 AM - 9:00 PM)', 'Only on school days from 8:00 AM to 4:30 PM', '24 hours a day, 7 days a week', 'Only when children are visibly playing outside'], c: 'Every day from 8:30 AM until one hour after sunset (unless municipal bylaws standardize hours to 7:30 AM - 9:00 PM)', e: 'Playground zones are in effect every day from 8:30 AM until one hour after sunset.' },
+  { id: 'SIGN-006', asset: '/assets/signs/traffic-signal-ahead.svg', topic: 'Warning Signs', q: 'What does this yellow diamond warning sign with a vertical traffic signal indicate?', a: ['Traffic control signals ahead; be prepared to slow down or stop', 'Emergency fire station driveway', 'Red light camera enforcement zone', 'Turn on your headlights ahead'], c: 'Traffic control signals ahead; be prepared to slow down or stop', e: 'This sign alerts drivers that there are traffic light signals ahead.' },
+  { id: 'SIGN-007', asset: '/assets/signs/merging-traffic.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with a straight arrow and an angled converging arrow mean?', a: ['Merging traffic ahead; vehicles from another road are joining your travel lane', 'Divided highway ends ahead', 'Sharp right turn on the highway', 'Exit lane begins on the right'], c: 'Merging traffic ahead; vehicles from another road are joining your travel lane', e: 'This sign warns that traffic from an on-ramp or side road is merging with your roadway.' },
+  { id: 'SIGN-008', asset: '/assets/signs/lane-ending.svg', topic: 'Warning Signs', q: 'What does this yellow diamond warning sign indicating a tapering right lane mean?', a: ['The right lane ends ahead; drivers in the right lane must merge safely to the left', 'Narrow bridge ahead', 'Winding road begins on the right', 'Passing lane begins ahead'], c: 'The right lane ends ahead; drivers in the right lane must merge safely to the left', e: 'This sign warns that the right lane is coming to an end.' },
+  { id: 'SIGN-009', asset: '/assets/signs/divided-highway-begins.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with a median barrier divider at the top indicate?', a: ['Divided highway begins ahead; keep to the right of the median barrier', 'Divided highway ends ahead; prepare for two-way oncoming traffic', 'Two-way bridge ahead', 'Obstacle in the middle of a one-way street'], c: 'Divided highway begins ahead; keep to the right of the median barrier', e: 'This sign indicates that the roadway ahead will be divided into two separate roadways by a median barrier.' },
+  { id: 'SIGN-010', asset: '/assets/signs/divided-highway-ends.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with a median divider at the bottom indicate?', a: ['Divided highway ends ahead; you are entering a two-way undivided roadway with oncoming traffic', 'Divided highway begins ahead', 'Dead end road ahead', 'Detour around a construction barrier'], c: 'Divided highway ends ahead; you are entering a two-way undivided roadway with oncoming traffic', e: 'This sign warns that the median is ending and you are entering a two-way roadway.' },
+  { id: 'SIGN-011', asset: '/assets/signs/slippery-when-wet.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign showing a skidding vehicle indicate?', a: ['The road surface ahead is slippery when wet, cold, or icy; reduce speed and avoid sudden steering or braking', 'Stunt driving testing area ahead', 'Rough unpaved gravel road ahead', 'Vehicle rollover testing grounds'], c: 'The road surface ahead is slippery when wet, cold, or icy; reduce speed and avoid sudden steering or braking', e: 'This sign warns that pavement becomes slippery when wet or icy.' },
+  { id: 'SIGN-012', asset: '/assets/signs/no-left-turn.svg', topic: 'Regulatory Signs', q: 'What does this regulatory sign with a left arrow inside a red circle with a slash mean?', a: ['Left turns are strictly prohibited at this intersection', 'Left turn permitted only on green arrow', 'U-turns prohibited but left turns permitted', 'Sharp left curve ahead'], c: 'Left turns are strictly prohibited at this intersection', e: 'A red circle with a diagonal slash prohibits left turns at this intersection.' },
+  { id: 'SIGN-013', asset: '/assets/signs/no-right-turn.svg', topic: 'Regulatory Signs', q: 'What does this regulatory sign with a right arrow inside a red circle with a slash mean?', a: ['Right turns are strictly prohibited at this intersection', 'Right turn permitted only after complete stop', 'One way street to the right', 'Sharp curve to the right ahead'], c: 'Right turns are strictly prohibited at this intersection', e: 'This sign strictly prohibits turning right at the intersection.' },
+  { id: 'SIGN-014', asset: '/assets/signs/no-u-turn.svg', topic: 'Regulatory Signs', q: 'What does this regulatory sign with a curved U-arrow inside a red circle with a slash indicate?', a: ['U-turns are prohibited at this location', 'No left turns allowed', 'No passing on curves', 'Dead end ahead with no turnaround space'], c: 'U-turns are prohibited at this location', e: 'This sign prohibits making a 180-degree U-turn.' },
+  { id: 'SIGN-015', asset: '/assets/signs/do-not-enter.svg', topic: 'Regulatory Signs', q: 'What does this square white sign with a solid red circle and white horizontal bar mean?', a: ['Do not enter; vehicles must not proceed past this sign into the oncoming lane or one-way street', 'Stop sign for heavy trucks only', 'Hospital quiet zone', 'Railway crossing without signal lights'], c: 'Do not enter; vehicles must not proceed past this sign into the oncoming lane or one-way street', e: 'The Do Not Enter sign prohibits vehicles from entering an opposing lane or one-way roadway.' },
+  { id: 'SIGN-016', asset: '/assets/signs/one-way-right.svg', topic: 'Regulatory Signs', q: 'What does this black-and-white sign with a horizontal arrow pointing right and the words "ONE WAY" indicate?', a: ['Traffic on this street moves in one direction only, as indicated by the arrow', 'Mandatory right turn for all vehicles', 'Detour route for commercial trucks', 'Passing permitted on the right side only'], c: 'Traffic on this street moves in one direction only, as indicated by the arrow', e: 'A ONE WAY sign indicates that all traffic must travel in the direction of the arrow.' },
+  { id: 'SIGN-017', asset: '/assets/signs/one-way-left.svg', topic: 'Regulatory Signs', q: 'What does this black-and-white sign with a horizontal arrow pointing left and the words "ONE WAY" indicate?', a: ['Traffic on this roadway moves to the left in one direction only', 'Sharp left turn ahead with 30 km/h limit', 'Passing lane on the left only', 'Left exit ahead'], c: 'Traffic on this roadway moves to the left in one direction only', e: 'This sign indicates that traffic moves exclusively to the left on the cross street.' },
+  { id: 'SIGN-018', asset: '/assets/signs/no-parking.svg', topic: 'Parking Signs', q: 'What does a sign displaying the letter "P" inside a red circle with a red diagonal slash mean?', a: ['No parking is permitted in this designated zone', 'Paid parking area with automated meters', 'Police vehicles only parking', 'Parking allowed for up to 15 minutes'], c: 'No parking is permitted in this designated zone', e: 'The letter P inside a red circle with a slash prohibits parking.' },
+  { id: 'SIGN-019', asset: '/assets/signs/construction-roadwork.svg', topic: 'Construction Signs', q: 'What does this orange diamond sign with a silhouette of a worker digging indicate?', a: ['Road construction or maintenance work ahead; obey reduced speed limits and watch for workers', 'Scenic archaeological park ahead', 'Pedestrian crossing on a gravel road', 'Agricultural farm zone'], c: 'Road construction or maintenance work ahead; obey reduced speed limits and watch for workers', e: 'An orange diamond with a digging worker indicates active road work ahead.' },
+  { id: 'SIGN-020', asset: '/assets/signs/construction-flagperson.svg', topic: 'Construction Signs', q: 'What does this orange diamond sign displaying a person holding a horizontal flag indicate?', a: ['Traffic control flagperson ahead; be prepared to stop and obey hand signals', 'Parade route ahead', 'Pedestrian crosswalk guard on duty', 'Track and field school event'], c: 'Traffic control flagperson ahead; be prepared to stop and obey hand signals', e: 'This sign warns that a flagperson is controlling traffic ahead.' },
+  { id: 'SIGN-021', asset: '/assets/signs/slow-moving-vehicle.svg', topic: 'Special Vehicles', q: 'What does a triangular fluorescent orange sign with a dark red reflective border mounted on the rear of a vehicle signify?', a: ['The vehicle travels at a speed of 40 km/h or less (slow-moving vehicle)', 'The vehicle carries hazardous chemicals', 'The vehicle is currently broken down and abandoned', 'Emergency roadside assistance vehicle'], c: 'The vehicle travels at a speed of 40 km/h or less (slow-moving vehicle)', e: 'The slow-moving vehicle emblem is displayed on machinery designed to travel at 40 km/h or slower.' },
+  { id: 'SIGN-022', asset: '/assets/signs/max-80.svg', topic: 'Speed Limits', q: 'What does this black and white "MAXIMUM 80" speed sign indicate?', a: ['Maximum legal speed of 80 km/h under ideal road and weather conditions', 'Minimum speed limit on rural highways', 'Speed limit for heavy commercial vehicles only', 'Construction detour speed'], c: 'Maximum legal speed of 80 km/h under ideal road and weather conditions', e: 'This sign sets the legal maximum speed limit at 80 km/h in ideal conditions.' },
+  { id: 'SIGN-023', asset: '/assets/signs/max-100.svg', topic: 'Speed Limits', q: 'What does this black and white "MAXIMUM 100" speed sign indicate on an Alberta highway?', a: ['The maximum legal speed limit under ideal conditions is 100 km/h', 'Recommended speed for merging onto the highway', 'Speed limit during nighttime hours only', 'Minimum passing speed'], c: 'The maximum legal speed limit under ideal conditions is 100 km/h', e: 'This sign indicates the maximum allowable speed limit is 100 km/h under ideal conditions.' },
+  { id: 'SIGN-024', asset: '/assets/signs/pedestrian-crosswalk.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with a walking pedestrian silhouette and crosswalk lines mean?', a: ['Pedestrian crosswalk ahead; yield right-of-way to pedestrians crossing the roadway', 'School zone with 20 km/h speed limit', 'Sidewalk ends ahead', 'Running track crossing'], c: 'Pedestrian crosswalk ahead; yield right-of-way to pedestrians crossing the roadway', e: 'This sign alerts drivers to an upcoming marked pedestrian crosswalk.' },
+  { id: 'SIGN-025', asset: '/assets/signs/railway-crossing.svg', topic: 'Railway Signs', q: 'What does this circular yellow sign with an "X" and the letters "R R" indicate?', a: ['Advance railway crossing warning; slow down, look, listen, and be prepared to stop', 'Rest area ahead', 'Road repair ahead', 'Roundabout intersection ahead'], c: 'Advance railway crossing warning; slow down, look, listen, and be prepared to stop', e: 'A round yellow sign with an X and RR warns drivers of an advance railroad crossing.' },
+  { id: 'SIGN-026', asset: '/assets/signs/roundabout-ahead.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign displaying three circular counter-clockwise arrows indicate?', a: ['Roundabout / traffic circle ahead; prepare to yield to circulating traffic on entry', 'Winding mountain road ahead', 'Sharp curve to the left', 'Cul-de-sac ahead'], c: 'Roundabout / traffic circle ahead; prepare to yield to circulating traffic on entry', e: 'This sign indicates a roundabout ahead. Prepare to slow down and yield on entry.' },
+  { id: 'SIGN-027', asset: '/assets/signs/winding-road.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with a serpentine curved arrow indicate?', a: ['A series of three or more curves (winding road) ahead; reduce speed', 'Slippery road when wet', 'Detour around highway construction', 'Lane ends on the left'], c: 'A series of three or more curves (winding road) ahead; reduce speed', e: 'This sign warns of a series of curves ahead (winding road).' },
+  { id: 'SIGN-028', asset: '/assets/signs/two-way-traffic.svg', topic: 'Warning Signs', q: 'What does this yellow diamond sign with opposing vertical arrows indicate?', a: ['Two-way traffic ahead on the same roadway; watch for oncoming traffic in the left lane', 'Divided highway begins', 'Passing permitted in both lanes', 'One-way street ahead'], c: 'Two-way traffic ahead on the same roadway; watch for oncoming traffic in the left lane', e: 'This sign warns that you are leaving a one-way street or divided highway and entering two-way traffic.' },
+  { id: 'SIGN-029', asset: '/assets/signs/hospital.svg', topic: 'Information Signs', q: 'What does this square blue sign with a large white letter "H" indicate?', a: ['Hospital or emergency medical medical services ahead', 'Hotel lodging facility ahead', 'Helicopter landing pad', 'Highway patrol weigh station'], c: 'Hospital or emergency medical medical services ahead', e: 'A blue sign with a white H indicates a hospital with emergency facilities.' },
+  { id: 'SIGN-030', asset: '/assets/signs/keep-right.svg', topic: 'Regulatory Signs', q: 'What does this white regulatory sign showing an obstacle with an arrow pointing down-right indicate?', a: ['Obstacle or traffic island ahead; keep to the right of the divider', 'Right turn required at the next street', 'Lane ends on the right', 'Steep hill descent ahead'], c: 'Obstacle or traffic island ahead; keep to the right of the divider', e: 'This regulatory sign directs traffic to pass to the right of an island or obstacle.' },
+  { id: 'SIGN-031', asset: '/assets/signs/straight-or-left-lane.svg', topic: 'Lane Control Signs', q: 'What does this white regulatory lane-use sign with a straight and left-branching arrow mean for drivers in that lane?', a: ['Vehicles in this lane may either proceed straight ahead or turn left', 'Left turn only is permitted from this lane', 'Passing on the left is permitted', 'U-turn lane only'], c: 'Vehicles in this lane may either proceed straight ahead or turn left', e: 'This lane-use sign indicates that drivers in this lane have the option to proceed straight or turn left.' },
+  { id: 'SIGN-032', asset: '/assets/signs/right-turn-only-lane.svg', topic: 'Lane Control Signs', q: 'What does this white regulatory sign with a curving right arrow and the word "ONLY" mandate?', a: ['Vehicles in this lane MUST turn right; proceeding straight is prohibited', 'Right turn permitted on red light only', 'Right lane is for transit buses only', 'Passing on the right is permitted'], c: 'Vehicles in this lane MUST turn right; proceeding straight is prohibited', e: 'This sign mandates that all traffic in this lane must make a right turn.' },
+  { id: 'SIGN-033', asset: '/assets/signs/passing-prohibited.svg', topic: 'Warning Signs', q: 'What does this yellow triangular pennant sign reading "NO PASSING" indicate?', a: ['Passing other vehicles is prohibited in this zone due to limited sight distance', 'Passing is permitted with caution', 'End of passing lane ahead', 'Dead end ahead'], c: 'Passing other vehicles is prohibited in this zone due to limited sight distance', e: 'A yellow no-passing pennant on the left side of the road indicates the start of a no-passing zone.' },
+  { id: 'SIGN-034', asset: '/assets/signs/emergency-vehicles-slowdown.svg', topic: 'Regulatory Signs', q: 'What does this regulatory sign specifying "PASSING EMERGENCY VEHICLES MAXIMUM 60 WHEN FLASHING" require?', a: ['Drivers in the lane adjacent to stopped emergency/roadside vehicles with flashing lights must slow to 60 km/h or lower', 'Emergency vehicles must not exceed 60 km/h', 'Passing is prohibited on all four-lane highways', 'Speed limit increases to 60 km/h in construction zones'], c: 'Drivers in the lane adjacent to stopped emergency/roadside vehicles with flashing lights must slow to 60 km/h or lower', e: 'This regulatory sign enforces Alberta law requiring drivers to slow to 60 km/h when passing stopped emergency and roadside maintenance vehicles with flashing lights.' }
 ];
 
-// Add the 50 detailed core questions to the main database
+for (const s of signDefinitions) {
+  addQ({
+    id: s.id,
+    category: 'Road Signs',
+    difficulty: 'easy',
+    sourceTopic: s.topic,
+    sourceSection: 'Traffic Signs',
+    question: s.q,
+    answers: s.a,
+    correctAnswer: s.c,
+    explanation: s.e,
+    visualType: 'sign',
+    signAsset: s.asset,
+    tags: ['signs', 'traffic-signs', s.topic.toLowerCase().replace(/\s+/g, '-')]
+  });
+}
+
+// ----------------------------------------------------
+// 3. CORE LEGAL & CURRICULUM QUESTIONS (50 QUESTIONS)
+// ----------------------------------------------------
+const rawQuestions = [
+  // Class 7 GDL Rules
+  { id: 'GDL-001', category: 'Licence Restrictions', difficulty: 'easy', topic: 'Class 7 Minimum Age', q: 'What is the minimum age required to apply for an Alberta Class 7 Learner’s Licence?', a: ['14 years of age', '16 years of age', '15 years of age', '18 years of age'], c: '14 years of age', e: 'In Alberta, you must be at least 14 years of age to apply for a Class 7 learner’s licence (with parental/guardian consent if under 18).' },
+  { id: 'GDL-002', category: 'Licence Restrictions', difficulty: 'easy', topic: 'Class 7 Accompanying Driver', q: 'When driving with an Alberta Class 7 Learner’s Licence, who must be seated in the front passenger seat next to you?', a: ['A fully licensed non-probationary Class 5 driver who is at least 18 years of age', 'Any licensed driver of any age', 'A parent or guardian regardless of whether they hold a driver’s licence', 'Another Class 7 learner driver who has passed the test'], c: 'A fully licensed non-probationary Class 5 driver who is at least 18 years of age', e: 'A Class 7 learner must always be accompanied by a fully licensed driver who is at least 18 years old and holds a non-probationary Class 5 driver’s licence, seated in the front passenger seat.' },
+  { id: 'GDL-003', category: 'Licence Restrictions', difficulty: 'easy', topic: 'Class 7 Night Driving Curfew', q: 'During which hours are Alberta Class 7 learner drivers strictly prohibited from driving?', a: ['Between midnight (12:00 AM) and 5:00 AM', 'Between 10:00 PM and 6:00 AM', 'Between 11:00 PM and 7:00 AM', 'Between 9:00 PM and sunrise'], c: 'Between midnight (12:00 AM) and 5:00 AM', e: 'Class 7 learner licence holders cannot drive between 12:00 midnight and 5:00 AM under any circumstances.' },
+  { id: 'GDL-004', category: 'Licence Restrictions', difficulty: 'easy', topic: 'Class 7 Blood Alcohol Tolerance', q: 'What is the legal blood alcohol concentration (BAC) limit for a Class 7 learner driver in Alberta?', a: ['Zero percent (0.00% BAC) — zero tolerance', '0.05% BAC', '0.08% BAC', '0.02% BAC'], c: 'Zero percent (0.00% BAC) — zero tolerance', e: 'Alberta has a zero-tolerance law for all GDL drivers. Your blood alcohol concentration must be 0.00% with no illegal drugs in your system.' },
+  { id: 'GDL-005', category: 'Licence Restrictions', difficulty: 'medium', topic: 'Class 7 Demerit Point Suspension', q: 'How many demerit points will result in a licence suspension for an Alberta Class 7 GDL learner driver?', a: ['8 demerit points', '15 demerit points', '12 demerit points', '4 demerit points'], c: '8 demerit points', e: 'A GDL driver will be suspended upon accumulating 8 or more demerit points within a 2-year period (compared to 15 points for fully licensed non-GDL drivers).' },
+  { id: 'GDL-006', category: 'Licence Restrictions', difficulty: 'easy', topic: 'Passenger Limits', q: 'How many passengers are permitted in a vehicle operated by a Class 7 learner driver?', a: ['Only as many passengers as there are functional, working seat belts in the vehicle', 'Maximum 2 passengers regardless of seat belts', 'Only the supervising passenger is allowed', 'Unlimited passengers in the rear seat'], c: 'Only as many passengers as there are functional, working seat belts in the vehicle', e: 'Under Alberta GDL rules, you cannot have more passengers in the vehicle than there are functional seat belts.' },
+  { id: 'GDL-007', category: 'Licence Restrictions', difficulty: 'medium', topic: 'Class 7 GDL Duration', q: 'How long must you hold an Alberta Class 7 Learner’s Licence before you are eligible to take the road test for a Class 5 licence?', a: ['At least 1 full year (12 continuous months)', '6 months', '2 years', '90 days'], c: 'At least 1 full year (12 continuous months)', e: 'A driver must hold a Class 7 learner’s licence for at least 12 continuous months and reach age 16 before taking the Class 5 basic road test.' },
+  { id: 'GDL-008', category: 'Licence Restrictions', difficulty: 'medium', topic: 'Class 7 Commercial Vehicle Restriction', q: 'Are Class 7 learner drivers permitted to drive commercial vehicles or operate a motorcycle without a supervisor?', a: ['No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding', 'Yes, as long as a Class 5 driver is accompanying them', 'Yes, for vehicles under 4,500 kg only', 'Yes, on rural roads during daylight'], c: 'No, a Class 7 licence does not permit commercial operation or unsupervised motorcycle riding', e: 'Class 7 licence holders cannot operate commercial vehicles or drive a motorcycle without a fully licensed supervising rider.' },
+
+  // Speed Limits
+  { id: 'SPD-001', category: 'Speed Limits', difficulty: 'easy', topic: 'Urban Speed Limit Default', q: 'Unless otherwise posted, what is the default maximum legal speed limit on urban city streets in Alberta?', a: ['50 km/h', '60 km/h', '40 km/h', '70 km/h'], c: '50 km/h', e: 'The provincial maximum speed limit on roadways within an urban area is 50 km/h unless posted signs indicate otherwise.' },
+  { id: 'SPD-002', category: 'Speed Limits', difficulty: 'easy', topic: 'Rural Primary Highway Default', q: 'Unless otherwise posted, what is the default maximum speed limit on a primary provincial highway outside urban areas in Alberta?', a: ['100 km/h', '110 km/h', '90 km/h', '80 km/h'], c: '100 km/h', e: 'The provincial maximum speed limit on primary paved highways outside urban areas is 100 km/h unless otherwise posted.' },
+  { id: 'SPD-003', category: 'Speed Limits', difficulty: 'easy', topic: 'Rural Secondary and Unpaved Roads', q: 'Unless otherwise posted, what is the maximum speed limit on unpaved gravel or secondary rural roads in Alberta?', a: ['80 km/h', '100 km/h', '60 km/h', '70 km/h'], c: '80 km/h', e: 'The maximum speed limit on unpaved gravel roads or secondary rural highways in Alberta is 80 km/h unless otherwise posted.' },
+  { id: 'SPD-004', category: 'Speed Limits', difficulty: 'medium', topic: 'School Zone Statutory Speed', q: 'What is the maximum legal speed limit when driving through an active school zone in Alberta?', a: ['30 km/h', '20 km/h', '40 km/h', '50 km/h'], c: '30 km/h', e: 'The maximum legal speed in a school zone is 30 km/h during active hours.' },
+  { id: 'SPD-005', category: 'Speed Limits', difficulty: 'medium', topic: 'Passing in School Zones', q: 'Is it legal to pass another moving vehicle traveling in the same direction within an active school zone or playground zone?', a: ['No, passing another moving vehicle in a school or playground zone during active hours is illegal', 'Yes, as long as you do not exceed 30 km/h', 'Yes, if the vehicle ahead is traveling slower than 20 km/h', 'Yes, if there are two lanes traveling in the same direction'], c: 'No, passing another moving vehicle in a school or playground zone during active hours is illegal', e: 'You are never permitted to pass any moving vehicle inside an active school zone or playground zone.' },
+  { id: 'SPD-006', category: 'Speed Limits', difficulty: 'medium', topic: 'Construction Zone Fines', q: 'What happens to speeding fines in designated construction zones in Alberta when construction workers are present?', a: ['Speeding fines are doubled', 'Speeding fines are tripled', 'Your driver’s licence is immediately suspended for 30 days', 'The fine is unchanged but demerit points double'], c: 'Speeding fines are doubled', e: 'Speeding fines are automatically doubled when passing through designated construction zones with workers present.' },
+
+  // Intersections & Right-of-Way
+  { id: 'INT-001', category: 'Right-of-Way', difficulty: 'easy', topic: 'T-Intersections', q: 'When arriving at a T-intersection where your road terminates, who must you yield to?', a: ['All traffic on the through street and any pedestrians crossing', 'Only vehicles approaching from your left', 'Traffic turning left only', 'You have right-of-way if you arrived first'], c: 'All traffic on the through street and any pedestrians crossing', e: 'At a T-intersection, the driver on the terminating road must yield to all cross traffic on the through street.' },
+  { id: 'INT-002', category: 'Right-of-Way', difficulty: 'easy', topic: 'Entering from Private Driveway or Alley', q: 'When driving out of a private driveway, parking lot, or alley onto a public roadway, what must you do?', a: ['Stop completely before the sidewalk or roadway edge and yield to all pedestrians, cyclists, and vehicular traffic', 'Honk your horn and drive forward slowly without stopping', 'You have the right-of-way over vehicles on the roadway', 'Yield only to vehicles traveling in the lane closest to you'], c: 'Stop completely before the sidewalk or roadway edge and yield to all pedestrians, cyclists, and vehicular traffic', e: 'When entering from a driveway or alley, stop completely before crossing the sidewalk and yield to all traffic and pedestrians.' },
+  { id: 'INT-003', category: 'Intersections', difficulty: 'medium', topic: 'Traffic Light Malfunction', q: 'If the traffic control lights at a multi-lane intersection are completely out of order (dark) due to a power outage, how must drivers treat the intersection?', a: ['Treat the intersection as an all-way (four-way) stop', 'Traffic on the wider, busier road has continuous right-of-way', 'First car to honk proceeds first', 'Proceed through without stopping at 50 km/h'], c: 'Treat the intersection as an all-way (four-way) stop', e: 'When traffic lights are non-functional, treat the intersection as a four-way stop.' },
+  { id: 'INT-004', category: 'Traffic Lights', difficulty: 'easy', topic: 'Flashing Amber Light', q: 'What does a flashing amber (yellow) traffic signal light at an intersection require you to do?', a: ['Slow down, proceed with caution, and yield right-of-way to pedestrians and approaching traffic', 'Come to a complete stop and wait for a green light', 'Accelerate before the light turns red', 'Stop and treat the intersection as a four-way stop'], c: 'Slow down, proceed with caution, and yield right-of-way to pedestrians and approaching traffic', e: 'A flashing amber light means CAUTION. Proceed only after yielding to pedestrians and traffic.' },
+  { id: 'INT-005', category: 'Traffic Lights', difficulty: 'easy', topic: 'Flashing Red Light', q: 'What does a flashing red traffic signal light mean?', a: ['Come to a complete stop, yield right-of-way to cross traffic and pedestrians, and proceed only when safe (treat as a STOP sign)', 'The road is closed ahead; turn around immediately', 'Slow down to 20 km/h without stopping', 'Yield to oncoming traffic only'], c: 'Come to a complete stop, yield right-of-way to cross traffic and pedestrians, and proceed only when safe (treat as a STOP sign)', e: 'A flashing red light means the exact same thing as a STOP sign.' },
+  { id: 'INT-006', category: 'Traffic Lights', difficulty: 'medium', topic: 'Right Turn on Red', q: 'Unless a sign specifically prohibits it, are you permitted to make a right turn on a red traffic light in Alberta?', a: ['Yes, but only after coming to a complete stop and yielding to all pedestrians and oncoming cross traffic', 'No, right turns on red are strictly illegal in Alberta', 'Yes, without stopping if there is no traffic', 'Yes, but only between sunrise and sunset'], c: 'Yes, but only after coming to a complete stop and yielding to all pedestrians and oncoming cross traffic', e: 'You may turn right on red after a full complete stop and yielding to all pedestrians and traffic.' },
+  { id: 'INT-007', category: 'Traffic Lights', difficulty: 'hard', topic: 'Left Turn on Red from One-Way to One-Way', q: 'Can a driver turn left on a red traffic light in Alberta?', a: ['Yes, but ONLY when turning from a one-way street onto another one-way street, after coming to a complete stop and yielding to traffic and pedestrians', 'No, left turns on red are never permitted under any circumstances', 'Yes, at any intersection during nighttime', 'Yes, whenever there are no oncoming vehicles'], c: 'Yes, but ONLY when turning from a one-way street onto another one-way street, after coming to a complete stop and yielding to traffic and pedestrians', e: 'In Alberta, a left turn on red is legal ONLY when turning from a one-way street onto another one-way street after a complete stop.' },
+  { id: 'INT-008', category: 'Traffic Lights', difficulty: 'medium', topic: 'Flashing Green Arrow', q: 'What does a flashing green left-turn arrow or protected green arrow indicate?', a: ['You have an advance protected left turn; opposing through traffic is stopped by a red light', 'You must yield to oncoming through traffic before turning left', 'Pedestrians have right-of-way across your turn path', 'The traffic light is broken'], c: 'You have an advance protected left turn; opposing through traffic is stopped by a red light', e: 'A green arrow gives you a protected turn where oncoming traffic faces a red light.' },
+
+  // Turning & Signaling
+  { id: 'TRN-001', category: 'Turning', difficulty: 'easy', topic: 'Signaling Distance in Urban Areas', q: 'What is the recommended minimum distance before an intersection to signal your intention to turn when driving in an urban city area?', a: ['At least 30 metres before the turn', 'At least 5 metres before the turn', 'At least 100 metres before the turn', 'Only when you reach the crosswalk'], c: 'At least 30 metres before the turn', e: 'In urban areas, signal at least 30 metres before reaching the intersection.' },
+  { id: 'TRN-002', category: 'Turning', difficulty: 'medium', topic: 'Dual Left-Turn Lanes', q: 'When turning left from a multi-lane road with two designated left-turn lanes, which lane should you finish your turn in?', a: ['Stay in the corresponding lane throughout the entire turn (inside lane to inside lane, outside lane to outside lane)', 'Always enter the curb lane regardless of which lane you started in', 'Switch lanes in the middle of the intersection to avoid other cars', 'Any lane as long as you signal'], c: 'Stay in the corresponding lane throughout the entire turn (inside lane to inside lane, outside lane to outside lane)', e: 'In dual turn lanes, you must remain in your corresponding lane throughout the entire turn.' },
+  { id: 'TRN-003', category: 'Turning', difficulty: 'easy', topic: 'Right Turn Lane Positioning', q: 'When preparing to make a standard right turn, where should your vehicle be positioned on the roadway?', a: ['Close to the right curb or edge of the road (within 1 metre)', 'In the centre lane to make a wide swinging turn', 'Across the centre line', 'On the sidewalk'], c: 'Close to the right curb or edge of the road (within 1 metre)', e: 'When making a right turn, position your vehicle close to the right curb.' },
+  { id: 'TRN-004', category: 'Turning', difficulty: 'hard', topic: 'U-Turns Prohibited Locations', q: 'In Alberta, at which of the following locations are U-turns strictly ILLEGAL?', a: ['At an intersection controlled by traffic lights (unless explicitly permitted by a sign), on curves, near crests of hills, and in alleys', 'On any wide residential street with no traffic', 'At any stop sign on a flat road', 'In empty suburban cul-de-sacs'], c: 'At an intersection controlled by traffic lights (unless explicitly permitted by a sign), on curves, near crests of hills, and in alleys', e: 'U-turns are prohibited at traffic lights, on curves or hill crests where visibility is less than 150m, and in alleys.' },
+
+  // Parking Regulations
+  { id: 'PRK-001', category: 'Parking', difficulty: 'easy', topic: 'Distance from Fire Hydrant', q: 'How far must you park from a fire hydrant in Alberta?', a: ['At least 5 metres', 'At least 1.5 metres', 'At least 3 metres', 'At least 10 metres'], c: 'At least 5 metres', e: 'You cannot park within 5 metres of a fire hydrant.' },
+  { id: 'PRK-002', category: 'Parking', difficulty: 'easy', topic: 'Distance from Stop Sign or Crosswalk', q: 'How far must you park from a stop sign, yield sign, or marked crosswalk at an intersection?', a: ['At least 5 metres', 'At least 2 metres', 'At least 1.5 metres', 'At least 8 metres'], c: 'At least 5 metres', e: 'You must park at least 5 metres away from a stop sign, yield sign, or crosswalk.' },
+  { id: 'PRK-003', category: 'Parking', difficulty: 'easy', topic: 'Distance from Driveway or Alley', q: 'What is the minimum distance you must leave when parking near a private driveway or public alley entrance?', a: ['At least 1.5 metres', 'At least 5 metres', 'At least 3 metres', 'At least 0.5 metres'], c: 'At least 1.5 metres', e: 'You must not park within 1.5 metres of a garage, private driveway, or alley.' },
+  { id: 'PRK-004', category: 'Parking', difficulty: 'easy', topic: 'Parallel Parking Curb Distance', q: 'When parallel parked alongside a curb on a two-way street, what is the maximum legal distance your tires can be from the curb?', a: ['500 mm (50 cm)', '1000 mm (1 metre)', '200 mm (20 cm)', '750 mm (75 cm)'], c: '500 mm (50 cm)', e: 'When parallel parked, your curbside wheels must be within 500 mm (50 cm) of the curb.' },
+  { id: 'PRK-005', category: 'Hill Parking', difficulty: 'medium', topic: 'Downhill Parking with Curb', q: 'When parking a vehicle facing DOWNHILL on a street with a curb, which way should you turn the front wheels?', a: ['Turn front wheels to the RIGHT (toward the curb)', 'Turn front wheels to the LEFT (away from the curb)', 'Keep front wheels straight', 'Turn front wheels halfway to the left'], c: 'Turn front wheels to the RIGHT (toward the curb)', e: 'When parking downhill with a curb, turn wheels to the RIGHT (toward curb).' },
+  { id: 'PRK-006', category: 'Hill Parking', difficulty: 'medium', topic: 'Uphill Parking WITHOUT Curb', q: 'When parking facing UPHILL on a road WITHOUT a curb (soft shoulder), how should you orient your front wheels?', a: ['Turn front wheels to the RIGHT (toward the edge/shoulder of the road)', 'Turn front wheels to the left (toward the road centre)', 'Keep front wheels straight', 'Leave wheels turned left and do not apply parking brake'], c: 'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)', e: 'When parking uphill without a curb, turn wheels to the RIGHT so the vehicle rolls into the ditch if brakes fail.' },
+  { id: 'PRK-007', category: 'Hill Parking', difficulty: 'medium', topic: 'Downhill Parking WITHOUT Curb', q: 'When parking facing DOWNHILL on a road WITHOUT a curb, how should you orient your front wheels?', a: ['Turn front wheels to the RIGHT (toward the edge/shoulder of the road)', 'Turn front wheels to the left', 'Keep front wheels straight', 'It does not matter if the parking brake is set'], c: 'Turn front wheels to the RIGHT (toward the edge/shoulder of the road)', e: 'When parking downhill without a curb, turn wheels to the RIGHT.' },
+
+  // Following Distance & Defensive Driving
+  { id: 'DEF-001', category: 'Defensive Driving', difficulty: 'easy', topic: 'Two-Second Rule', q: 'Under normal dry road and weather conditions, what is the recommended minimum following distance behind the vehicle ahead?', a: ['At least 2 seconds', 'At least 1 second', 'At least 5 seconds', 'Exactly 1 car length for every 50 km/h'], c: 'At least 2 seconds', e: 'The 2-second rule is the minimum safe following distance under ideal conditions.' },
+  { id: 'DEF-002', category: 'Defensive Driving', difficulty: 'medium', topic: 'Following Distance in Poor Weather', q: 'In adverse weather conditions such as rain, snow, ice, or fog, how should you adjust your following distance?', a: ['Increase following distance to at least 4 seconds or more', 'Maintain the standard 2-second distance', 'Reduce following distance to 1 second to see taillights better', 'Follow directly behind large trucks'], c: 'Increase following distance to at least 4 seconds or more', e: 'In poor weather, increase following distance to at least 4 seconds or more.' },
+  { id: 'DEF-003', category: 'Defensive Driving', difficulty: 'medium', topic: 'Visual Lead Time', q: 'When driving on highways or city streets, how far ahead should a proactive defensive driver scan the road ahead?', a: ['At least 12 to 15 seconds ahead (about 1 to 2 city blocks, or half a kilometre on the highway)', '3 to 5 seconds ahead', 'Only look at the rear bumper of the car immediately ahead', '20 to 30 metres ahead'], c: 'At least 12 to 15 seconds ahead (about 1 to 2 city blocks, or half a kilometre on the highway)', e: 'Proactive drivers maintain a 12 to 15-second visual search pattern ahead.' },
+  { id: 'DEF-004', category: 'Defensive Driving', difficulty: 'easy', topic: 'Blind Spot Shoulder Checks', q: 'Why are shoulder checks (glancing over your shoulder) essential before changing lanes or turning?', a: ['Rearview and side mirrors have blind spot areas where nearby vehicles, motorcycles, and cyclists cannot be seen', 'Shoulder checks are only necessary when reversing', 'Shoulder checks replace the need to use turn signals', 'They are required only during driving examinations'], c: 'Rearview and side mirrors have blind spot areas where nearby vehicles, motorcycles, and cyclists cannot be seen', e: 'Mirrors cannot display vehicles in your blind spots. Always perform a shoulder check.' },
+  { id: 'DEF-005', category: 'Defensive Driving', difficulty: 'easy', topic: 'Stopping Behind Another Vehicle in Traffic', q: 'When stopping behind another vehicle at a red light or stop sign, how much space should you leave between your vehicle and the one ahead?', a: ['Enough space to see the rear tires of the vehicle ahead contacting the pavement', 'Stop within 10 centimetres of their rear bumper', 'At least 3 car lengths', 'Close enough that no motorcycle can enter'], c: 'Enough space to see the rear tires of the vehicle ahead contacting the pavement', e: 'Leave enough space to see the rear tires of the vehicle ahead touching the pavement.' },
+
+  // Winter Driving & Adverse Conditions
+  { id: 'WIN-001', category: 'Winter Driving', difficulty: 'medium', topic: 'Skid Recovery on Ice', q: 'If your rear wheels lose traction and your vehicle begins to fishtail (skid) on an icy road, what is the correct corrective action?', a: ['Take your foot off the accelerator, do not brake hard, and steer smoothly in the direction you want the front of the vehicle to go', 'Slam on the brakes immediately and pull the handbrake', 'Accelerate rapidly to overpower the skid', 'Steer sharply in the opposite direction of the skid'], c: 'Take your foot off the accelerator, do not brake hard, and steer smoothly in the direction you want the front of the vehicle to go', e: 'In a skid, ease off the accelerator and steer gently in the direction you want the front of the vehicle to travel.' },
+  { id: 'WIN-002', category: 'Winter Driving', difficulty: 'medium', topic: 'Hydroplaning', q: 'What causes hydroplaning on wet highways, and how should a driver react?', a: ['Tires ride on a thin film of water losing contact with the road; ease off the gas and steer straight without hard braking', 'Brake pads become wet; pump the brakes rapidly with full force', 'The engine stalls from water splash; shift immediately to neutral and restart', 'Wind pulls the car; steer vigorously back and forth'], c: 'Tires ride on a thin film of water losing contact with the road; ease off the gas and steer straight without hard braking', e: 'Hydroplaning occurs when water builds up under tires. Ease off the gas smoothly and keep steering straight.' },
+  { id: 'WIN-003', category: 'Winter Driving', difficulty: 'easy', topic: 'Driving in Heavy Fog', q: 'When driving in thick fog, heavy snowfall, or smoke at night, which vehicle headlights should you use?', a: ['Low-beam headlights (and fog lights if equipped)', 'High-beam headlights for maximum range', 'Parking lights only', 'Hazard warning lights only'], c: 'Low-beam headlights (and fog lights if equipped)', e: 'High beams reflect off fog and snow directly back into your eyes. Always use low beams.' },
+  { id: 'WIN-004', category: 'Winter Driving', difficulty: 'easy', topic: 'Headlight Statutory Hours', q: 'Under Alberta law, when are drivers legally required to turn on their headlights?', a: ['From one hour after sunset until one hour before sunrise, and anytime visibility is reduced to less than 150 metres', 'Only when completely pitch dark after 10:00 PM', 'Only when driving on highways outside city limits', 'From 6:00 PM to 6:00 AM year-round'], c: 'From one hour after sunset until one hour before sunrise, and anytime visibility is reduced to less than 150 metres', e: 'Headlights must be on from one hour after sunset to one hour before sunrise, and whenever visibility is under 150m.' },
+  { id: 'WIN-005', category: 'Winter Driving', difficulty: 'easy', topic: 'Dimming High Beams When Approaching Traffic', q: 'When driving at night with high-beam headlights, at what distance must you dim your lights when approaching oncoming traffic?', a: ['At least 300 metres away', 'At least 50 metres away', 'At least 1000 metres away', 'Only when the oncoming driver flashes their lights'], c: 'At least 300 metres away', e: 'Dim high beams to low beams within 300 metres of oncoming vehicles and 150 metres when following.' },
+
+  // Demerit Point System & Fines
+  { id: 'DEM-001', category: 'Demerit Points', difficulty: 'medium', topic: 'Distracted Driving Penalties', q: 'What are the provincial penalties in Alberta for a convicted distracted driving offence (e.g. texting or using a handheld phone while driving)?', a: ['A $300 fine and 3 demerit points', 'A $150 fine and 1 demerit point', 'A $500 fine and 5 demerit points', 'A warning letter on the first offence'], c: 'A $300 fine and 3 demerit points', e: 'Under Alberta’s distracted driving legislation, the penalty is a $300 fine and 3 demerit points.' },
+  { id: 'DEM-002', category: 'Demerit Points', difficulty: 'medium', topic: 'Failing to Stop for School Bus with Flashing Red Lights', q: 'How many demerit points are assigned to a driver for failing to stop for a school bus with active flashing red lights?', a: ['6 demerit points', '3 demerit points', '2 demerit points', '4 demerit points'], c: '6 demerit points', e: 'Failing to stop for a school bus with flashing red lights carries 6 demerit points.' },
+  { id: 'DEM-003', category: 'Demerit Points', difficulty: 'medium', topic: 'Demerit Points for Speeding 51+ km/h Over Limit', q: 'How many demerit points will a driver receive for exceeding the speed limit by more than 50 km/h?', a: ['6 demerit points and a mandatory court appearance', '4 demerit points', '3 demerit points', '2 demerit points'], c: '6 demerit points and a mandatory court appearance', e: 'Speeding 51+ km/h over the limit carries 6 demerit points and a mandatory court appearance.' },
+  { id: 'DEM-004', category: 'Demerit Points', difficulty: 'hard', topic: 'Demerit Point Retention Period', q: 'How long do demerit points remain on an Alberta driver’s record before being cleared?', a: ['2 years from the date of the conviction', '1 year from the date of payment', '5 years from the offence date', 'Until you renew your driver’s licence'], c: '2 years from the date of the conviction', e: 'Demerit points remain on a driver’s abstract for exactly two years from conviction.' },
+  { id: 'DEM-005', category: 'Demerit Points', difficulty: 'medium', topic: 'GDL Reinstatement on Demerit Suspension', q: 'If a Class 7 GDL learner’s licence is suspended for accumulating 8 or more demerit points, how long is the first suspension period?', a: ['1 month (30 days)', '6 months', '1 year', '7 days'], c: '1 month (30 days)', e: 'A first demerit suspension lasts 1 month, and points are reduced to 3 upon reinstatement.' },
+
+  // Vehicle Emergencies & Procedures
+  { id: 'EMG-001', category: 'Vehicle Emergencies', difficulty: 'medium', topic: 'Tire Blowout Handling', q: 'If a front tire suddenly blows out while traveling at 100 km/h on the highway, what should you do first?', a: ['Grip the steering wheel firmly, ease off the gas, and steer straight; apply brakes gently only after the vehicle has slowed', 'Slam on the brakes immediately to stop as fast as possible', 'Turn the steering wheel sharply toward the right shoulder', 'Shift into reverse or park immediately'], c: 'Grip the steering wheel firmly, ease off the gas, and steer straight; apply brakes gently only after the vehicle has slowed', e: 'Grip the steering wheel firmly with both hands, ease off the gas smoothly, and steer straight.' },
+  { id: 'EMG-002', category: 'Vehicle Emergencies', difficulty: 'medium', topic: 'Sticking Accelerator Pedal', q: 'If your vehicle’s gas pedal sticks down and the engine continues to accelerate out of control, what is the best immediate response?', a: ['Shift the transmission into NEUTRAL (N), apply brakes firmly, and steer to the shoulder before turning off the engine', 'Turn off the ignition key immediately while traveling at high speed', 'Pull the emergency handbrake at full force', 'Pump the accelerator rapidly'], c: 'Shift the transmission into NEUTRAL (N), apply brakes firmly, and steer to the shoulder before turning off the engine', e: 'Shifting to neutral disconnects engine power without locking steering.' },
+  { id: 'EMG-003', category: 'Vehicle Emergencies', difficulty: 'medium', topic: 'Total Brake Failure', q: 'If your vehicle experiences sudden total hydraulic foot brake failure while driving, what steps should you take?', a: ['Pump the brake pedal rapidly; if that fails, downshift to a lower gear and apply the parking brake gradually while holding the release button', 'Turn off the engine immediately and remove the key', 'Jump out of the moving vehicle', 'Swerve back and forth vigorously across lanes'], c: 'Pump the brake pedal rapidly; if that fails, downshift to a lower gear and apply the parking brake gradually while holding the release button', e: 'Pump the pedal rapidly, downshift to a lower gear, and gently use the parking brake.' },
+  { id: 'EMG-004', category: 'Collision Procedures', difficulty: 'easy', topic: 'Collision Reporting Threshold', q: 'When must a motor vehicle collision in Alberta be legally reported to police?', a: ['When there is any injury, fatality, or combined property damage exceeding $2,000 (or if it is a hit-and-run)', 'Only when total damage exceeds $10,000', 'Only if someone is hospitalized for more than 48 hours', 'Only if a government vehicle is involved'], c: 'When there is any injury, fatality, or combined property damage exceeding $2,000 (or if it is a hit-and-run)', e: 'Collisions must be reported if there is injury, fatality, hit-and-run, or damage over $2,000.' },
+
+  // Pavement Markings
+  { id: 'MRK-001', category: 'Pavement Markings', difficulty: 'easy', topic: 'Solid Yellow Centre Line', q: 'What does a solid yellow line on your side of the centre of a two-lane roadway indicate?', a: ['Passing is prohibited in your direction of travel', 'Passing is permitted with caution', 'One-way traffic only', 'Lane for bicycles only'], c: 'Passing is prohibited in your direction of travel', e: 'A solid yellow line on your side indicates passing is prohibited.' },
+  { id: 'MRK-002', category: 'Pavement Markings', difficulty: 'easy', topic: 'Broken Yellow Centre Line', q: 'What does a single broken (dashed) yellow centre line indicate on a two-lane highway?', a: ['Passing is permitted from either direction when oncoming traffic is clear and safe', 'Passing is strictly prohibited at all times', 'The road is a divided one-way highway', 'Speed limit is 110 km/h'], c: 'Passing is permitted from either direction when oncoming traffic is clear and safe', e: 'A broken yellow centre line indicates passing is permitted when clear.' },
+  { id: 'MRK-003', category: 'Pavement Markings', difficulty: 'easy', topic: 'Solid White Line Between Travel Lanes', q: 'What does a solid white line painted between lanes traveling in the same direction indicate?', a: ['Lane changes are discouraged and hazardous (or prohibited)', 'Lane changes are encouraged at intersections', 'Opposing traffic travels in that lane', 'The lane is for parking only'], c: 'Lane changes are discouraged and hazardous (or prohibited)', e: 'Solid white lines between lanes discourage lane changes.' },
+  { id: 'MRK-004', category: 'Pavement Markings', difficulty: 'medium', topic: 'Diamond Symbol Painted on Lane', q: 'What does a white diamond symbol painted directly on a roadway lane indicate in Alberta?', a: ['The lane is reserved for specific designated vehicles only (e.g. transit buses, carpools / HOV, or bicycles)', 'Dangerous bump ahead in the pavement', 'Emergency vehicles must not use this lane', 'Passing lane on a two-lane highway'], c: 'The lane is reserved for specific designated vehicles only (e.g. transit buses, carpools / HOV, or bicycles)', e: 'A diamond marking indicates a reserved special-purpose lane (HOV, bus, bike).' },
+
+  // Alcohol & Drugs
+  { id: 'ALC-001', category: 'Alcohol and Drugs', difficulty: 'easy', topic: 'Alcohol Elimination Rate', q: 'What is the only factor that will lower blood alcohol concentration (BAC) and sober up an impaired driver?', a: ['Time (allowing the liver sufficient time to metabolize the alcohol)', 'Drinking black coffee or energy drinks', 'Taking a cold shower', 'Exercising or fresh air'], c: 'Time (allowing the liver sufficient time to metabolize the alcohol)', e: 'Only time can eliminate alcohol from your body.' },
+  { id: 'ALC-002', category: 'Alcohol and Drugs', difficulty: 'easy', topic: 'Immediate Roadside Sanctions (IRS)', q: 'Under Alberta’s Immediate Roadside Sanctions (IRS) program, what happens to a driver who tests 0.08% BAC or refuses a breath test?', a: ['Immediate 90-day driving suspension, 30-day vehicle seizure, mandatory ignition interlock for 12 months, and substantial monetary penalties', 'A 24-hour suspension and small warning fine only', 'No suspension unless convicted in criminal court 6 months later', '1 demerit point and a verbal warning'], c: 'Immediate 90-day driving suspension, 30-day vehicle seizure, mandatory ignition interlock for 12 months, and substantial monetary penalties', e: 'IRS Fail consequences include an immediate 90-day suspension, 30-day vehicle seizure, and 12-month interlock.' },
+
+  // Seat Belts and Child Restraints
+  { id: 'SBT-001', category: 'Seat Belts', difficulty: 'easy', topic: 'Seat Belt Responsibility for Minors', q: 'Who is legally responsible under Alberta law to ensure that passengers under the age of 16 are properly wearing seat belts or secured in child car seats?', a: ['The driver of the vehicle', 'The passenger themselves', 'The parents even if they are not in the vehicle', 'The vehicle owner only'], c: 'The driver of the vehicle', e: 'The driver is legally responsible for all passengers under 16 wearing seat belts.' },
+  { id: 'SBT-002', category: 'Seat Belts', difficulty: 'medium', topic: 'Child Safety Restraint Requirements', q: 'In Alberta, when must a child passenger be secured in an approved forward-facing child safety seat?', a: ['When the child weighs between 9 kg (20 lbs) and 18 kg (40 lbs)', 'Only up to 6 months of age', 'Whenever the child is seated in the front passenger seat', 'Only until the child reaches 5 kg'], c: 'When the child weighs between 9 kg (20 lbs) and 18 kg (40 lbs)', e: 'Children weighing between 9 kg and 18 kg must be in a forward-facing child safety seat.' }
+];
+
 for (const q of rawQuestions) {
   addQ({
     id: q.id,
@@ -1524,69 +458,9 @@ for (const q of rawQuestions) {
   });
 }
 
-// Now let's programmatically expand the question bank with structured Alberta curriculum variations
-// to reach 260+ meticulously validated unique questions across all 50 categories!
-
-const additionalTopics = [
-  {
-    cat: 'Intersections',
-    topic: 'Right-of-Way at Yield Signs',
-    q: 'When approaching an intersection with a yield sign, when are you NOT required to come to a full stop?',
-    a: ['When there is no approaching traffic or pedestrians to yield to', 'Whenever driving in daylight', 'If your vehicle is traveling under 40 km/h', 'If turning right only'],
-    c: 'When there is no approaching traffic or pedestrians to yield to',
-    e: 'At a yield sign, you only need to stop if other vehicles or pedestrians are present that have the right of way.'
-  },
-  {
-    cat: 'Pedestrian Safety',
-    topic: 'Blind Pedestrians',
-    q: 'What does a pedestrian carrying a white cane or accompanied by a guide dog indicate to a driver?',
-    a: ['The pedestrian is visually impaired; drivers must exercise extra caution and yield right-of-way', 'The pedestrian is a law enforcement officer', 'The pedestrian is requesting a ride', 'The crosswalk is closed'],
-    c: 'The pedestrian is visually impaired; drivers must exercise extra caution and yield right-of-way',
-    e: 'A white cane or guide dog signifies a visually impaired pedestrian. Drivers must yield right-of-way and take special precautions.'
-  },
-  {
-    cat: 'Railway Crossings',
-    topic: 'Shifting Gears on Tracks',
-    q: 'Why must drivers of manual transmission vehicles avoid shifting gears while crossing railway tracks?',
-    a: ['The vehicle could stall or hesitate directly on the tracks', 'It damages the vehicle clutch', 'It makes a loud noise that confuses the train', 'It is only illegal for commercial trucks'],
-    c: 'The vehicle could stall or hesitate directly on the tracks',
-    e: 'Never change gears while driving across train tracks because missing a gear could stall the vehicle in the path of a train.'
-  },
-  {
-    cat: 'Passing',
-    topic: 'Passing on the Right',
-    q: 'When is it legally permissible to pass another vehicle on the right in Alberta?',
-    a: ['When the vehicle ahead is making a left turn (and there is an unobstructed paved lane/shoulder to pass safely), or on multi-lane one-way roads', 'Anytime you are in a hurry on a residential street', 'By driving onto unpaved ditches', 'Passing on the right is never allowed under any condition'],
-    c: 'When the vehicle ahead is making a left turn (and there is an unobstructed paved lane/shoulder to pass safely), or on multi-lane one-way roads',
-    e: 'You may pass on the right only when the vehicle ahead is signaling and making a left turn and there is room on the roadway, or on multi-lane roads.'
-  },
-  {
-    cat: 'Passing',
-    topic: 'Passing Near Hill Crests',
-    q: 'Why is passing prohibited within 150 metres of the crest of a hill or on a curve on a two-lane highway?',
-    a: ['Your view of oncoming traffic is obstructed and you cannot see whether the road ahead is clear', 'The grade makes your car accelerate too quickly', 'Pavement is always slippery on hilltops', 'Speed limits are lower on hill crests'],
-    c: 'Your view of oncoming traffic is obstructed and you cannot see whether the road ahead is clear',
-    e: 'Passing is illegal on curves and near hill crests where your sight distance of oncoming traffic is restricted to less than 150 metres.'
-  },
-  {
-    cat: 'Lane Changes',
-    topic: 'Solid White Lane Line',
-    q: 'What does a solid white line between lanes traveling in the same direction indicate before an intersection?',
-    a: ['Lane changes are hazardous and discouraged; stay in your lane', 'You must change lanes immediately', 'This lane is for U-turns only', 'Only commercial trucks may use this lane'],
-    c: 'Lane changes are hazardous and discouraged; stay in your lane',
-    e: 'Solid white lines between lanes moving in the same direction discourage lane changes where maneuvering is hazardous, such as intersection approaches.'
-  },
-  {
-    cat: 'Traffic Signals',
-    topic: 'Flashing Green Pedestrian Signal',
-    q: 'In Alberta, what does a pedestrian-actuated flashing green traffic signal indicate to a driver?',
-    a: ['You may proceed through without stopping, but be prepared to stop if the light changes to solid amber and red for a pedestrian', 'You must turn left immediately', 'The road is closed to passenger cars', 'You must honk before proceeding'],
-    c: 'You may proceed through without stopping, but be prepared to stop if the light changes to solid amber and red for a pedestrian',
-    e: 'A flashing green pedestrian signal indicates drivers may proceed, but pedestrians can push the button to activate the signal and turn it red.'
-  }
-];
-
-// Let's systematically build up to 260+ questions covering all 50 categories
+// ----------------------------------------------------
+// 4. STRUCTURED CURRICULUM QUESTIONS (REMAINDER TO 290)
+// ----------------------------------------------------
 const categoriesList = [
   'Road Signs', 'Traffic Lights', 'Pavement Markings', 'Intersections', 'Right-of-Way',
   'Uncontrolled Intersections', 'Stop Signs', 'Yield Signs', 'Turning', 'Lane Positioning',
@@ -1600,12 +474,11 @@ const categoriesList = [
   'Signs by Shape', 'Signs by Colour', 'Regulatory Signs', 'Warning Signs', 'Information Signs'
 ];
 
-let baseId = 100;
+let baseId = 200;
 
 for (let i = 0; i < categoriesList.length; i++) {
   const cat = categoriesList[i];
   
-  // Generate 4-5 focused questions per category with realistic Alberta rules
   const qVariations = [
     {
       sub: 'Basic Rules',
