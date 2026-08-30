@@ -73,9 +73,9 @@
           <button id="start-real-exam-btn" class="btn-primary" data-i18n="startRealExamCta">
             Start Exam Simulation <span>&rarr;</span>
           </button>
-          <button id="hero-top30-btn" class="btn-secondary" data-nav="study-pack">
+          <button id="hero-top30-btn" class="btn-secondary" data-nav="study-pack" onclick="window.app.switchView('study-pack')">
             <span data-i18n="top30Cta">Top 30 Study Pack</span>
-            <span style="font-size: 0.6rem; background: var(--nx-gold-surface); border: var(--border-width) solid var(--nx-gold); color: var(--nx-gold); padding: 0.15rem 0.4rem; border-radius: 2px; margin-left: 0.35rem;" data-i18n="top30Badge">PDF INCLUDED</span>
+            <span style="font-size: 0.6rem; background: var(--nx-gold-surface); border: var(--border-width) solid var(--nx-gold); color: var(--nx-gold); padding: 0.15rem 0.4rem; border-radius: 2px; margin-left: 0.35rem; pointer-events: none;" data-i18n="top30Badge">PDF INCLUDED</span>
           </button>
         </div>
 
@@ -397,6 +397,14 @@
         </div>
 
         <div id="study-topics-grid" class="modes-grid"></div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="https://www.alberta.ca/driver-guides" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>📖</span> <span data-i18n="officialResourcesLink">Official Alberta Driver Guides</span> &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- VIEW 6: TOP 30 STUDY PACK ONLINE INTERACTIVE VIEW -->
     <section id="view-study-pack" class="modes-section" style="display: none;">

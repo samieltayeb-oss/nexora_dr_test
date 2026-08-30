@@ -90,12 +90,16 @@ class App {
     document.querySelectorAll('[data-nav]').forEach(el => {
       el.addEventListener('click', (e) => {
         e.preventDefault();
-        const targetView = el.getAttribute('data-nav');
-        this.switchView(targetView);
+        const targetView = el.getAttribute('data-nav') || e.currentTarget?.getAttribute('data-nav');
+        if (targetView) this.switchView(targetView);
       });
     });
 
-    // Start Mode Buttons
+    // Hero & Mode CTA Buttons
+    document.getElementById('hero-top30-btn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.switchView('study-pack');
+    });
     document.getElementById('start-real-exam-btn')?.addEventListener('click', () => this.startExamSession('real-exam'));
     document.getElementById('start-practice-btn')?.addEventListener('click', () => this.startExamSession('practice'));
     document.getElementById('start-timed-btn')?.addEventListener('click', () => this.startExamSession('timed'));
