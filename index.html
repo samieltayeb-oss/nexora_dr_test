@@ -36,6 +36,7 @@
 
       <nav class="nav-links">
         <a href="#" class="nav-link active" data-nav="home" data-i18n="navHome">Home</a>
+        <a href="#" class="nav-link" data-nav="study-pack" data-i18n="navTop30">Top 30 Pack</a>
         <a href="#" class="nav-link" data-nav="readiness" data-i18n="navReadiness">My Readiness</a>
         <a href="#" class="nav-link" data-nav="study" data-i18n="navStudy">Study Guide</a>
       </nav>
@@ -51,6 +52,14 @@
     <!-- VIEW 1: HOME & MODE SELECTOR -->
     <section id="view-home" class="animate-fade-in">
       <div class="container hero-section">
+
+        <!-- Ahmed Sami Suliman Hero Personalization Banner -->
+        <div class="hero-personalization-card">
+          <div class="personalization-label" data-i18n="personalizationLabel">MADE ESPECIALLY FOR</div>
+          <div class="personalization-name" data-i18n="personalizationName">Ahmed Sami Suliman</div>
+          <div class="personalization-meta" data-i18n="personalizationMeta">17 YEARS OLD • ALBERTA CLASS 7</div>
+        </div>
+
         <div class="eyebrow-gold" data-i18n="heroEyebrow">Alberta Driver's Guide Practice Engine</div>
         <h1 class="hero-title">
           <span data-i18n="heroTitle">Master the Alberta Class 7</span><br>
@@ -64,8 +73,9 @@
           <button id="start-real-exam-btn" class="btn-primary" data-i18n="startRealExamCta">
             Start Exam Simulation <span>&rarr;</span>
           </button>
-          <button id="start-practice-btn" class="btn-secondary" data-i18n="practiceByTopicCta">
-            Practice by Topic
+          <button id="hero-top30-btn" class="btn-secondary" data-nav="study-pack">
+            <span data-i18n="top30Cta">Top 30 Study Pack</span>
+            <span style="font-size: 0.6rem; background: var(--nx-gold-surface); border: var(--border-width) solid var(--nx-gold); color: var(--nx-gold); padding: 0.15rem 0.4rem; border-radius: 2px; margin-left: 0.35rem;" data-i18n="top30Badge">PDF INCLUDED</span>
           </button>
         </div>
 
@@ -98,7 +108,26 @@
         </div>
 
         <div class="modes-grid">
-          <!-- Card 1: Real Exam Simulation -->
+          <!-- Card 1: Top 30 Study Pack -->
+          <div class="mode-card" style="border-color: var(--nx-gold-border);">
+            <div>
+              <span class="mode-badge" data-i18n="modeTop30Badge">STUDY ESSENTIALS</span>
+              <h3 class="mode-title" data-i18n="modeTop30Title">Top 30 Study Questions</h3>
+              <p class="mode-desc" data-i18n="modeTop30Desc">
+                Review 30 essential Class 7 concepts with answers, explanations, diagrams, and memory study tips.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+              <button class="cta-sweep mode-cta" data-nav="study-pack" data-i18n="btnStudyOnline">
+                Study Online &rarr;
+              </button>
+              <a href="downloads/nexora-dr-test-top-30-en.pdf" id="card-pdf-download-btn" target="_blank" download class="btn-ghost" style="padding: 0.25rem 0.5rem; font-size: 0.65rem; border: var(--border-width) solid var(--nx-card-border);" data-i18n="btnDownloadPdf">
+                📥 Download PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Real Exam Simulation -->
           <div class="mode-card">
             <div>
               <span class="mode-badge" data-i18n="modeRealExamBadge">Recommended</span>
@@ -112,7 +141,7 @@
             </button>
           </div>
 
-          <!-- Card 2: Practice Mode -->
+          <!-- Card 3: Practice Mode -->
           <div class="mode-card">
             <div>
               <span class="mode-badge" data-i18n="modePracticeBadge">Learning Mode</span>
@@ -126,7 +155,7 @@
             </button>
           </div>
 
-          <!-- Card 3: Timed Challenge -->
+          <!-- Card 4: Timed Challenge -->
           <div class="mode-card">
             <div>
               <span class="mode-badge" data-i18n="modeTimedBadge">Speed Training</span>
@@ -140,7 +169,7 @@
             </button>
           </div>
 
-          <!-- Card 4: Smart Review -->
+          <!-- Card 5: Smart Review -->
           <div class="mode-card">
             <div>
               <span class="mode-badge" data-i18n="modeSmartReviewBadge">Smart Adaptive Review</span>
@@ -154,7 +183,7 @@
             </button>
           </div>
 
-          <!-- Card 5: Road Signs -->
+          <!-- Card 6: Road Signs -->
           <div class="mode-card">
             <div>
               <span class="mode-badge" data-i18n="modeRoadSignsBadge">Visual Focus</span>
@@ -165,20 +194,6 @@
             </div>
             <button class="cta-sweep mode-cta" id="start-signs-btn" data-i18n="modeRoadSignsTitle">
               Test Road Signs &rarr;
-            </button>
-          </div>
-
-          <!-- Card 6: Study Guide -->
-          <div class="mode-card">
-            <div>
-              <span class="mode-badge" data-i18n="modeStudyGuideBadge">Revision</span>
-              <h3 class="mode-title" data-i18n="modeStudyGuideTitle">Concise Study Notes</h3>
-              <p class="mode-desc" data-i18n="modeStudyGuideDesc">
-                Condensed, high-yield summaries of Alberta road rules, parking regulations, demerits, and speed limits.
-              </p>
-            </div>
-            <button class="cta-sweep mode-cta" id="start-study-btn" data-i18n="modeStudyGuideTitle">
-              Read Study Guide &rarr;
             </button>
           </div>
         </div>
@@ -383,10 +398,47 @@
 
         <div id="study-topics-grid" class="modes-grid"></div>
 
-        <div style="text-align: center; margin-top: 3.5rem;">
-          <a href="https://www.alberta.ca/driver-guides" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            <span>📖</span> <span data-i18n="officialResourcesLink">Official Alberta Driver Guides</span> &rarr;
-          </a>
+    <!-- VIEW 6: TOP 30 STUDY PACK ONLINE INTERACTIVE VIEW -->
+    <section id="view-study-pack" class="modes-section" style="display: none;">
+      <div class="container container-narrow">
+        <div class="study-pack-header">
+          <div class="eyebrow-gold" data-i18n="modeTop30Badge">STUDY ESSENTIALS</div>
+          <h1 class="section-title" data-i18n="modeTop30Title">Top 30 Study Questions</h1>
+          <p data-i18n="top30Subtitle">Selected from the highest-priority topics in Alberta's Driver's Guide.</p>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="study-pack-controls">
+          <div class="study-pack-filter-bar" id="study-pack-filter-bar">
+            <button class="filter-pill active" data-filter="all">All Topics (30)</button>
+            <button class="filter-pill" data-filter="Signs & Signals">Signs & Signals</button>
+            <button class="filter-pill" data-filter="Right-of-Way & Intersections">Right-of-Way</button>
+            <button class="filter-pill" data-filter="Speed Limits & Zones">Speed & Zones</button>
+            <button class="filter-pill" data-filter="Parking Regulations">Parking</button>
+            <button class="filter-pill" data-filter="Special Road Situations">Special Situations</button>
+            <button class="filter-pill" data-filter="Driver Safety & Laws">Safety & GDL</button>
+          </div>
+
+          <div class="study-pack-actions">
+            <button id="btn-toggle-study-answers" class="btn-secondary" style="font-size: 0.7rem; padding: 0.5rem 0.9rem;" data-i18n="btnHideAnswers">
+              Hide Answers (Quiz Me)
+            </button>
+            <a href="downloads/nexora-dr-test-top-30-en.pdf" id="study-pack-download-pdf" target="_blank" download class="btn-primary" style="font-size: 0.7rem; padding: 0.5rem 1rem;">
+              📥 <span data-i18n="btnDownloadPdf">Download PDF</span>
+            </a>
+            <button id="btn-print-study-pack" class="btn-ghost" style="font-size: 0.7rem; border: var(--border-width) solid var(--nx-card-border);" data-i18n="btnPrintStudyPack">
+              🖨 Print
+            </button>
+          </div>
+        </div>
+
+        <!-- Questions List Container -->
+        <div id="study-pack-questions-list"></div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <button class="btn-primary" onclick="window.app.startExamSession('real-exam')">
+            Ready? Start Full Exam Simulation &rarr;
+          </button>
         </div>
       </div>
     </section>

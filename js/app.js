@@ -1,8 +1,6 @@
-// NEXORA DR TEST — Master Application Controller
-// Orchestrates views, state transitions, speech synthesis, and exam sessions
-
 import { questionsEn } from '../data/questions-en.js';
 import { questionsAr } from '../data/questions-ar.js';
+import { top30StudyPack } from '../data/top30-study-pack.js';
 import { LocalizationManager } from './localization.js';
 import { ExamEngine } from './exam-engine.js';
 import { ExamTimer } from './timer.js';
@@ -15,6 +13,8 @@ class App {
     this.loc = new LocalizationManager();
     this.progress = new ProgressEngine();
     this.speech = new SpeechEngine();
+    this.studyAnswersRevealed = true;
+    this.studyActiveFilter = 'all';
 
     this.timer = new ExamTimer({
       durationMinutes: 30,
@@ -50,6 +50,7 @@ class App {
     this.viewResults = document.getElementById('view-results');
     this.viewReadiness = document.getElementById('view-readiness');
     this.viewStudy = document.getElementById('view-study');
+    this.viewStudyPack = document.getElementById('view-study-pack');
 
     // Exam elements
     this.qTracker = document.getElementById('q-tracker');
@@ -81,6 +82,7 @@ class App {
         if (this.currentView === 'home') this.renderHome();
         if (this.currentView === 'readiness') this.renderReadiness();
         if (this.currentView === 'study') this.renderStudy();
+        if (this.currentView === 'study-pack') this.renderStudyPack();
       });
     }
 
@@ -100,6 +102,29 @@ class App {
     document.getElementById('start-smart-btn')?.addEventListener('click', () => this.startExamSession('smart-review'));
     document.getElementById('start-signs-btn')?.addEventListener('click', () => this.startExamSession('road-signs'));
     document.getElementById('start-study-btn')?.addEventListener('click', () => this.switchView('study'));
+
+    // Top 30 Study Pack Controls
+    document.getElementById('btn-toggle-study-answers')?.addEventListener('click', () => {
+      this.studyAnswersRevealed = !this.studyAnswersRevealed;
+      const btn = document.getElementById('btn-toggle-study-answers');
+      if (btn) {
+        btn.textContent = this.studyAnswersRevealed ? this.loc.t('btnHideAnswers') : this.loc.t('btnShowAnswers');
+      }
+      this.renderStudyPack();
+    });
+
+    document.getElementById('btn-print-study-pack')?.addEventListener('click', () => {
+      window.print();
+    });
+
+    document.querySelectorAll('#study-pack-filter-bar .filter-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('#study-pack-filter-bar .filter-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        this.studyActiveFilter = pill.getAttribute('data-filter') || 'all';
+        this.renderStudyPack();
+      });
+    });
 
     // Exam Controls
     document.getElementById('btn-skip')?.addEventListener('click', () => this.examEngine.skipCurrentQuestion());
@@ -158,7 +183,7 @@ class App {
     this.currentView = viewName;
     this.speech.stop();
 
-    [this.viewHome, this.viewExam, this.viewResults, this.viewReadiness, this.viewStudy].forEach(v => {
+    [this.viewHome, this.viewExam, this.viewResults, this.viewReadiness, this.viewStudy, this.viewStudyPack].forEach(v => {
       if (v) v.style.display = 'none';
     });
 
@@ -175,6 +200,9 @@ class App {
     } else if (viewName === 'study') {
       this.viewStudy.style.display = 'block';
       this.renderStudy();
+    } else if (viewName === 'study-pack') {
+      this.viewStudyPack.style.display = 'block';
+      this.renderStudyPack();
     }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -563,6 +591,122 @@ class App {
     }
   }
 
+  renderStudyPack() {
+    const isAr = this.loc.currentLang === 'ar';
+    const activeBankMap = new Map(this.activeBank.map(q => [q.id, q]));
+    const container = document.getElementById('study-pack-questions-list');
+    if (!container) return;
+
+    // Filter items
+    let items = top30StudyPack;
+    if (this.studyActiveFilter && this.studyActiveFilter !== 'all') {
+      items = items.filter(item => item.categoryGroup === this.studyActiveFilter);
+    }
+
+    const letters = isAr ? ['أ', 'ب', 'ج', 'د'] : ['A', 'B', 'C', 'D'];
+    const pdfPath = isAr ? 'downloads/nexora-dr-test-top-30-ar.pdf' : 'downloads/nexora-dr-test-top-30-en.pdf';
+
+    // Update download links
+    const dlBtn = document.getElementById('study-pack-download-pdf');
+    if (dlBtn) dlBtn.href = pdfPath;
+    const cardDlBtn = document.getElementById('card-pdf-download-btn');
+    if (cardDlBtn) cardDlBtn.href = pdfPath;
+
+    container.innerHTML = items.map((item, idx) => {
+      const q = activeBankMap.get(item.questionId);
+      if (!q) return '';
+
+      let visualHtml = '';
+      if (q.visualType === 'sign' && q.signAsset) {
+        visualHtml = `
+          <div class="question-visual-container" style="margin: 0.75rem 0 1rem; background: rgba(0,0,0,0.3);">
+            <img src="${q.signAsset}" class="question-sign-img" style="max-height: 120px;" alt="${q.question}" />
+          </div>
+        `;
+      } else if (q.visualType === 'nano-banana' && q.image) {
+        visualHtml = `
+          <div class="question-visual-container" style="margin: 0.75rem 0 1rem; background: rgba(0,0,0,0.3);">
+            <img src="${q.image}" class="question-scenario-img" style="max-height: 220px;" alt="${q.imageAlt || q.question}" onclick="window.app.openLightbox('${q.image}', '${q.imageAlt || q.question}')" />
+            <span class="visual-zoom-hint">🔍 Tap to zoom scenario</span>
+          </div>
+        `;
+      }
+
+      const optionsHtml = q.answers.map((ans, aIdx) => {
+        const isCorrect = ans === q.correctAnswer;
+        let optClass = '';
+        if (this.studyAnswersRevealed && isCorrect) {
+          optClass = 'is-correct';
+        }
+
+        return `
+          <div class="study-opt-item ${optClass}" data-q-id="${q.id}" data-opt-idx="${aIdx}">
+            <span class="study-opt-marker">${letters[aIdx]}</span>
+            <span style="flex-grow: 1;">${ans} ${this.studyAnswersRevealed && isCorrect ? '✓' : ''}</span>
+          </div>
+        `;
+      }).join('');
+
+      const tipText = isAr ? item.studyTipAr : item.studyTip;
+      const qNumberLabel = isAr ? `السؤال ${item.order} من 30` : `QUESTION ${String(item.order).padStart(2, '0')} OF 30`;
+
+      return `
+        <div class="study-card" id="study-card-${q.id}">
+          <div class="study-card-meta">
+            <span class="study-card-num">${qNumberLabel}</span>
+            <span class="category-tag">${item.categoryGroup}</span>
+          </div>
+          <div class="study-card-q">${q.question}</div>
+          ${visualHtml}
+          <div class="study-options-list">
+            ${optionsHtml}
+          </div>
+
+          <div class="practice-explanation-box ${this.studyAnswersRevealed ? 'active' : ''}" style="margin-top: 0.75rem; border-color: var(--nx-gold);">
+            <div class="explanation-title" style="color: var(--nx-gold);">${isAr ? 'التفسير القانوني' : 'WHY THIS ANSWER IS CORRECT'}</div>
+            <div class="explanation-text">${q.explanation}</div>
+          </div>
+
+          <div class="study-tip-box" style="display: ${this.studyAnswersRevealed ? 'block' : 'none'};">
+            <strong>💡 ${isAr ? 'نصيحة للمراجعة:' : 'STUDY TIP:'}</strong> ${tipText}
+          </div>
+
+          <div class="study-source-label">
+            ${isAr ? 'دليل السائق في ألبرتا —' : "Alberta Driver's Guide —"} ${q.sourceTopic || q.category}
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // If quiz mode (answers hidden), bind option click listeners for interactive self-testing
+    if (!this.studyAnswersRevealed) {
+      container.querySelectorAll('.study-opt-item').forEach(opt => {
+        opt.style.cursor = 'pointer';
+        opt.addEventListener('click', () => {
+          const qId = opt.getAttribute('data-q-id');
+          const q = activeBankMap.get(qId);
+          const optIdx = parseInt(opt.getAttribute('data-opt-idx'), 10);
+          const card = document.getElementById(`study-card-${qId}`);
+          if (!card || !q) return;
+
+          card.querySelectorAll('.study-opt-item').forEach((item, idx) => {
+            item.classList.remove('is-correct', 'wrong-feedback');
+            if (q.answers[idx] === q.correctAnswer) {
+              item.classList.add('is-correct');
+            } else if (idx === optIdx && q.answers[idx] !== q.correctAnswer) {
+              item.style.borderColor = 'var(--nx-fail-red)';
+              item.style.background = 'var(--nx-fail-surface)';
+            }
+          });
+
+          card.querySelector('.practice-explanation-box')?.classList.add('active');
+          const tipBox = card.querySelector('.study-tip-box');
+          if (tipBox) tipBox.style.display = 'block';
+        });
+      });
+    }
+  }
+
   updateLanguageUI() {
     const lang = this.loc.currentLang;
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -574,6 +718,12 @@ class App {
     if (langToggleBtn) {
       langToggleBtn.textContent = this.loc.t('langToggle');
     }
+
+    const pdfPath = lang === 'ar' ? 'downloads/nexora-dr-test-top-30-ar.pdf' : 'downloads/nexora-dr-test-top-30-en.pdf';
+    const cardDlBtn = document.getElementById('card-pdf-download-btn');
+    if (cardDlBtn) cardDlBtn.href = pdfPath;
+    const studyDlBtn = document.getElementById('study-pack-download-pdf');
+    if (studyDlBtn) studyDlBtn.href = pdfPath;
   }
 
   openModal(modal) {

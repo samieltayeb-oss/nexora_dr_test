@@ -485,3 +485,268 @@
   font-size: 0.6875rem;
   color: var(--nx-muted);
 }
+
+/* Ahmed Sami Suliman Hero Personalization Banner */
+.hero-personalization-card {
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  padding: 1.25rem 2rem;
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-gold-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), var(--glow-gold-subtle);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-personalization-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--nx-gold), transparent);
+}
+
+.personalization-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--nx-gold);
+  margin-bottom: 0.35rem;
+}
+
+.lang-ar .personalization-label {
+  font-family: var(--font-arabic-heading);
+  letter-spacing: 0.1em;
+}
+
+.personalization-name {
+  font-family: var(--font-headline);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--nx-ivory);
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.lang-ar .personalization-name {
+  font-family: var(--font-arabic-heading);
+  font-size: 1.6rem;
+}
+
+.personalization-meta {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--nx-muted);
+}
+
+.lang-ar .personalization-meta {
+  font-family: var(--font-arabic-body);
+  letter-spacing: 0.05em;
+}
+
+/* Top 30 Study Pack Interactive UI */
+.study-pack-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.study-pack-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background: var(--nx-near);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: var(--border-width) solid var(--nx-card-border);
+}
+
+.study-pack-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: var(--nx-black);
+  border: var(--border-width) solid var(--nx-card-border);
+  color: var(--nx-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover, .filter-pill.active {
+  background: var(--nx-gold-surface);
+  border-color: var(--nx-gold);
+  color: var(--nx-gold);
+}
+
+.study-pack-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.study-card {
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-card-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.25s ease;
+}
+
+.study-card:hover {
+  border-color: var(--nx-gold-border);
+}
+
+.study-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.study-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--nx-gold);
+  letter-spacing: 0.15em;
+}
+
+.study-card-q {
+  font-size: 1.15rem;
+  color: var(--nx-ivory);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.study-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.study-opt-item {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-xs);
+  background: var(--nx-black);
+  border: var(--border-width) solid var(--nx-card-border);
+  font-size: 0.9rem;
+  color: var(--nx-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.25s ease;
+}
+
+.study-opt-item.is-correct {
+  background: var(--nx-pass-surface);
+  border-color: var(--nx-pass-green);
+  color: var(--nx-ivory);
+}
+
+.study-opt-item.is-correct .study-opt-marker {
+  background: var(--nx-pass-green);
+  color: #000000;
+}
+
+.study-opt-marker {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-xs);
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.study-tip-box {
+  background: var(--nx-gold-surface);
+  border: var(--border-width) solid var(--nx-gold-border);
+  border-radius: var(--radius-xs);
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--nx-gold);
+  line-height: 1.5;
+}
+
+.study-source-label {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--nx-dark-muted);
+  text-align: right;
+}
+
+.lang-ar .study-source-label {
+  text-align: left;
+}
+
+/* Dedicated Print Stylesheet */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .nx-header, .nx-footer, .ambient-glow, .study-pack-controls, .hero-ctas, .btn-ghost, .stat-grid, .modes-section {
+    display: none !important;
+  }
+
+  .study-card {
+    background: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+    color: #000000 !important;
+    page-break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  .study-card-q {
+    color: #000000 !important;
+  }
+
+  .study-opt-item {
+    background: #F9F9F9 !important;
+    border: 1px solid #DDDDDD !important;
+    color: #000000 !important;
+  }
+
+  .study-opt-item.is-correct {
+    background: #E6F4EA !important;
+    border-color: #34A853 !important;
+    font-weight: bold;
+  }
+
+  .study-tip-box {
+    background: #FEF9E7 !important;
+    border: 1px solid #F1C40F !important;
+    color: #7D6608 !important;
+  }
+}
+

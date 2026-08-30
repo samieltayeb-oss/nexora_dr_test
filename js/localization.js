@@ -8,9 +8,14 @@ export const translations = {
     navHome: "Home",
     navModes: "Exam Modes",
     navStudy: "Study Guide",
+    navTop30: "Top 30 Pack",
     navReadiness: "My Readiness",
     navSigns: "Road Signs",
     langToggle: "العربية",
+
+    personalizationLabel: "MADE ESPECIALLY FOR",
+    personalizationName: "Ahmed Sami Suliman",
+    personalizationMeta: "17 YEARS OLD • ALBERTA CLASS 7",
 
     heroEyebrow: "Alberta Driver's Guide Practice Engine",
     heroTitle: "Master the Alberta Class 7",
@@ -18,6 +23,8 @@ export const translations = {
     heroSubtitle: "Prepare with precision using realistic examinations, road-sign simulations, and situational road diagrams based on the official Alberta Driver's Guide.",
     startRealExamCta: "Start Real Exam Simulation",
     practiceByTopicCta: "Practice by Topic",
+    top30Cta: "Top 30 Study Pack",
+    top30Badge: "PDF INCLUDED",
 
     statQuestions: "30",
     statQuestionsLabel: "Questions Per Exam",
@@ -30,6 +37,17 @@ export const translations = {
 
     modeSectionTitle: "Structured Examination Modes",
     modeSectionSubtitle: "Choose your preparation path — from realistic government registry simulations to focused category mastery.",
+
+    modeTop30Title: "Top 30 Study Questions",
+    modeTop30Desc: "Review 30 essential Class 7 concepts with answers, explanations, diagrams, and memory study tips.",
+    modeTop30Badge: "STUDY ESSENTIALS",
+    top30Subtitle: "Selected from the highest-priority topics in Alberta's Driver's Guide.",
+    btnStudyOnline: "Study Online",
+    btnDownloadPdf: "Download PDF",
+    btnPrintStudyPack: "Print Study Pack",
+    btnShowAnswers: "Show All Answers",
+    btnHideAnswers: "Hide Answers (Quiz Me)",
+    studyTipLabel: "STUDY TIP",
 
     modeRealExamTitle: "Real Exam Simulation",
     modeRealExamDesc: "Strict 30-question simulation matching Alberta registry conditions. No mid-test answers, no countdown timer.",
@@ -112,9 +130,14 @@ export const translations = {
     navHome: "الرئيسية",
     navModes: "أنماط الاختبار",
     navStudy: "دليل الدراسة",
+    navTop30: "أهم 30 سؤالاً",
     navReadiness: "مستوى الجاهزية",
     navSigns: "شواخص المرور",
     langToggle: "English",
+
+    personalizationLabel: "صُمم خصيصاً لـ",
+    personalizationName: "أحمد سامي سليمان",
+    personalizationMeta: "17 عاماً • رخصة المتعلم Class 7 في ألبرتا",
 
     heroEyebrow: "منظومة التدريب على دليل السائق بألبرتا",
     heroTitle: "اجتز اختبار قيادة ألبرتا",
@@ -122,6 +145,8 @@ export const translations = {
     heroSubtitle: "استعد بدقة متناهية عبر اختبارات واقعية تحاكي نظام السجل المدني بألبرتا، ورسوم ثلاثية الأبعاد لمواقف الطريق وشواخص المرور المعتمدة.",
     startRealExamCta: "بدء محاكاة الاختبار الواقعي",
     practiceByTopicCta: "التدريب حسب الموضوع",
+    top30Cta: "أهم 30 سؤالاً للمراجعة",
+    top30Badge: "ملف PDF مرفق",
 
     statQuestions: "30",
     statQuestionsLabel: "سؤالاً في كل اختبار",
@@ -134,6 +159,17 @@ export const translations = {
 
     modeSectionTitle: "أنماط الاختبارات المنظمة",
     modeSectionSubtitle: "اختر مسار تدريبك — من المحاكاة الكاملة المطابقة لاختبار السجل إلى التدريب المركز والمراجعة الذكية.",
+
+    modeTop30Title: "أهم 30 سؤالاً للمراجعة",
+    modeTop30Desc: "مراجعة 30 سؤالاً عالي الأهمية مع الحلول والشروحات المفصلة ونصائح المراجعة السريعة.",
+    modeTop30Badge: "أساسيات المراجعة",
+    top30Subtitle: "تم اختيارها من أهم المواضيع في دليل السائق الرسمي لحكومة ألبرتا.",
+    btnStudyOnline: "ابدأ المراجعة الآن",
+    btnDownloadPdf: "تحميل دليل PDF",
+    btnPrintStudyPack: "طباعة الدليل",
+    btnShowAnswers: "إظهار كافة الإجابات",
+    btnHideAnswers: "إخفاء الإجابات (اختبر نفسي)",
+    studyTipLabel: "نصيحة للمراجعة",
 
     modeRealExamTitle: "محاكاة الاختبار الواقعي",
     modeRealExamDesc: "اختبار دقيق من 30 سؤالاً مطابق لظروف مراكز السجل بألبرتا، بدون مؤقت زمني وبدون إظهار الإجابات أثناء الاختبار.",
