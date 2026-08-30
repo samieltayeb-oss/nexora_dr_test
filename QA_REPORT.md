@@ -17,6 +17,7 @@
 | **TC-06: Category Breakdown Summation** | Category percentages and counts sum to 30 | Random Sample | **PASSED** |
 | **TC-07: Asset Existence Audit** | All 34 SVG signs on disk and 12 scenario images verified on disk | 100% Asset Paths | **PASSED** |
 | **TC-08: Arabic Bank 1-to-1 Mapping** | 306 Arabic questions match English IDs and answer choices | 306 Questions | **PASSED** |
+| **TC-09: Top 30 Study Pack & PDFs** | 30 curated questions, study tips, EN & AR 21-page PDFs verified | 11 Assertions | **PASSED** |
 
 ---
 
