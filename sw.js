@@ -1,5 +1,5 @@
-// NEXORA DR TEST — Offline Service Worker Cache
-const CACHE_NAME = 'nexora-dr-test-v1';
+// NEXORA DR TEST — Offline Service Worker (V1.1)
+const CACHE_NAME = 'nexora-dr-test-v1.1';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -20,15 +20,17 @@ const STATIC_ASSETS = [
   './js/localization.js',
   './data/questions-en.js',
   './data/questions-ar.js',
+  './data/top30-study-pack.js',
   './assets/brand/logo-primary.png',
   './assets/brand/logo.png'
 ];
 
 self.addEventListener('install', (e) => {
+  self.skipWaiting();
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS);
-    }).then(() => self.skipWaiting())
+    })
   );
 });
 
@@ -46,14 +48,28 @@ self.addEventListener('activate', (e) => {
   );
 });
 
+// Network-First with Cache Fallback for instant update propagation
 self.addEventListener('fetch', (e) => {
+  if (e.request.method !== 'GET') return;
+
   e.respondWith(
-    caches.match(e.request).then((res) => {
-      return res || fetch(e.request).catch(() => {
-        if (e.request.destination === 'document') {
-          return caches.match('./index.html');
+    fetch(e.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(e.request, responseClone);
+          });
         }
-      });
-    })
+        return networkResponse;
+      })
+      .catch(() => {
+        return caches.match(e.request).then((cachedResponse) => {
+          if (cachedResponse) return cachedResponse;
+          if (e.request.destination === 'document') {
+            return caches.match('./index.html');
+          }
+        });
+      })
   );
 });
