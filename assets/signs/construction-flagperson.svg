@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <g transform="translate(100, 100) rotate(45)">
+      <rect x="-68" y="-68" width="136" height="136" rx="12" fill="#F97316" stroke="#000000" stroke-width="6"/>
+    </g>
+    <!-- Flagperson with flag -->
+    <circle cx="85" cy="58" r="9" fill="#000000"/>
+    <path d="M78,72 L96,72 L100,118 L94,152 L84,152 L86,122 L80,152 L70,152 L74,118 L68,88 Z" fill="#000000"/>
+    <!-- Arm holding flag staff horizontally -->
+    <line x1="92" y1="85" x2="152" y2="85" stroke="#000000" stroke-width="5"/>
+    <polygon points="120,85 152,85 152,118 120,118" fill="#000000"/>
+  </svg>

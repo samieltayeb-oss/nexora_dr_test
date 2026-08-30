@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <polygon points="100,15 185,75 160,185 40,185 15,75" fill="#D9F99D" stroke="#000000" stroke-width="6"/>
+    <!-- Adult silhouette -->
+    <circle cx="82" cy="72" r="10" fill="#000000"/>
+    <path d="M72,88 Q82,82 92,88 L96,135 L86,135 L84,165 L76,165 L74,135 L68,135 Z" fill="#000000"/>
+    <!-- Child silhouette -->
+    <circle cx="122" cy="90" r="8" fill="#000000"/>
+    <path d="M114,104 Q122,98 130,104 L132,140 L125,140 L123,165 L117,165 L115,140 L110,140 Z" fill="#000000"/>
+    <!-- Briefcase/Bag -->
+    <rect x="62" y="112" width="10" height="14" rx="2" fill="#000000"/>
+  </svg>

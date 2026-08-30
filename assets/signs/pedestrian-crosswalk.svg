@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <g transform="translate(100, 100) rotate(45)">
+      <rect x="-68" y="-68" width="136" height="136" rx="12" fill="#FACC15" stroke="#000000" stroke-width="6"/>
+    </g>
+    <circle cx="100" cy="55" r="10" fill="#000000"/>
+    <path d="M92,72 L108,72 L116,98 L104,102 L98,84 L94,115 L106,145 L94,145 L86,120 L78,145 L66,145 L80,105 L82,82 Z" fill="#000000"/>
+    <!-- Crosswalk stripes -->
+    <line x1="45" y1="155" x2="155" y2="155" stroke="#000000" stroke-width="4"/>
+    <line x1="45" y1="163" x2="155" y2="163" stroke="#000000" stroke-width="3" stroke-dasharray="8,6"/>
+  </svg>

@@ -1,0 +1,341 @@
+/* NEXORA DR TEST — Results Experience, Performance Charts & Mistake Review */
+
+.results-section {
+  padding: 3rem 0 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.results-hero-card {
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-card-border);
+  border-radius: var(--radius-md);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-elevation);
+  position: relative;
+  overflow: hidden;
+}
+
+.results-hero-card.passed {
+  border-color: var(--nx-pass-border);
+  background: linear-gradient(180deg, rgba(34, 197, 94, 0.04) 0%, var(--nx-near) 100%);
+}
+
+.results-hero-card.failed {
+  border-color: var(--nx-fail-border);
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.04) 0%, var(--nx-near) 100%);
+}
+
+.results-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.passed .results-status-badge {
+  color: var(--nx-pass-green);
+  background: var(--nx-pass-surface);
+  border: var(--border-width) solid var(--nx-pass-border);
+}
+
+.failed .results-status-badge {
+  color: var(--nx-fail-red);
+  background: var(--nx-fail-surface);
+  border: var(--border-width) solid var(--nx-fail-border);
+}
+
+.results-hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  margin-bottom: 0.75rem;
+}
+
+.results-hero-subtitle {
+  font-size: 1.05rem;
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Score Circular Radial Indicator */
+.score-circle-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.score-circle-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 8;
+}
+
+.score-circle-bar {
+  fill: none;
+  stroke: var(--nx-gold);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  transition: stroke-dashoffset 1.2s var(--transition-smooth);
+}
+
+.passed .score-circle-bar {
+  stroke: var(--nx-pass-green);
+}
+
+.failed .score-circle-bar {
+  stroke: var(--nx-fail-red);
+}
+
+.score-circle-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-number {
+  font-family: var(--font-headline);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--nx-ivory);
+}
+
+.lang-ar .score-number {
+  font-family: var(--font-arabic-heading);
+}
+
+.score-pct {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--nx-muted);
+  margin-top: 0.25rem;
+}
+
+/* Quick Summary Stat Blocks */
+.results-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.results-stat-box {
+  background: var(--nx-black);
+  border: var(--border-width) solid var(--nx-card-border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.results-stat-num {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--nx-ivory);
+  margin-bottom: 0.25rem;
+}
+
+.results-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--nx-muted);
+}
+
+/* Results Actions */
+.results-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Category Performance Breakdown */
+.breakdown-card {
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-card-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.breakdown-header {
+  margin-bottom: 1.75rem;
+}
+
+.breakdown-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.breakdown-item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--nx-ivory);
+}
+
+.breakdown-track {
+  height: 6px;
+  background: var(--nx-black);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.breakdown-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--nx-gold);
+  transition: width 0.8s var(--transition-smooth);
+}
+
+.breakdown-fill.high { background: var(--nx-pass-green); }
+.breakdown-fill.medium { background: var(--nx-gold); }
+.breakdown-fill.low { background: var(--nx-fail-red); }
+
+/* Detailed Mistake Review Section */
+.mistakes-section {
+  margin-top: 3rem;
+}
+
+.mistakes-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.mistake-card {
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-fail-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.mistake-q-num {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  color: var(--nx-gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.mistake-question {
+  font-size: 1.1rem;
+  color: var(--nx-ivory);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.mistake-answers-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.mistake-ans-box {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.875rem;
+}
+
+.mistake-ans-box.wrong {
+  background: var(--nx-fail-surface);
+  border: var(--border-width) solid var(--nx-fail-border);
+}
+
+.mistake-ans-box.correct {
+  background: var(--nx-pass-surface);
+  border: var(--border-width) solid var(--nx-pass-border);
+}
+
+.mistake-box-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.wrong .mistake-box-label { color: var(--nx-fail-red); }
+.correct .mistake-box-label { color: var(--nx-pass-green); }
+
+.mistake-explanation-box {
+  background: var(--nx-black);
+  border-left: 2px solid var(--nx-gold);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  font-size: 0.85rem;
+  color: var(--nx-muted);
+  line-height: 1.6;
+}
+
+.lang-ar .mistake-explanation-box {
+  border-left: none;
+  border-right: 2px solid var(--nx-gold);
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}
+
+/* Readiness Dashboard */
+.readiness-section {
+  padding: 3.5rem 0 6rem;
+}
+
+.readiness-card {
+  background: var(--nx-near);
+  border: var(--border-width) solid var(--nx-card-border);
+  border-radius: var(--radius-md);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.readiness-badge {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.4rem 1.2rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--nx-gold-surface);
+  border: var(--border-width) solid var(--nx-gold-border);
+  color: var(--nx-gold);
+}

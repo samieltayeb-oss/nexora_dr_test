@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" width="100%" height="100%">
+    <rect x="6" y="6" width="148" height="188" rx="12" fill="#FFFFFF" stroke="#000000" stroke-width="6"/>
+    <!-- Obstacle divider at top -->
+    <path d="M70,35 Q80,28 90,35 L95,65 Q80,75 65,65 Z" fill="#000000"/>
+    <!-- Arrow pointing down and right -->
+    <path d="M55,75 Q75,90 95,115 L108,102 L112,142 L72,138 L85,125 Q65,100 45,85 Z" fill="#000000"/>
+  </svg>

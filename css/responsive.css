@@ -1,0 +1,147 @@
+/* NEXORA DR TEST — Mobile-First Responsive & RTL Polish */
+
+/* Mobile Breakpoints (<= 768px) */
+@media (max-width: 768px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .modes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .results-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .mistake-answers-comparison {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .hero-section {
+    padding: 3rem 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .nav-links {
+    display: none; /* Collapsed mobile view or simplified header */
+  }
+
+  .header-actions {
+    gap: 0.5rem;
+  }
+
+  .question-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .answer-card {
+    padding: 0.9rem 1rem;
+    min-height: 52px; /* Touch target >= 44px */
+  }
+
+  .exam-controls {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .exam-controls-left, .exam-controls-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .exam-controls-right .btn-primary {
+    flex-grow: 1;
+  }
+
+  .results-hero-card {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .breakdown-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+/* Small Viewport (iPhone SE <= 420px) */
+@media (max-width: 420px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+
+  .answer-text {
+    font-size: 0.875rem;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+}
+
+/* RTL Layout Mirroring (Arabic) */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .eyebrow-gold::before {
+  margin-left: 0.75rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .mode-badge {
+  align-self: flex-start;
+}
+
+[dir="rtl"] .answer-card {
+  text-align: right;
+}
+
+[dir="rtl"] .cta-sweep::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .mistake-explanation-box {
+  border-left: none;
+  border-right: 2px solid var(--nx-gold);
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}
+
+[dir="rtl"] .practice-explanation-box {
+  border-left: none;
+  border-right: 3px solid var(--nx-gold);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}

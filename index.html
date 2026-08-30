@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="NEXORA DR TEST — Premium Alberta Class 7 Learner Driver Knowledge Test Preparation Platform. Realistic simulations, road signs, and scenario diagrams based on the official Alberta Driver's Guide.">
+  <title>NEXORA DR TEST — Alberta Class 7 Learner Knowledge Exam Prep</title>
+
+  <!-- PWA & Mobile Icons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/brand/logo.png">
+  <link rel="apple-touch-icon" href="assets/brand/logo.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/nexora-tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/exam.css">
+  <link rel="stylesheet" href="css/results.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="lang-en">
+
+  <!-- Ambient Radial Lighting -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="nx-header">
+    <div class="container header-content">
+      <a href="#" class="brand-wrapper" data-nav="home" aria-label="NEXORA DR TEST Home">
+        <img src="assets/brand/logo-primary.png" alt="NEXORA" class="brand-logo-img">
+        <span class="brand-divider"></span>
+        <span class="brand-tagline">DR TEST • AB CLASS 7</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#" class="nav-link active" data-nav="home" data-i18n="navHome">Home</a>
+        <a href="#" class="nav-link" data-nav="readiness" data-i18n="navReadiness">My Readiness</a>
+        <a href="#" class="nav-link" data-nav="study" data-i18n="navStudy">Study Guide</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="lang-toggle-btn" class="lang-btn" aria-label="Toggle Language">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Content Views -->
+  <main>
+    <!-- VIEW 1: HOME & MODE SELECTOR -->
+    <section id="view-home" class="animate-fade-in">
+      <div class="container hero-section">
+        <div class="eyebrow-gold" data-i18n="heroEyebrow">Official Curriculum Practice Engine</div>
+        <h1 class="hero-title">
+          <span data-i18n="heroTitle">Master the Alberta Class 7</span><br>
+          <span class="hero-title-accent" data-i18n="heroTitleAccent">Learner Driver Exam</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          Prepare with precision using realistic examinations, road-sign simulations, and situational road diagrams based on the official Alberta Driver's Guide.
+        </p>
+
+        <div class="hero-ctas">
+          <button id="start-real-exam-btn" class="btn-primary" data-i18n="startRealExamCta">
+            Start Exam Simulation <span>&rarr;</span>
+          </button>
+          <button id="start-practice-btn" class="btn-secondary" data-i18n="practiceByTopicCta">
+            Practice by Topic
+          </button>
+        </div>
+
+        <!-- Metric Stat Cards -->
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="statQuestions">30</div>
+            <div class="stat-label" data-i18n="statQuestionsLabel">Questions Per Exam</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="statPassMark">25 / 30</div>
+            <div class="stat-label" data-i18n="statPassMarkLabel">Passing Mark (83%)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="statBankSize">290+</div>
+            <div class="stat-label" data-i18n="statBankSizeLabel">Validated Questions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-readiness">0%</div>
+            <div class="stat-label" data-i18n="navReadiness">My Readiness</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Examination Modes Grid -->
+      <div class="container modes-section">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="modeSectionTitle">Structured Examination Modes</h2>
+          <p data-i18n="modeSectionSubtitle">Choose your preparation path — from realistic registry simulations to focused category mastery.</p>
+        </div>
+
+        <div class="modes-grid">
+          <!-- Card 1: Real Exam Simulation -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modeRealExamBadge">Recommended</span>
+              <h3 class="mode-title" data-i18n="modeRealExamTitle">Real Exam Simulation</h3>
+              <p class="mode-desc" data-i18n="modeRealExamDesc">
+                Strict 30-question simulation matching Alberta registry conditions. No mid-test answers, no countdown timer.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-real-exam-card-btn" data-i18n="startRealExamCta" onclick="window.app.startExamSession('real-exam')">
+              Start Simulation &rarr;
+            </button>
+          </div>
+
+          <!-- Card 2: Practice Mode -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modePracticeBadge">Learning Mode</span>
+              <h3 class="mode-title" data-i18n="modePracticeTitle">Practice by Category</h3>
+              <p class="mode-desc" data-i18n="modePracticeDesc">
+                Study specific topics with instant answer validation, step-by-step explanations, and Driver's Guide references.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-practice-card-btn" data-i18n="practiceByTopicCta" onclick="window.app.startExamSession('practice')">
+              Explore Topics &rarr;
+            </button>
+          </div>
+
+          <!-- Card 3: Timed Challenge -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modeTimedBadge">Speed Training</span>
+              <h3 class="mode-title" data-i18n="modeTimedTitle">Timed Challenge</h3>
+              <p class="mode-desc" data-i18n="modeTimedDesc">
+                Build testing confidence under time pressure with configurable 15, 20, or 30-minute countdown timers.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-timed-btn" data-i18n="modeTimedTitle">
+              Start Timed Test &rarr;
+            </button>
+          </div>
+
+          <!-- Card 4: Smart Review -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modeSmartReviewBadge">Adaptive AI</span>
+              <h3 class="mode-title" data-i18n="modeSmartReviewTitle">Smart Weakness Review</h3>
+              <p class="mode-desc" data-i18n="modeSmartReviewDesc">
+                Personalized exam generated automatically from your historical weak categories and missed questions.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-smart-btn" data-i18n="modeSmartReviewTitle">
+              Review Weaknesses &rarr;
+            </button>
+          </div>
+
+          <!-- Card 5: Road Signs -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modeRoadSignsBadge">Visual Focus</span>
+              <h3 class="mode-title" data-i18n="modeRoadSignsTitle">Road Sign Challenge</h3>
+              <p class="mode-desc" data-i18n="modeRoadSignsDesc">
+                Master 100% of Alberta regulatory, warning, and information signs with high-contrast vector illustrations.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-signs-btn" data-i18n="modeRoadSignsTitle">
+              Test Road Signs &rarr;
+            </button>
+          </div>
+
+          <!-- Card 6: Study Guide -->
+          <div class="mode-card">
+            <div>
+              <span class="mode-badge" data-i18n="modeStudyGuideBadge">Revision</span>
+              <h3 class="mode-title" data-i18n="modeStudyGuideTitle">Concise Study Notes</h3>
+              <p class="mode-desc" data-i18n="modeStudyGuideDesc">
+                Condensed, high-yield summaries of Alberta road rules, parking regulations, demerits, and speed limits.
+              </p>
+            </div>
+            <button class="cta-sweep mode-cta" id="start-study-btn" data-i18n="modeStudyGuideTitle">
+              Read Study Guide &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: FOCUSED EXAMINATION VIEWPORT -->
+    <section id="view-exam" class="exam-section" style="display: none;">
+      <div class="container exam-container">
+        
+        <!-- Top Meta Tracker Bar -->
+        <div class="exam-topbar">
+          <div class="exam-meta-left">
+            <span id="q-tracker" class="question-tracker">Question 1 of 30</span>
+            <span id="category-tag" class="category-tag">Right-of-Way</span>
+          </div>
+
+          <div class="header-actions">
+            <!-- Timed Challenge Countdown Pill (Shown only in Timed Mode) -->
+            <div id="timer-pill" class="timer-pill" style="display: none;">
+              <span>⏱</span>
+              <span id="timer-text">30:00</span>
+            </div>
+            <button id="btn-read-audio" class="btn-ghost" style="font-size: 0.7rem;">🔊 Read Question</button>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="exam-progress-wrapper">
+          <div class="exam-progress-bar-bg">
+            <div id="progress-bar-fill" class="exam-progress-bar-fill"></div>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <h2 id="question-text" class="question-text">
+            Loading examination question...
+          </h2>
+
+          <!-- Visual Graphic Container (Signs or Nano Banana Scenarios) -->
+          <div id="visual-container" class="question-visual-container" style="display: none;"></div>
+
+          <!-- Answer Cards A / B / C / D -->
+          <div id="answers-container" class="answers-grid" role="radiogroup"></div>
+
+          <!-- Instant Explanation (Practice Mode Only) -->
+          <div id="practice-explanation" class="practice-explanation-box">
+            <div class="explanation-title" data-i18n="explanationLabel">Alberta Driving Rule Explanation</div>
+            <div id="explanation-text" class="explanation-text"></div>
+          </div>
+        </div>
+
+        <!-- Exam Action Controls -->
+        <div class="exam-controls">
+          <div class="exam-controls-left">
+            <button id="btn-prev" class="btn-secondary" data-i18n="btnPrevious">Previous</button>
+            <button id="btn-skip" class="btn-ghost" data-i18n="btnSkip">Skip Question</button>
+          </div>
+          <div class="exam-controls-right">
+            <button id="btn-next" class="btn-primary" data-i18n="btnNext">Next &rarr;</button>
+            <button id="btn-finish" class="btn-secondary" data-i18n="btnFinish">Finish Test</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIEW 3: RESULTS & MISTAKE REVIEW -->
+    <section id="view-results" class="results-section" style="display: none;">
+      <div class="container container-narrow">
+        
+        <!-- Results Hero Banner -->
+        <div id="results-hero-card" class="results-hero-card passed">
+          <span class="results-status-badge" data-i18n="resultsPassedTitle">EXAMINATION PASSED</span>
+          <h1 id="results-hero-title" class="results-hero-title">PASSED</h1>
+          <p id="results-hero-subtitle" class="results-hero-subtitle">
+            You scored 27 / 30 (90%). 25 correct answers are required to pass.
+          </p>
+
+          <!-- Circular Radial Progress -->
+          <div class="score-circle-wrapper">
+            <svg class="score-svg" viewBox="0 0 180 180">
+              <circle class="score-circle-bg" cx="90" cy="90" r="80"></circle>
+              <circle id="score-circle-bar" class="score-circle-bar" cx="90" cy="90" r="80"></circle>
+            </svg>
+            <div class="score-circle-text">
+              <span id="score-number" class="score-number">27/30</span>
+              <span id="score-pct" class="score-pct">90%</span>
+            </div>
+          </div>
+
+          <!-- Stat Counters -->
+          <div class="results-summary-grid">
+            <div class="results-stat-box">
+              <div id="res-correct" class="results-stat-num" style="color: var(--nx-pass-green);">27</div>
+              <div class="results-stat-label" data-i18n="resultsCorrectLabel">Correct</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="res-incorrect" class="results-stat-num" style="color: var(--nx-fail-red);">3</div>
+              <div class="results-stat-label" data-i18n="resultsIncorrectLabel">Incorrect</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="res-skipped" class="results-stat-num" style="color: var(--nx-skip-amber);">0</div>
+              <div class="results-stat-label" data-i18n="resultsSkippedLabel">Skipped</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="res-time" class="results-stat-num">14:20</div>
+              <div class="results-stat-label" data-i18n="resultsTimeSpentLabel">Time Taken</div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="results-actions">
+            <button id="btn-results-mistakes" class="btn-primary" data-i18n="btnReviewMistakes">Review Mistakes</button>
+            <button id="btn-results-retry-weak" class="btn-secondary" data-i18n="btnRetryWeak">Retry Weak Topics</button>
+            <button id="btn-results-take-another" class="btn-secondary" data-i18n="btnTakeAnother">Take Another Exam</button>
+            <button id="btn-results-home" class="btn-ghost" data-i18n="btnBackHome">Back to Home</button>
+          </div>
+        </div>
+
+        <!-- Category Breakdown Card -->
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <h3 class="breakdown-title" data-i18n="categoryBreakdownTitle">Performance by Category</h3>
+            <p>Mastery percentage across all tested topics in this session.</p>
+          </div>
+          <div id="category-breakdown-list" class="breakdown-list"></div>
+        </div>
+
+        <!-- Detailed Mistake Review Section -->
+        <div id="mistakes-section" class="mistakes-section">
+          <h2 class="mistakes-title" data-i18n="mistakeReviewTitle">Detailed Mistake Analysis</h2>
+          <div id="mistakes-cards-container"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIEW 4: STUDENT READINESS DASHBOARD -->
+    <section id="view-readiness" class="readiness-section" style="display: none;">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <div class="eyebrow-gold">Personal Mastery Index</div>
+          <h1 class="section-title" data-i18n="readinessDashboardTitle">Class 7 Examination Readiness</h1>
+          <p>Transparent local algorithm based on recent test scores, category mastery, and topic coverage.</p>
+        </div>
+
+        <div class="readiness-card">
+          <div class="score-number" id="readiness-score-num" style="font-size: 4.5rem; color: var(--nx-gold);">86%</div>
+          <div id="readiness-status-label" class="readiness-badge">Exam Ready</div>
+
+          <div class="results-summary-grid" style="margin-top: 2.5rem; margin-bottom: 0;">
+            <div class="results-stat-box">
+              <div id="readiness-tests-attempted" class="results-stat-num">5</div>
+              <div class="results-stat-label" data-i18n="testsAttemptedLabel">Tests Completed</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="readiness-tests-passed" class="results-stat-num" style="color: var(--nx-pass-green);">4</div>
+              <div class="results-stat-label" data-i18n="testsPassedLabel">Tests Passed</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="readiness-best-score" class="results-stat-num">29 / 30</div>
+              <div class="results-stat-label" data-i18n="bestScoreLabel">Best Score</div>
+            </div>
+            <div class="results-stat-box">
+              <div id="readiness-total-answered" class="results-stat-num">150</div>
+              <div class="results-stat-label" data-i18n="totalAnsweredLabel">Questions Answered</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weak Areas & Mastery Breakdown -->
+        <div class="breakdown-card">
+          <h3 class="breakdown-title" data-i18n="weakAreasTitle">Topics Requiring Attention</h3>
+          <p style="margin-bottom: 1.25rem;">Categories where accuracy is below 75%. Practice these to boost your readiness score.</p>
+          <div id="readiness-weak-list" class="breakdown-list"></div>
+        </div>
+
+        <div class="breakdown-card">
+          <h3 class="breakdown-title" data-i18n="strongAreasTitle">Mastered Categories</h3>
+          <p style="margin-bottom: 1.25rem;">Categories where accuracy is 85% or higher.</p>
+          <div id="readiness-strong-list" class="breakdown-list"></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button id="btn-trigger-reset" class="btn-ghost" style="color: var(--nx-fail-red);" data-i18n="btnResetProgress">
+            Reset My Progress
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: CONCISE STUDY GUIDE -->
+    <section id="view-study" class="modes-section" style="display: none;">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-gold">High-Yield Knowledge Summaries</div>
+          <h1 class="section-title" data-i18n="modeStudyGuideTitle">Alberta Class 7 Study Guide</h1>
+          <p>Condensed summaries of key traffic laws, road signs, parking orientations, and safety regulations.</p>
+        </div>
+
+        <div id="study-topics-grid" class="modes-grid"></div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="https://www.alberta.ca/driver-guides" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>📖</span> <span data-i18n="officialResourcesLink">Official Alberta Driver Guides</span> &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Submit Exam Confirmation Modal -->
+  <div id="submit-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-submit-title">
+    <div class="modal-card">
+      <h3 id="modal-submit-title" class="modal-title" data-i18n="confirmSubmitTitle">Submit Examination?</h3>
+      <p class="modal-body" data-i18n="confirmSubmitMsg">
+        Are you sure you want to finish and grade this test now?
+      </p>
+      <div class="modal-actions">
+        <button id="modal-cancel-submit" class="btn-secondary" data-i18n="confirmSubmitNo">Continue Testing</button>
+        <button id="modal-confirm-submit" class="btn-primary" data-i18n="confirmSubmitYes">Yes, Grade My Test</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Progress Confirmation Modal -->
+  <div id="reset-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-reset-title">
+    <div class="modal-card">
+      <h3 id="modal-reset-title" class="modal-title">Reset All Progress?</h3>
+      <p class="modal-body" data-i18n="confirmResetMsg">
+        Are you sure you want to delete all saved test history and reset your readiness score?
+      </p>
+      <div class="modal-actions">
+        <button id="modal-cancel-reset" class="btn-secondary">Cancel</button>
+        <button id="modal-confirm-reset" class="btn-primary" style="background: var(--nx-fail-red); color: #fff;">Reset Everything</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Image Modal -->
+  <div id="lightbox-modal" class="lightbox-overlay" role="dialog" aria-modal="true">
+    <button id="lightbox-close-btn" class="lightbox-close" aria-label="Close Lightbox">✕ Close</button>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Scenario Diagram">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="nx-footer">
+    <div class="container footer-content">
+      <p class="footer-disclaimer" data-i18n="footerDisclaimer">
+        NEXORA DR TEST is an independent educational practice tool and is not affiliated with, endorsed by, or operated by the Government of Alberta. Always consult the current Alberta Driver's Guide and Alberta.ca for official licensing requirements.
+      </p>
+      <div class="footer-meta">
+        <span data-i18n="lastVerifiedText">Curriculum verified: August 2026</span>
+        <span>•</span>
+        <a href="https://www.alberta.ca/driver-knowledge-tests" target="_blank" rel="noopener noreferrer" style="color: var(--nx-gold);" data-i18n="officialResourcesLink">
+          Alberta.ca Driver Knowledge Tests &rarr;
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript App -->
+  <script type="module" src="js/app.js"></script>
+
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.warn('SW registration skipped:', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

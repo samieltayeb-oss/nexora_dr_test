@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" width="100%" height="100%">
+    <rect x="6" y="6" width="168" height="208" rx="12" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
+    <text x="90" y="38" font-family="'DM Sans', 'Arial', sans-serif" font-size="15" font-weight="900" fill="#000000" text-anchor="middle">PASSING</text>
+    <text x="90" y="58" font-family="'DM Sans', 'Arial', sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">EMERGENCY</text>
+    <text x="90" y="78" font-family="'DM Sans', 'Arial', sans-serif" font-size="13" font-weight="900" fill="#000000" text-anchor="middle">VEHICLES</text>
+    <rect x="25" y="90" width="130" height="85" rx="8" fill="#F8FAFC" stroke="#000000" stroke-width="3"/>
+    <text x="90" y="112" font-family="'DM Sans', 'Arial', sans-serif" font-size="12" font-weight="700" fill="#000000" text-anchor="middle">MAXIMUM</text>
+    <text x="90" y="162" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="46" font-weight="900" fill="#000000" text-anchor="middle">60</text>
+    <text x="90" y="198" font-family="'DM Sans', 'Arial', sans-serif" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">WHEN FLASHING</text>
+  </svg>

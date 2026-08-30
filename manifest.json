@@ -1,0 +1,23 @@
+{
+  "name": "NEXORA DR TEST",
+  "short_name": "NEXORA DR",
+  "description": "Alberta Class 7 Learner Driver Knowledge Test Practice Platform",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/brand/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/brand/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

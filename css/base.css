@@ -1,0 +1,214 @@
+/* NEXORA DR TEST — Base Styles, Typography, Layout Grid & Brand Signatures */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--nx-black);
+  color: var(--nx-ivory);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: var(--nx-black);
+  color: var(--nx-ivory);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  selection-background-color: var(--nx-gold);
+  selection-color: var(--nx-black);
+}
+
+::selection {
+  background-color: var(--nx-gold);
+  color: var(--nx-black);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--nx-ivory);
+}
+
+.lang-ar h1, .lang-ar h2, .lang-ar h3, .lang-ar h4, .lang-ar h5, .lang-ar h6 {
+  font-family: var(--font-arabic-heading);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.lang-ar body, .lang-ar p, .lang-ar span, .lang-ar button {
+  font-family: var(--font-arabic-body);
+}
+
+p {
+  color: var(--nx-muted);
+  font-size: 0.95rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* NEXORA Signature Eyebrow Text */
+.eyebrow-gold {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  color: var(--nx-gold);
+  letter-spacing: 0.32em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 400;
+}
+
+.eyebrow-gold::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 0.5px;
+  background-color: var(--nx-gold);
+}
+
+.lang-ar .eyebrow-gold {
+  font-family: var(--font-arabic-heading);
+  letter-spacing: 0.1em;
+}
+
+/* NEXORA Signature CTA Underline Sweep */
+.cta-sweep {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--nx-gold);
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.cta-sweep::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: var(--nx-gold);
+  transition: width 0.4s var(--transition-smooth);
+}
+
+.cta-sweep:hover::after {
+  width: 100%;
+}
+
+.lang-ar .cta-sweep::after {
+  left: auto;
+  right: 0;
+}
+
+/* Subtle Background Ambient Radial Glows */
+.ambient-glow {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  background: radial-gradient(ellipse at top center, rgba(196, 154, 16, 0.04) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Fine 0.5px Borders */
+.border-nx {
+  border: var(--border-width) solid var(--nx-card-border);
+}
+
+.border-nx-gold {
+  border: var(--border-width) solid var(--nx-gold-border);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nx-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nx-elevated);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nx-gold);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.05); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s var(--transition-smooth) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

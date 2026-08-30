@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <g transform="translate(100, 100) rotate(45)">
+      <rect x="-68" y="-68" width="136" height="136" rx="12" fill="#FACC15" stroke="#000000" stroke-width="6"/>
+    </g>
+    <!-- Traffic light housing -->
+    <rect x="80" y="48" width="40" height="104" rx="8" fill="#000000"/>
+    <circle cx="100" cy="68" r="11" fill="#DC2626"/>
+    <circle cx="100" cy="100" r="11" fill="#EAB308"/>
+    <circle cx="100" cy="132" r="11" fill="#22C55E"/>
+  </svg>

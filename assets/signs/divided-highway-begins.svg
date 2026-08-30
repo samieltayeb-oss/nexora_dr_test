@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <g transform="translate(100, 100) rotate(45)">
+      <rect x="-68" y="-68" width="136" height="136" rx="12" fill="#FACC15" stroke="#000000" stroke-width="6"/>
+    </g>
+    <!-- Median island at top -->
+    <path d="M90,40 Q100,32 110,40 L114,75 Q100,85 86,75 Z" fill="#000000"/>
+    <!-- Curved arrows passing around island -->
+    <path d="M72,155 L72,95 Q72,70 60,60 L50,70 L50,45 L78,45 L70,55 Q82,65 82,95 L82,155 Z" fill="#000000"/>
+    <path d="M128,155 L128,95 Q128,70 140,60 L150,70 L150,45 L122,45 L130,55 Q118,65 118,95 L118,155 Z" fill="#000000"/>
+  </svg>

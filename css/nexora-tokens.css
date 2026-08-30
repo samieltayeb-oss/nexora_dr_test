@@ -1,0 +1,65 @@
+/* NEXORA DR TEST — Design Tokens & Theme Variables
+ * Authoritative NEXORA Design System: #080808 Black, #C49A10 Gold, 0.5px Borders
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Color Surfaces */
+  --nx-black: #080808;
+  --nx-near: #111111;
+  --nx-elevated: #1a1a1a;
+  --nx-elevated-hover: #222222;
+
+  /* Brand Accents */
+  --nx-gold: #C49A10;
+  --nx-gold-hover: #E5B830;
+  --nx-amber: #6B4F08;
+  --nx-gold-arabic: #D4AF37;
+  --nx-gold-surface: rgba(196, 154, 16, 0.06);
+  --nx-gold-surface-strong: rgba(196, 154, 16, 0.12);
+  --nx-gold-border: rgba(196, 154, 16, 0.20);
+  --nx-gold-border-active: rgba(196, 154, 16, 0.60);
+
+  /* Typography Colors */
+  --nx-ivory: #F2EDE4;          /* Warm cream — strictly never pure cold white */
+  --nx-muted: #ADA89F;          /* Warm muted grey */
+  --nx-dark-muted: #5C5852;     /* Tertiary metadata label */
+  --nx-card-border: rgba(255, 255, 255, 0.06);
+  --nx-card-border-subtle: rgba(255, 255, 255, 0.03);
+
+  /* Semantic Feedback Colors */
+  --nx-pass-green: #22c55e;
+  --nx-pass-surface: rgba(34, 197, 94, 0.08);
+  --nx-pass-border: rgba(34, 197, 94, 0.25);
+  
+  --nx-fail-red: #ef4444;
+  --nx-fail-surface: rgba(239, 68, 68, 0.08);
+  --nx-fail-border: rgba(239, 68, 68, 0.25);
+
+  --nx-skip-amber: #f59e0b;
+  --nx-skip-surface: rgba(245, 158, 11, 0.08);
+
+  /* Typography Stacks */
+  --font-headline: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+  --font-arabic-heading: 'IBM Plex Sans Arabic', 'DM Sans', sans-serif;
+  --font-arabic-body: 'IBM Plex Sans Arabic', 'DM Sans', sans-serif;
+
+  /* Structural Radii & Borders */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  --border-width: 0.5px;
+
+  /* Luxury Shadows & Glows */
+  --glow-gold-subtle: 0 0 35px rgba(196, 154, 16, 0.08);
+  --glow-gold-focus: 0 0 25px rgba(196, 154, 16, 0.25);
+  --shadow-elevation: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+
+  /* Transitions */
+  --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
