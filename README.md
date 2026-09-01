@@ -12,7 +12,8 @@ NEXORA DR TEST delivers an educational experience built on the official *Driver'
 - **Ahmed Sami Suliman Personalization**: Custom luxury presentation tailored for Ahmed Sami Suliman (Age 17 • Alberta Class 7).
 - **Top 30 High-Priority Study Pack**: 30 curated high-yield questions with highlighted answers, detailed legal reasoning, actionable study tips, and downloadable bilingual PDFs.
 - **Authoritative Real Exam Simulation**: 30 questions, 25 to pass (83.33%), **no countdown timer** (matching official Alberta registry reality), stops upon reaching 25 correct answers or when achieving 25 is mathematically impossible (6 wrong), with end-of-test grading and mistake review.
-- **Visual Question Engine**: 34 handcrafted vector SVG traffic signs alongside 12 high-resolution 3D elevated driver-education diagrams generated via the Nano Banana scenario engine with programmatic vehicle marker overlays (`Vehicle A`, `Vehicle B`, `Vehicle C`).
+- **Authentic Official Road Signs**: 34 authentic official Alberta Transportation & TAC / MUTCDC standard vector traffic signs (RA-1 Stop, RA-2 Yield, RB-1 Speed Limits, RB-23 Do Not Enter, WC-013 Playground, RA-102a Emergency Vehicles Slowdown, etc.) directly integrated into the testing and study engine.
+- **Visual Question Engine**: 34 official standard SVG traffic signs alongside 12 high-resolution 3D elevated driver-education diagrams generated via the Nano Banana scenario engine with programmatic vehicle marker overlays (`Vehicle A`, `Vehicle B`, `Vehicle C`).
 - **Comprehensive Question Bank**: 306 validated original practice questions across 51 categories with 100% explanation coverage.
 - **Bilingual & True RTL**: Complete English and Modern Standard Arabic (`dir="rtl"`) support with `IBM Plex Sans Arabic` and `Cormorant Garamond` typography.
 - **Privacy-First & Offline Ready**: 100% client-side `localStorage` tracking, zero database required, zero telemetry tracking, and PWA offline support.

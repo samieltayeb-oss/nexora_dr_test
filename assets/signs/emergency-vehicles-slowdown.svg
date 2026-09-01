@@ -1,10 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" width="100%" height="100%">
-    <rect x="6" y="6" width="168" height="208" rx="12" fill="#FFFFFF" stroke="#000000" stroke-width="5"/>
-    <text x="90" y="38" font-family="'DM Sans', 'Arial', sans-serif" font-size="15" font-weight="900" fill="#000000" text-anchor="middle">PASSING</text>
-    <text x="90" y="58" font-family="'DM Sans', 'Arial', sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">EMERGENCY</text>
-    <text x="90" y="78" font-family="'DM Sans', 'Arial', sans-serif" font-size="13" font-weight="900" fill="#000000" text-anchor="middle">VEHICLES</text>
-    <rect x="25" y="90" width="130" height="85" rx="8" fill="#F8FAFC" stroke="#000000" stroke-width="3"/>
-    <text x="90" y="112" font-family="'DM Sans', 'Arial', sans-serif" font-size="12" font-weight="700" fill="#000000" text-anchor="middle">MAXIMUM</text>
-    <text x="90" y="162" font-family="'DM Sans', 'Arial Black', sans-serif" font-size="46" font-weight="900" fill="#000000" text-anchor="middle">60</text>
-    <text x="90" y="198" font-family="'DM Sans', 'Arial', sans-serif" font-size="11" font-weight="700" fill="#64748B" text-anchor="middle">WHEN FLASHING</text>
-  </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="63.178322mm"
+   height="39.740471mm"
+   viewBox="0 0 63.178322 39.740471"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="A;bertadrtaw.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9255612"
+     inkscape:cx="3807.3037"
+     inkscape:cy="547.75815"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-111.74779,17.662525)"><g
+       id="g38"><path
+         id="path14"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         d="m 113.81369,-17.612525 c -1.09766,0 -2.0159,0.91771 -2.0159,2.01538 v 35.60971 c 0,1.09767 0.91824,2.01538 2.0159,2.01538 h 59.04652 c 1.09766,0 2.0159,-0.91771 2.0159,-2.01538 v -35.60971 c 0,-1.09767 -0.91824,-2.01538 -2.0159,-2.01538 z" /><path
+         id="path9-0"
+         style="fill-rule:evenodd;stroke-width:0.0163734;stroke-linecap:round"
+         d="m 140.37758,-12.055535 c 1.0244,0 1.85483,0.83044 1.85483,1.85483 0,1.0243997 -0.83043,1.8548297 -1.85483,1.8548297 -1.02439,0 -1.85482,-0.83043 -1.85482,-1.8548297 0,-1.02439 0.83043,-1.85483 1.85482,-1.85483 z m 1.84654,3.5460197 6.52651,3.24743 1.0301,5.91722996 h -1.63314 c -0.57802,-1.46982 -0.90449,-2.93978996 -1.45739,-4.61065996 l -2.08554,-0.66582 6.68366,18.2289803 -1.9788,0.7098 -5.33908,-10.8293203 -2.84566,4.90579 -0.54012,6.1182203 -2.3304,-0.1193 0.42722,-7.2112403 3.0903,-5.95491 -1.72099,-4.18334 c -0.62181,0.45838 -1.2186,1.14305 -1.88448,1.60789 l -4.02635,2.15459996 -0.85437,-1.30641 4.20368,-3.00762996 3.15199,-4.34817 z m 13.72839,23.8945003 v 1.08551 h -25.23092 v -1.08551 z"
+         sodipodi:nodetypes="ssssscccccccccccccccccccccccccc" /><rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12"
+         width="60.878578"
+         height="37.441528"
+         x="112.89776"
+         y="-16.513288"
+         ry="0.91568971" /><g
+         id="g15"
+         transform="translate(-28.473557,-126.20364)"><g
+           id="g11-5"
+           transform="matrix(1.6695869,0,0,1.6695869,75.448522,-83.632966)"
+           style="stroke-width:0.598951"><rect
+             style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.299475;stroke-dasharray:none;stroke-opacity:1"
+             id="rect10-0"
+             width="7.8338342"
+             height="7.8338342"
+             x="41.855061"
+             y="123.08714" /><circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.299475;stroke-dasharray:none;stroke-opacity:1"
+             id="circle10-2"
+             cx="45.771976"
+             cy="127.00405"
+             r="3.0296893" /></g><g
+           id="g14"
+           transform="matrix(1.6695869,0,0,1.6695869,115.3319,-83.632966)"
+           style="stroke-width:0.598951"><rect
+             style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.299475;stroke-dasharray:none;stroke-opacity:1"
+             id="rect14"
+             width="7.8338342"
+             height="7.8338342"
+             x="41.855061"
+             y="123.08714" /><circle
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.299475;stroke-dasharray:none;stroke-opacity:1"
+             id="circle14"
+             cx="45.771976"
+             cy="127.00405"
+             r="3.0296893" /></g></g></g></g></svg>
